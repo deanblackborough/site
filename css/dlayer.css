@@ -1,0 +1,26 @@
+body {
+    padding-top: 50px;
+}
+
+a {
+    color: #1073a4;
+}
+
+a:hover {
+    color: #1582b9;
+}
+
+.footer {
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.footer p {
+    margin-bottom: 2px;
+}
+
+ /*.nav-pills > li.active > a, 
+ .nav-pills > li.active > a:focus, 
+ .nav-pills > li.active > a:hover {
+     background-color: #4f88ba;
+}*/
