@@ -609,12 +609,338 @@
 						value can be cleared using the clear button.</p>
 					
 					<h4 id="cm-ct-form">Form</h4>
+					
+					<p>The form tool allows a user to add a form to the 
+						selected content row. To add a form the user simply 
+						needs to select the form that they would like to 
+						insert from all the forms defined in the Form 
+						builder.</p>
+						
+					<p>The initial size of a newly inserted form depends upon 
+						whether or not the user has added any other content 
+						items to the selected content row. The sizing logic 
+						in Dlayer will attempt to calculate a sensible size 
+						for the form based on the size of all the content 
+						items which currently appear before it in the content 
+						row. The goal of the sizing logic is to set a size 
+						for the form so that it fills any remaining space in 
+						the content row. Behind the scenes there is a minimum 
+						and suggested maximum size, for a form the values are 
+						three and 12. If the sizing logic calculates a size 
+						below the minimum it will set the size to the 
+						suggested maximum and drop the form down below its 
+						siblings. If the form is the only item in the content 
+						row the suggested maximum width is automatically 
+						applied.</p>
+						
+					<p>At any point after insertion the user will be able to 
+						alter the size and position of the form to any value 
+						between one and 12, they will also be able to set the 
+						offsetting value. The offsetting value is the amount 
+						of free space that appears to the left of the form. 
+						The sum of the size and offsetting must be a value 
+						between one and 12, if the size is set to six the 
+						offsetting value will be limited to values between 
+						zero and six. The size and position sub tool is 
+						available in edit mode along with all the other 
+						sub tools.</p>
+						
+					<p>In edit mode an edit sub tool appears, this allows the 
+						user to edit the form by jumping to the Form builder. 
+						The user will be taken directly to the Form builder 
+						with the form selected, at any point they can return 
+						to the Content manager to see their changes, the 
+						state of the Content manager is maintained 
+						throughout.</p>
+						
+					<h5>Sub tools</h5>
+					
+					<p>The form tool has three sub tools, the edit tool, the 
+						size and position tool and the styling tool.</p>
+						
+					<p>Forms need to be edited in the Form builder, the edit 
+						tool allows a user to jump directly to the Form builder 
+						designer view with the form selected. After making 
+						their changes in the Form builder the user can click a 
+						button to return back to the Content manager, the 
+						state of the designer will have been maintained. The 
+						form content item will immediately show all the 
+						changed that were made in the Form builder.</p>
+						
+					<p>The size and position tool allows a user to define both 
+						the width of the content item and its offset. The 
+						width and offset values need to be a value between 
+						one and 12 and the sum of the two values cannot be 
+						larger than 12, please refer to the content row 
+						section to read up on why widths needs to be 
+						expressed in twelfths.</p>
+						
+					<p>The styling tool allows a user to define the 
+						background colour for the text item and the text item 
+						container. The user can select colours by clicking the 
+						colour fields, this will activate the colour picker 
+						allowing them to select a colour from any of the 
+						sites colour palettes, by choosing a colour from a 
+						list of the last 5 used across the site or by manually 
+						entering a hex value, an assigned value can be cleared 
+						using the clear button.</p>
+					
 					<h4 id="cm-ct-jumbotron">Jumbotron</h4>
+					
+					<p>The jumbotron tool allows a user to add a new 
+						jumbotron content item to the selected content row. 
+						A jumbotron is ideal for either acting as the main 
+						heading for a page or to highlight important piece of 
+						content. To add a jumbotron item the user needs to 
+						define the title, the sub title text, the label for 
+						an optional button and also define a name by which 
+						they can identify the text later.</p>
+						
+					<p>The text which a user assigns when creating a jumbotron 
+						item gets stored independently to the data which 
+						defines the position, styling and layout of the 
+						jumbotron item, the text content is never duplicated 
+						in the app. When the text is stored in the database 
+						it is saved against the name that was assigned when 
+						the jumbotron item was created.</p>
+						
+					<p>A jumbotron item will automatically be sized to span 
+						the entire width of the content row it has been 
+						assigned to.</p>
+						
+					<p>At any point after insertion the user will be able to 
+						alter the size and position of the jumbotron item to 
+						any value between one and 12, they will also be able 
+						to set the offsetting value. The offsetting value is 
+						the amount of free space that appears to the left of 
+						the jumbotron item. The sum of the size and offsetting 
+						must be a value between one and 12, if the size is 
+						set to six the offsetting value will be limited to 
+						values between zero and six. The size and position 
+						sub tool is available in edit mode along with all the 
+						other sub tools.</p>
+						
+					<p>In edit mode the form will include an instances field 
+						if the text content assigned to the jumbotron item is 
+						being used in more than one active jumbotron item. 
+						The instances field controls whether or not any text 
+						changes affect all the linked jumbotron items or 
+						just the current jumbotron item. If the user chooses 
+						no when updating a jumbotron item Dlayer will 
+						automatically store the new text in the database 
+						and increment the name.</p>
+						
+					<h5>Sub tools</h5>
+					
+					<p>The jumbotron tool has two sub tools, the size and 
+						position tool and the styling tool.</p>
+						
+					<p>The size and position tool allows a user to define 
+						both the width of the content item and its offset. 
+						The width and offset values need to be a value 
+						between one and 12 and the sum of the two values 
+						cannot be larger than 12, please refer to the content 
+						row section to read up on why widths needs to be 
+						expressed in twelfths.</p>
+						
+					<p>The styling tool allows a user to define the background 
+						colour for the jumbotron item. The user can select a 
+						colour by clicking the colour field, this will 
+						activate the colour picker allowing them to select 
+						a colour from any of the site’s colour palettes, by 
+						choosing a colour from a list of the last 5 used 
+						across the site or by manually entering a hex value, 
+						an assigned value can be cleared using the clear 
+						button.</p>
+					
 					<h4 id="cm-ct-image">Image</h4>
+					
+					<p>The image tool allows a user to add an image to the 
+						selected content row. To add an image a user needs to 
+						select the image that they would like to add, set the 
+						expand setting and optionally define a caption which 
+						appears below the image. To select an image the user 
+						invokes the image picker, the image picker helps the 
+						user filter down the images in their Image library by 
+						category and sub category. Once filtered the user is 
+						asked to select an image and finally if applicable a 
+						version of that image.</p>
+						
+					<p>The initial size of a newly inserted image depends 
+						upon whether or not the user has added any other 
+						content items to the selected content row. The sizing 
+						logic in Dlayer will attempt to calculate a sensible 
+						size for the image based on the size of all the 
+						content items which currently appear before it in the 
+						content row. The goal of the sizing logic is to set a 
+						size for the image so that it fills any remaining 
+						space in the content row. Behind the scenes there is 
+						a minimum and suggested maximum size, for an image 
+						the values are one and six. If the sizing logic 
+						calculates a size below the minimum it will set the 
+						size to the suggested maximum and drop the form down 
+						below its siblings. If the form is the only item in 
+						the content row the suggested maximum width is 
+						automatically applied.</p>
+						
+					<p>At any point after insertion the user will be able to 
+						alter the size and position of the image to any value 
+						between one and 12, they will also be able to set the 
+						offsetting value. The offsetting value is the amount 
+						of free space that appears to the left of the image. 
+						The sum of the size and offsetting must be a value 
+						between one and 12, if the size is set to six the 
+						offsetting value will be limited to values between 
+						zero and six. The size and position sub tool is 
+						available in edit mode along with all the other 
+						sub tools.</p>
+						
+					<p>A user can only test the expand setting when they view 
+						a preview of their content page, the expand controls 
+						cannot be added in the design window because they 
+						interfere with the Dlayer selection controls.</p>
+						
+					<h5>Sub tools</h5>
+					
+					<p>The image tool has two sub tools, the size and position 
+						tool and the styling tool.</p>
+						
+					<p>The size and position tool allows a user to define both 
+						the width of the content item and its offset. The width 
+						and offset values need to be a value between one and 12 
+						and the sum of the two values cannot be larger than 12, 
+						please refer to the content row section to read up on 
+						why widths needs to be expressed in twelfths.</p>
+						
+					<p>The styling tool allows a user to define the background 
+						colour for the image content container. The user can 
+						select a colour by clicking the colour field, this 
+						will activate the colour picker allowing them to 
+						select a colour from any of the site’s colour palettes, 
+						by choosing a colour from a list of the last 5 used 
+						across the site or by manually entering a hex value, 
+						an assigned value can be cleared using the clear 
+						button.</p>
+					
 					<h3 id="cm-import-tools">Import tools</h3>
+					
+					<p>The import tools allow a user to create content items 
+						using data that already exists within Dlayer. They are 
+						only used to add content items, once a content item 
+						has been created using the import tools it will from 
+						that point on act as a standard content item.</p>
+					
 					<h4 id="cm-it-text">Text</h4>
+					
+					<p>The import text tool allows a user to add a new text 
+						content item using text content from a previously 
+						created text item, both current and deleted. When a 
+						user selects the text content to use from the select 
+						menu the text field will be populated with the saved 
+						data.</p>
+						
+					<p>The user is free to modify the imported text, if 
+						changed, upon insertion Dlayer will save the new text 
+						content to the database and increment the name used 
+						to identify the text.</p>
+						
+					<p>The initial size of a newly inserted text item depends 
+						upon whether or not the user has added any other 
+						content items to the selected content row. The sizing 
+						logic in Dlayer will attempt to calculate a sensible 
+						size for the text item based on the size of all the 
+						content items which currently appear before it in 
+						the content row. The goal of the sizing logic is to 
+						set a size for the text item so that it fills any 
+						remaining space in the content row. Behind the scenes 
+						there is a minimum and suggested maximum size, for a 
+						text item the values are three and 12. If the sizing 
+						logic calculates a size below the minimum it will set 
+						the size to the suggested maximum and drop the new 
+						text item down below its siblings. If the text item 
+						is the only item in the content row the suggested 
+						maximum width is automatically applied.</p>
+						
+					<p>At any point after insertion the user will be able to 
+						alter the size and position of the text item to any 
+						value between one and 12, they will also be able to 
+						set the offsetting value. The offsetting value is the 
+						amount of free space that appears to the left of the 
+						text item. The sum of the size and offsetting must be 
+						a value between one and 12, if the size is set to six 
+						the offsetting value will be limited to values between 
+						zero and six. The size and position sub tool is 
+						available in edit mode along with all the other sub 
+						tools.</p>
+						
+					<p>Once created the content item will behave as a 
+						standard text content item.</p>
+					
 					<h4 id="cm-it-heading">Heading</h4>
+					
+					<p>The import heading tool allows a user to add a new 
+						heading content item using text content from a 
+						previously created heading item, both current and 
+						deleted. When a user selects the text content to 
+						use from the select menu the heading and sub heading 
+						fields will be populated with the saved data.</p>
+						
+					<p>The user is free to modify the imported text, if 
+						changed, upon insertion Dlayer will save the new text 
+						content to the database and increment the name used 
+						to identify the text.</p>
+						
+					<p>A heading item will automatically be sized to span 
+						the entire width of the content row it has been 
+						assigned to.</p>
+						
+					<p>At any point after insertion the user will be able to 
+						alter the size and position of the heading item to 
+						any value between one and 12, they will also be able 
+						to set the offsetting value. The offsetting value 
+						is the amount of free space that appears to the left 
+						of the heading item. The sum of the size and 
+						offsetting must be a value between one and 12, if 
+						the size is set to six the offsetting value will be 
+						limited to values between zero and six. The size and 
+						position sub tool is available in edit mode along 
+						with all the other sub tools.</p>
+						
+					<p>Once created the content item will behave as a standard 
+						heading content item.</p>
+					
 					<h4 id="cm-it-jumbotron">Jumbotron</h4>
+					
+					<p>The import jumbotron tool allows a user to add a new 
+						jumbotron content item using text content from a 
+						previously created jumbotron item, both current and 
+						deleted. When a user selects the text content to use 
+						from the select menu the title and sub title fields 
+						will be populated with the saved data.</p>
+						
+					<p>The user is free to modify the imported text, if 
+						changed, upon insertion Dlayer will save the new text 
+						content to the database and increment the name used 
+						to identify the text.</p>
+						
+					<p>A jumbotron item will automatically be sized to span 
+						the entire width of the content row it has been 
+						assigned to.</p>
+						
+					<p>At any point after insertion the user will be able to 
+						alter the size and position of the jumbotron item to 
+						any value between one and 12, they will also be able 
+						to set the offsetting value. The offsetting value is 
+						the amount of free space that appears to the left of 
+						the jumbotron item. The sum of the size and offsetting 
+						must be a value between one and 12, if the size is 
+						set to six the offsetting value will be limited to 
+						values between zero and six. The size and position 
+						sub tool is available in edit mode along with all the 
+						other sub tools.</p>
+						
+					<p>Once created the content item will behave as a 
+						standard jumbotron content item.</p>
 						
 					<hr />
 					
