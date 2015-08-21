@@ -11,6 +11,7 @@ body {
 .footer {
 	padding-top:30px;
 	padding-bottom:30px;
+    background-color: rgba(0,0,0,.1);
 }
 
 .footer p {
