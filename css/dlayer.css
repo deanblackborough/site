@@ -2,6 +2,12 @@ body {
 	padding-top: 60px;
 }
 
+.releases h3 {
+	border-bottom: .0625rem solid rgba(0,0,0,.1);
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+}
+
 .footer {
 	padding-top:30px;
 	padding-bottom:30px;
