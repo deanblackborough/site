@@ -19,13 +19,6 @@
 		<!-- Bootstrap core CSS -->
 		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/dlayer.css" rel="stylesheet">
-		
-		<style>
-		h3 {
-			margin-top: 1rem;
-			padding-top: 1rem;
-		}	
-		</style>
 	</head>
 
 	<body>
@@ -42,58 +35,56 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-					<h1>Dlayer.com <small class="text-muted">Web Development 
-						simplified</small></h1>
-					
-					<hr />
-					
-					<p><a href="https://github.com/Dlayer/dlayer">
-						View the Project on GitHub 
-						<small class="text-muted">Dlayer/dlayer</small></a></p>
-						
-					<div class="btn-group btn-group-sm" role="group" aria-label="...">
-						<a class="btn btn-secondary" href="https://github.com/Dlayer/dlayer/zipball/master"><strong>ZIP</strong></a>
-						<a class="btn btn-secondary" href="https://github.com/Dlayer/dlayer/tarball/master"><strong>TAR</strong></a>
-						<a class="btn btn-secondary" href="https://github.com/Dlayer/dlayer"><strong>On GitHub</strong></a>
-					</div>
-					
-					<hr />
-					
+					<h1>Dlayer.com</h1>
+
+                    <p class="text-muted">Web Development simplified</p>
+
+                    <p>
+                        <a class="btn btn-primary-outline btn-sm" href="https://github.com/Dlayer/dlayer/zipball/master" role="button">Zip</a>
+                        <a class="btn btn-primary-outline btn-sm" href="https://github.com/Dlayer/dlayer/zipball/master" role="button">Tar</a>
+                        <a class="btn btn-primary btn-sm" href="https://github.com/Dlayer/dlayer/zipball/master" role="button">on GitHub</a>
+                    </p>
+
+                    <p class="text-muted">Visit GitHub to view the project</p>
+
+                    <hr />
+
 					<ul class="nav nav-pills nav-stacked hidden-sm-down">
 						<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
 						<li class="nav-item"><a href="/releases.html" class="nav-link active">Releases</a></li>
 						<li class="nav-item"><a href="#" class="nav-link disabled">Demo</a></li>
 						<li class="nav-item"><a href="/docs/" class="nav-link">Docs</a></li>
+                        <li class="nav-item"><a href="/coding-standards.html" class="nav-link">Coding standards</a></li>
 						<li class="nav-item"><a href="/history.html" class="nav-link">History</a></li>
 					</ul>
-					
+
 					<ul class="nav nav-tabs small hidden-md-up">
 						<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
 						<li class="nav-item"><a href="/releases.html" class="nav-link active">Releases</a></li>
 						<li class="nav-item"><a href="#" class="nav-link disabled">Demo</a></li>
 						<li class="nav-item"><a href="/docs/" class="nav-link">Docs</a></li>
+                        <li class="nav-item"><a href="/coding-standards.html" class="nav-link">Coding standards</a></li>
 						<li class="nav-item"><a href="/history.html" class="nav-link">History</a></li>
 					</ul>
 
 					<hr />
 
-					<p class="small">A 
-						<a href="https://github.com/Dlayer">Dlayer</a> 
-						project. Intial idea and development by 
-						<a href="http://www.g3d-development.com/blog/">G3D 
-						Development Limited</a> / 
-						<a href="http://www.deanblackborough.com">Dean 
+					<p class="small">A
+						<a href="https://github.com/Dlayer">Dlayer</a>
+						project. Intial idea and development by
+						<a href="http://www.g3d-development.com/blog/">G3D
+						Development Limited</a> /
+						<a href="http://www.deanblackborough.com">Dean
 						Blackborough</a></p>
 				</div>
-				<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+				<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 releases">
 					<h2 class="display-1">Private releases</h2>
 
 					<hr />
 
-					<p class="lead">Listed below are all the releases prior to 
+					<p class="lead">Listed below are all the releases prior to
 						the app going Open Source in August 2015.</p>
 
-					<h3>v0.80 - Refactoring, content and two new preset tools for Form builder. <small>27th Jun 2015</small></h3>
 					<h3>v0.79 (Internal) - Content area tool, multiple content rows and refatcoring. <small>19th Jun 2015</small></h3>
 					<ul>
 						<li>Added a password tool to the preset section in the Form builder.</li>
@@ -868,9 +859,9 @@
 						<li>Added new tool icons for the form builder and content manager and updated the cancel image for all three modules, didn't match the rest of the images.</li>
 						<li>Split the content data methods out into their own models to match the rest of the system and as pre-planning for additional changes. Moved the margin settings for a heading, was defined in the heading styles settings, now defined per heading.</li>
 						<li>Fixed a bug with the manual split tools, javascript wasn't taking the border of the parent element into account when drawing and calculating the split position and size of the new children.</li>
-						<li>At the start of building this version of Dlayer I modified my development approach a little for this project. Typically I can plan the models and classes required to solve a problem fairly easily, with Dlayer because of the complexity I opted for a more procedural approach, this allowed me to put in place the structure for the first designer (template designer) which I then duplicated and modified for the form builder and content manager. 
+						<li>At the start of building this version of Dlayer I modified my development approach a little for this project. Typically I can plan the models and classes required to solve a problem fairly easily, with Dlayer because of the complexity I opted for a more procedural approach, this allowed me to put in place the structure for the first designer (template designer) which I then duplicated and modified for the form builder and content manager.
 
-							All three modules ended up with a very similar base, for the last week I’ve been refactoring the code adding core classes and models which handle the majority of the base functionality for each module, the ribbon, tool bars and tool processing code. 
+							All three modules ended up with a very similar base, for the last week I’ve been refactoring the code adding core classes and models which handle the majority of the base functionality for each module, the ribbon, tool bars and tool processing code.
 						</li>
 						<li>Reworked the form module ribbon data classes, now rely more on the base abstract class and there is less duplication, system mirrors the more functional template designer.</li>
 						<li>Reworked the template module ribbon data classes, now rely more on the base abstract class and there is less duplication, fixed a small bug when changing borders, incorrect id var was being used.</li>
@@ -929,25 +920,23 @@
 						<li>Added a pagination view helper, update of my existing pagination view helper.</li>
 						<li>Added a development log to Dlayer to show changes to the application, two reasons, one to spur on my development, two, to show the public what I am adding.</li>
 					</ul>
-
-
-					<hr />
-				</div>
-			</div>
-
-			<div class="row footer">
-				<div class="col-md-12 col-xs-12 muted text-center small">
-					<p>Dlayer original developed by 
-						<a href="http://www.g3d-development.com/blog/">G3D 
-							Development Limited</a> / 
-						<a href="http://www.deanblackborough.com">Dean 
-							Blackborough</a></p>
-					<p>Dlayer Copyright &copy; G3D Development 2015</p>
-					<p>Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a></p>
-					<p>Code <a href="https://github.com/Dlayer/dlayer/blob/master/LICENSE">licensed</a> under MIT</p>
 				</div>
 			</div>
 		</div>
+        <div class="container-fluid">
+            <div class="row footer">
+                <div class="col-md-12 col-xs-12 muted text-center small">
+                    <p>Dlayer original developed by
+                        <a href="http://www.g3d-development.com/blog/">G3D
+                        Development Limited</a> /
+                        <a href="http://www.deanblackborough.com">Dean
+                        Blackborough</a></p>
+                    <p>Dlayer Copyright &copy; G3D Development 2015</p>
+                    <p>Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a></p>
+                    <p>Code <a href="https://github.com/Dlayer/dlayer/blob/master/LICENSE">licensed</a> under MIT</p>
+                </div>
+            </div>
+        </div>
 
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
