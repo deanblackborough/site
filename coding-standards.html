@@ -151,15 +151,15 @@
 							private $class_property;
 
 							/**
-							* This is a comment for the example method shown
-							* below, method comments should explain where the
-							* method is used and what it does if not obvious
-							*
-							* @param1 array Description
-							* @param2 boolean Description
-							* @return void Brief description of returned value
-							*   if necessary
-							*/
+							 * This is a comment for the example method shown
+							 * below, method comments should explain where the
+							 * method is used and what it does if not obvious
+							 *
+							 * @param1 array Description
+							 * @param2 boolean Description
+							 * @return void Brief description of returned value
+							 *   if necessary
+							 */
 							private function exampleMethod(array $param1, $param2)
 							{
 								// This is a single line comment
@@ -168,8 +168,8 @@
 									// logic
 								}
 
-								/* This is bad example string to show a multi
-								line.............................comment */
+								/* This is an example of a multi-line comment, it
+								should detail what is happening below and why */
 								switch($var)
 								{
 									case 1:
@@ -217,18 +217,24 @@
 								$model_users = new Model_Users();
 
 								return $model_users->activeUsers(30);
+
+								return $model_users->activeUsers()
+									->limit(50)->order('desc');
 							}
 						}
 						</code>
 					</pre>
 
-					<p>I will not turn any code away because of failure to
-						adhere to these coding standards, I very much
-						understand how difficult it can be to adapt after
-						years of coding one way, I'm still adjusting myself.</p>
+					<p>I will not turn away any that fails to adhere to these
+						coding standards, I very much understand how difficult
+						it can be to adapt after years of coding one way, I'm
+						still adjusting myself and the current coding standards
+						don't apply to a large amount of the Dlayer code some
+						of which dates back years.</p>
 
 					<pre>
-						<code class="language-php">// I still default to placing braces like this...
+						<code class="language-php">
+						// I still default to placing braces like this...
 						if($var1 === $var2) {
 							// Logic
 						}
@@ -243,7 +249,7 @@
 					</pre>
 
 					<p>Please just try to ensure that your coding
-						style is consistant, that matters far more than trying
+						style is consistent, that matters far more than trying
 						to adhere to these specific rules.</p>
 						
 					<h3>Javascript</h3>
@@ -251,6 +257,23 @@
 					<p>I'm still working on these, I'll update 
 						this section when I clean up dlayer.js, currently it is 
 						a little bit of a mess.</p>
+
+					<h3>Database changes</h3>
+
+					<p>Contributions which require changes to the structure of
+						the database will need to include two patch files, one
+						that makes the necessary changes and another to undo
+						the changes.</p>
+
+					<p>Contributions which only require content changes to
+						the database only need to include one patch file, an
+						undo patch file isn't required but will be
+						appreciated if included.</p>
+
+					<p><em>I plan to follow the above guidelines myself once
+						v1.00 has been released, depending on how it goes
+						I may revert to just including dumps until the repo
+						is forked by another developer.</em></p>
 				</div>
 			</div>
 		</div>
@@ -262,7 +285,7 @@
 						Development Limited</a> /
 						<a href="http://www.deanblackborough.com">Dean
 						Blackborough</a></p>
-					<p>Dlayer Copyright &copy; G3D Development 2015</p>
+					<p>Dlayer Copyright &copy; G3D Development 2016</p>
 					<p>Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a></p>
 					<p>Code <a href="https://github.com/Dlayer/dlayer/blob/master/LICENSE">licensed</a> under MIT</p>
 				</div>
