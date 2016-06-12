@@ -141,93 +141,93 @@
 							contact me if you have any questions.</li>
 					</ul>
 
-			<pre>
-				<code class="language-php">/**
-				 * This is the comment for the example class, it should
-				 * be a brief overview of the class
+		<pre>
+			<code class="language-php">/**
+			 * This is the comment for the example class, it should
+			 * be a brief overview of the class
+			 *
+			 * @author Name &lt;email&gt;
+			 * @copyright Copyright here
+			 * @license Link to license text
+			 */
+			class ExampleClass
+			{
+				private $class_property;
+
+				/**
+				 * This is a comment for the example method shown
+				 * below, method comments should explain where the
+				 * method is used and what it does if not obvious
 				 *
-				 * @author Name &lt;email&gt;
-				 * @copyright Copyright here
-				 * @license Link to license text
+				 * @param1 array Description
+				 * @param2 boolean Description
+				 * @return void Brief description of returned value
+				 *   if necessary
 				 */
-				class ExampleClass
+				private function exampleMethod(array $param1, $param2)
 				{
-					private $class_property;
-
-					/**
-					 * This is a comment for the example method shown
-					 * below, method comments should explain where the
-					 * method is used and what it does if not obvious
-					 *
-					 * @param1 array Description
-					 * @param2 boolean Description
-					 * @return void Brief description of returned value
-					 *   if necessary
-					 */
-					private function exampleMethod(array $param1, $param2)
+					// This is a single line comment
+					if($var1 === $var2)
 					{
-						// This is a single line comment
-						if($var1 === $var2)
-						{
-							// logic
-						}
-
-						/* This is an example of a multi-line comment, it
-						should detail what is happening below and why */
-						switch($var)
-						{
-							case 1:
-								// logic
-							break;
-
-							case 2:
-							case 3:
-								// logic
-							break;
-
-							// Default case statement always included
-							default:
-								// logic
-							break:
-						}
-
-						for ($i=0; $i&lt;$n; $i++)
-						{
-							// logic
-						}
-
-						$multiple_word_var = 2;
-
-						$quotes = 'Single quotes should be used, only
-							use double quotes when necessary';
-
-						$array1 = array('value1', 'value2');
-
-						$array2 = array(
-							array('value1', 'value2'),
-							array('value1', 'value2')
-						)
-
-						$sql = "SELECT field_1, field_2, field_3
-								FROM table_name
-								JOIN table_name_2
-									ON condition2 = :value2
-								WHERE condition1 = :value1";
-						$stmt = $this->_db->prepare($sql);
-						$stmt->bindValue(':value1', $value1, PDO::PARAM_INT);
-						$stmt->bindValue(':value2', $value2, PDO::PARAM_INT);
-						$stmt->execute();
-
-						$model_users = new Model_Users();
-
-						return $model_users->activeUsers(30);
-
-						return $model_users->activeUsers()
-							->limit(50)->order('desc');
+						// logic
 					}
+
+					/* This is an example of a multi-line comment, it
+					should detail what is happening below and why */
+					switch($var)
+					{
+						case 1:
+							// logic
+						break;
+
+						case 2:
+						case 3:
+							// logic
+						break;
+
+						// Default case statement always included
+						default:
+							// logic
+						break:
+					}
+
+					for ($i=0; $i&lt;$n; $i++)
+					{
+						// logic
+					}
+
+					$multiple_word_var = 2;
+
+					$quotes = 'Single quotes should be used, only
+						use double quotes when necessary';
+
+					$array1 = array('value1', 'value2');
+
+					$array2 = array(
+						array('value1', 'value2'),
+						array('value1', 'value2')
+					)
+
+					$sql = "SELECT field_1, field_2, field_3
+							FROM table_name
+							JOIN table_name_2
+								ON condition2 = :value2
+							WHERE condition1 = :value1";
+					$stmt = $this->_db->prepare($sql);
+					$stmt->bindValue(':value1', $value1, PDO::PARAM_INT);
+					$stmt->bindValue(':value2', $value2, PDO::PARAM_INT);
+					$stmt->execute();
+
+					$model_users = new Model_Users();
+
+					return $model_users->activeUsers(30);
+
+					return $model_users->activeUsers()
+						->limit(50)->order('desc');
 				}
-				</code>
-			</pre>
+			}
+			</code>
+		</pre>
 
 					<p>I will not turn away any that fails to adhere to these
 						coding standards, I very much understand how difficult
@@ -236,19 +236,19 @@
 						don't apply to a large amount of the Dlayer code some
 						of which dates back years.</p>
 
-			<pre><code class="language-php">
-			// I still default to placing braces like this...
-			if($var1 === $var2) {
-				// Logic
-			}
+		<pre><code class="language-php">
+		// I still default to placing braces like this...
+		if($var1 === $var2) {
+			// Logic
+		}
 
-			/* ...rather than this, although strangely I never make
-			the mistake with classes and methods */
-			if($var1 === $var2)
-			{
-				// Logic
-			}
-			</code></pre>
+		/* ...rather than this, although strangely I never make
+		the mistake with classes and methods */
+		if($var1 === $var2)
+		{
+			// Logic
+		}
+		</code></pre>
 
 					<p>Please just try to ensure that your coding
 						style is consistent, that matters far more than trying
@@ -258,70 +258,70 @@
 
 					<p>The Javascript coding standards pretty much match the PHP coding standards bar the obvious language differences, booleans in low case, below is a excerpt from one of the preview Javascript files</p>
 					
-			<pre><code class="language-javascript">
-			var previewFormBuilder =
+		<pre><code class="language-javascript">
+		var previewFormBuilder =
+		{
+			highlight: false,
+			changed: false,
+			visible: false,
+
+			/**
+			 * Preview function for integer based field attributes, updates the
+			 * attribute value in on the form as the user makes changes in the tool
+			 *
+			 * @param {Integer} Id of the field being edited
+			 * @param {String} Field attribute being updated
+			 * @param {String} Element attribute that is being updated
+			 * @param {String} Initial value for the text string
+			 * @param {Boolean} If the value is optional the user should be able to
+			 * clear the value, shouldn't default to initial value, if not set
+			 * defaults to false
+			 * @returns {Void}
+			 */
+			elementAttributeInteger: function (field_id, attribute, field_attribute,
+				value, optional)
 			{
-				highlight: false,
-				changed: false,
-				visible: false,
-
-				/**
-				 * Preview function for integer based field attributes, updates the
-				 * attribute value in on the form as the user makes changes in the tool
-				 *
-				 * @param {Integer} Id of the field being edited
-				 * @param {String} Field attribute being updated
-				 * @param {String} Element attribute that is being updated
-				 * @param {String} Initial value for the text string
-				 * @param {Boolean} If the value is optional the user should be able to
-				 * clear the value, shouldn't default to initial value, if not set
-				 * defaults to false
-				 * @returns {Void}
-				 */
-				elementAttributeInteger: function (field_id, attribute, field_attribute,
-					value, optional)
+				if (typeof optional === 'undefined')
 				{
-					if (typeof optional === 'undefined')
+					optional = false
+				}
+
+				$('#params-' + attribute).change(function ()
+				{
+					previewFormBuilder.highlight = true;
+
+					var selector = '#field_' + field_id;
+					var new_value = parseInt(this.value, 10);
+					var current_value = parseInt($(selector).attr(field_attribute), 10);
+
+					if (new_value !== NaN && current_value !== NaN &&
+						new_value !== current_value && new_value > 0)
 					{
-						optional = false
+						$(selector).attr(field_attribute, new_value);
+						previewFormBuilder.highlightItem(selector);
+						dlayer.preview.changed = true;
 					}
-
-					$('#params-' + attribute).change(function ()
+					else
 					{
-						previewFormBuilder.highlight = true;
-
-						var selector = '#field_' + field_id;
-						var new_value = parseInt(this.value, 10);
-						var current_value = parseInt($(selector).attr(field_attribute), 10);
-
-						if (new_value !== NaN && current_value !== NaN &&
-							new_value !== current_value && new_value > 0)
+						if (optional == false)
 						{
-							$(selector).attr(field_attribute, new_value);
-							previewFormBuilder.highlightItem(selector);
-							dlayer.preview.changed = true;
+							$(selector).attr(field_attribute, value);
+							$('#params-' + attribute).val(value);
 						}
 						else
 						{
-							if (optional == false)
-							{
-								$(selector).attr(field_attribute, value);
-								$('#params-' + attribute).val(value);
-							}
-							else
-							{
-								$(selector).attr(field_attribute, '');
-								$('#params-' + attribute).val('');
-								previewFormBuilder.highlightItem(selector);
-								previewFormBuilder.changed = true;
-							}
+							$(selector).attr(field_attribute, '');
+							$('#params-' + attribute).val('');
+							previewFormBuilder.highlightItem(selector);
+							previewFormBuilder.changed = true;
 						}
+					}
 
-						previewFormBuilder.unsaved();
-					});
-				},
-			}
-			</code></pre>
+					previewFormBuilder.unsaved();
+				});
+			},
+		}
+		</code></pre>
 
 					<h3>Database changes</h3>
 
