@@ -1,147 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Dlayer is a web development tool aimed primarily at users that don't have any web design or web development experience.">
-		<meta name="author" content="G3D Development Limited - Dean Blackborough">
-		<meta name="application-name" content="Dlayer.com"/>
-		<meta name="msapplication-TileColor" content="#FFFFFF"/>
-		<meta name="msapplication-starturl" content="http://www.dlayer.com"/>
-		<meta name="msapplication-tooltip" content="Dlayer.com: Web development simplified"/>
-		<link rel="shortcut icon" href="/images/favicon.ico" />
-		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-		<link rel="icon" sizes="192x192" href="/images/favicon-192x192.png" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Dlayer is a web development tool aimed primarily at users that don't have any web design or web development experience.">
+    <meta name="author" content="G3D Development Limited - Dean Blackborough">
+    <meta name="application-name" content="Dlayer.com"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF"/>
+    <meta name="msapplication-starturl" content="http://www.dlayer.com"/>
+    <meta name="msapplication-tooltip" content="Dlayer.com: Web development simplified"/>
+    <link rel="shortcut icon" href="/images/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="icon" sizes="192x192" href="/images/favicon-192x192.png"/>
 
-		<title>Dlayer- Coding standards</title>
+    <title>Dlayer- Coding standards</title>
 
-		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-		<link href="bower_components/prism/themes/prism.css" rel="stylesheet">
-		<link href="css/dlayer.css" rel="stylesheet">
-	</head>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/prism/themes/prism.css" rel="stylesheet">
+    <link href="css/dlayer.css" rel="stylesheet">
+</head>
 
-	<body>
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<body>
+<script>
+    (function (i, s, o, g, r, a, m)
+    {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function ()
+            {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-		  ga('create', 'UA-64736-3', 'auto');
-		  ga('send', 'pageview');
+    ga('create', 'UA-64736-3', 'auto');
+    ga('send', 'pageview');
 
-		</script>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-					<h1>Dlayer.com</h1>
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+            <h1>Dlayer.com</h1>
 
-					<p class="text-muted">Web Development simplified</p>
+            <p class="text-muted">Web Development simplified</p>
 
-					<p>
-						<a class="btn btn-primary-outline btn-sm" href="https://github.com/Dlayer/dlayer/zipball/master" role="button">Zip</a>
-						<a class="btn btn-primary-outline btn-sm" href="https://github.com/Dlayer/dlayer/tarball/master" role="button">Tar</a>
-						<a class="btn btn-primary btn-sm" href="https://github.com/Dlayer/dlayer" role="button">on GitHub</a>
-					</p>
+            <p>
+                <a class="btn btn-primary-outline btn-sm" href="https://github.com/Dlayer/dlayer/zipball/master"
+                   role="button">Zip</a>
+                <a class="btn btn-primary-outline btn-sm" href="https://github.com/Dlayer/dlayer/tarball/master"
+                   role="button">Tar</a>
+                <a class="btn btn-primary btn-sm" href="https://github.com/Dlayer/dlayer" role="button">on GitHub</a>
+            </p>
 
-					<p class="text-muted">Visit GitHub to view the project</p>
+            <p class="text-muted">Visit GitHub to view the project</p>
 
-					<hr />
+            <hr/>
 
-					<div class="hidden-sm-down">
-						<ul class="nav nav-pills nav-stacked">
-							<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-							<li class="nav-item"><a href="/releases.html" class="nav-link">Releases</a></li>
-							<li class="nav-item"><a href="https://demo.dlayer.com/" class="nav-link">Demo</a></li>
-							<li class="nav-item"><a href="/docs/" class="nav-link">Docs</a></li>
-							<li class="nav-item"><a href="/coding-standards.html" class="nav-link active">Coding standards</a></li>
-							<li class="nav-item"><a href="/history.html" class="nav-link">History</a></li>
-						</ul>
+            <div class="hidden-sm-down">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/releases.html" class="nav-link">Releases</a></li>
+                    <li class="nav-item"><a href="https://demo.dlayer.com/" class="nav-link">Demo</a></li>
+                    <li class="nav-item"><a href="/docs/" class="nav-link">Docs</a></li>
+                    <li class="nav-item"><a href="/coding-standards.html" class="nav-link active">Coding standards</a>
+                    </li>
+                    <li class="nav-item"><a href="/history.html" class="nav-link">History</a></li>
+                </ul>
 
-						<hr />
+                <hr/>
 
-						<p class="small hidden-sm-down">A
-						<a href="https://github.com/Dlayer">Dlayer</a>
-						project. Intial idea and development by
-						<a href="http://www.g3d-development.com/blog/">G3D
-						Development Limited</a> /
-						<a href="http://www.deanblackborough.com">Dean
-						Blackborough</a></p>
-					</div>
+                <p class="small hidden-sm-down">A
+                    <a href="https://github.com/Dlayer">Dlayer</a>
+                    project. Intial idea and development by
+                    <a href="http://www.g3d-development.com/blog/">G3D
+                        Development Limited</a> /
+                    <a href="http://www.deanblackborough.com">Dean
+                        Blackborough</a></p>
+            </div>
 
-					<div class="small hidden-md-up">
-						<ul class="nav nav-tabs">
-							<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-							<li class="nav-item dropdown">
-								<a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dlayer</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="/releases.html">Releases</a>
-									<a class="dropdown-item" href="https://demo.dlayer.com#">Demo</a>
-									<a class="dropdown-item" href="/coding-standards.html">Coding standards</a>
-									<a class="dropdown-item" href="/history.html">History</a>
-								</div>
-							</li>
-							<li class="nav-item"><a href="/docs/" class="nav-link">Docs</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
-					<h2 class="display-1">Coding standards</h2>
+            <div class="small hidden-md-up">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                           aria-haspopup="true" aria-expanded="false">Dlayer</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/releases.html">Releases</a>
+                            <a class="dropdown-item" href="https://demo.dlayer.com#">Demo</a>
+                            <a class="dropdown-item" href="/coding-standards.html">Coding standards</a>
+                            <a class="dropdown-item" href="/history.html">History</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="/docs/" class="nav-link">Docs</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+            <h2 class="display-1">Coding standards</h2>
 
-					<hr />
+            <hr/>
 
-					<p class="lead">If you would like to contribute to Dlayer
-						please try to adhere to the coding standards detailed
-						below, if you have any questions or you think I
-						have missed something please contact me.</p>
+            <p class="lead">If you would like to contribute to Dlayer
+                please try to adhere to the coding standards detailed
+                below, if you have any questions or you think I
+                have missed something please contact me. As of 16th October I have
+                switched to PSR-1/2</p>
 
-					<p class="text-muted">My own code, specifically the older
-						Dlayer code may not match these guidelines 100%, I am
-						however trying to keep to them with all the new code
-						and whenever I touch a class or file in a non
-						insignificant way.</p>
+            <p class="text-muted">My own code, specifically the older
+                Dlayer code will not match these guidelines 100%, I am
+                however adhering to the coding standard with all new code and whenever I
+                touch a class or file in a non insignificant way.</p>
 
-					<h3>Pull requests</h3>
+            <h3>Pull requests</h3>
 
-					<p>All pull requests should be made from a branch in your fork, please try and give your fork a name which relates to the changes. Before creating a pull request please update your fork so it is inline with Dlayer/master.</p>
+            <p>All pull requests should be made from a branch in your fork, please try and give your fork a
+                name which relates to the changes. Before creating a pull request please update your fork so
+                it is inline with Dlayer/master.</p>
 
-					<h3>Files</h3>
+            <h3>Files</h3>
 
-					<ul>
-						<li>Use <code>UTF-8</code> character encoding</li>
-						<li>Unix formatted, <code>(LF)</code></li>
-						<li>A line length of <code>120</code> characters is
-							recommended but not in any way a fixed requirement,
-							let context dictate, please don't make code harder
-							to read by wrapping to hit a specific line
-							length</li>
-						<li>All code and comments should be in English</li>
-						<li><code>Tabs</code> should be used for all indenting,
-							<code>spaces</code> may be used for additional
-							aligment if you wish but ideally tabs only</li>
-					</ul>
+            <ul>
+                <li>Use <code>UTF-8</code> character encoding</li>
+                <li>Unix formatted, <code>(LF)</code></li>
+                <li>A line length of <code>120</code> characters is
+                    recommended but not in any way a fixed requirement,
+                    let context dictate, please don't make code harder
+                    to read by wrapping to hit a specific line
+                    length
+                </li>
+                <li>All code and comments should be in English</li>
+                <li><code>Spaces</code> should be used for all indenting, a setting of
+                    4 is recommended.
+                </li>
+            </ul>
 
-					<h3>PHP</h3>
+            <h3>PHP</h3>
 
-					<ul>
-						<li>Always use <code>&lt;?php ... ?&gt;</code> never
-							<code>&lt;? ... ?&gt;</code></li>
-						<li>PHP keywords should all be in lowercase...</li>
-						<li>... the exception being <code>TRUE</code>,
-							<code>FALSE</code>, <code>NULL</code> and
-							<code>CONSTANTS</code> which should always
-							appear in uppercase</li>
-						<li>Braces on their own line</li>
-						<li><code>UpperCamelCase</code> for classes, interfaces etc</li>
-						<li><code>lowerCamelCase</code> for methods and functions</li>
-						<li><code>lowercase_with_undescores</code> for multiple word vars</li>
-						<li>It is easier to show coding standards using an
-							example, please check below and as stated above,
-							contact me if you have any questions.</li>
-					</ul>
+            <ul>
+                <li>Always use <code>&lt;?php ... ?&gt;</code> never
+                    <code>&lt;? ... ?&gt;</code> (Disagrees with PSR-1 but shoot me!)
+                </li>
+                <li>PHP CONSTANTS should all be in UPPERCASE.</li>
+                <li>PHP keywords should be in lowercase, including, true, false and null</li>
+                <li>Braces on their own line for classes, namespaces and functions</li>
+                <li>Braces in line for if/while etc</li>
+                <li><code>UpperCamelCase</code> for classes, interfaces etc</li>
+                <li><code>lowerCamelCase</code> for methods and functions</li>
+                <li><code>lowercase_with_underscores</code> for multiple word vars</li>
+                <li>It is easier to show coding standards using a visual example, please
+                    check below and as stated above, contact me if you have any questions.
+                </li>
+            </ul>
 
-		<pre>
+            <pre>
 			<code class="language-php">/**
 			 * This is the comment for the example class, it should
 			 * be a brief overview of the class
@@ -156,26 +172,25 @@
 
 				/**
 				 * This is a comment for the example method shown
-				 * below, method comments should explain where the
-				 * method is used and what it does if not obvious
+				 * below, method comments should explain the
+		                 * purpose and if helpful the
+                		 * context in which it could/should be used
 				 *
 				 * @param1 array Description
 				 * @param2 boolean Description
-				 * @return void Brief description of returned value
-				 *   if necessary
+				 * @return void Brief description of returned value if necessary
+		                 * @throws \Exception (if relevant)
 				 */
-				private function exampleMethod(array $param1, $param2)
+				private function exampleMethod(array $param_one, $param_two)
 				{
 					// This is a single line comment
-					if($var1 === $var2)
-					{
+					if($var1 === $var2) {
 						// logic
 					}
 
 					/* This is an example of a multi-line comment, it
 					should detail what is happening below and why */
-					switch($var)
-					{
+					switch($var) {
 						case 1:
 							// logic
 						break;
@@ -191,12 +206,11 @@
 						break:
 					}
 
-					for ($i=0; $i&lt;$n; $i++)
-					{
+					for ($i=0; $i&lt;$n; $i++){
 						// logic
 					}
 
-					$multiple_word_var = 2;
+					$multiple_word_var = 'foo';
 
 					$quotes = 'Single quotes should be used, only
 						use double quotes when necessary';
@@ -223,42 +237,30 @@
 					return $model_users->activeUsers(30);
 
 					return $model_users->activeUsers()
-						->limit(50)->order('desc');
+                        			->limit(50)
+                        			->order('desc');
 				}
 			}
 			</code>
 		</pre>
 
-					<p>I will not turn away any that fails to adhere to these
-						coding standards, I very much understand how difficult
-						it can be to adapt after years of coding one way, I'm
-						still adjusting myself and the current coding standards
-						don't apply to a large amount of the Dlayer code some
-						of which dates back years.</p>
+            <p>I will not turn away any codes that fails to adhere to these
+                coding standards, I very much understand how difficult
+                it can be to adapt after years of coding one way, I'm
+                still adjusting myself and the current coding standards
+                don't apply to a large amount of the Dlayer code some
+                of which dates back years.</p>
 
-		<pre><code class="language-php">
-		// I still default to placing braces like this...
-		if($var1 === $var2) {
-			// Logic
-		}
+            <p>Please just try to ensure that your coding
+                style is consistent, that matters far more than trying
+                to adhere to these specific rules.</p>
 
-		/* ...rather than this, although strangely I never make
-		the mistake with classes and methods */
-		if($var1 === $var2)
-		{
-			// Logic
-		}
-		</code></pre>
+            <h3>Javascript</h3>
 
-					<p>Please just try to ensure that your coding
-						style is consistent, that matters far more than trying
-						to adhere to these specific rules.</p>
-						
-					<h3>Javascript</h3>
+            <p>The Javascript coding standards pretty much match the PHP coding standards bar the obvious language
+                differences, booleans in low case, below is a excerpt from one of the preview Javascript files</p>
 
-					<p>The Javascript coding standards pretty much match the PHP coding standards bar the obvious language differences, booleans in low case, below is a excerpt from one of the preview Javascript files</p>
-					
-		<pre><code class="language-javascript">
+            <pre><code class="language-javascript">
 		var previewFormBuilder =
 		{
 			highlight: false,
@@ -281,8 +283,7 @@
 			elementAttributeInteger: function (field_id, attribute, field_attribute,
 				value, optional)
 			{
-				if (typeof optional === 'undefined')
-				{
+				if (typeof optional === 'undefined') {
 					optional = false
 				}
 
@@ -295,21 +296,15 @@
 					var current_value = parseInt($(selector).attr(field_attribute), 10);
 
 					if (new_value !== NaN && current_value !== NaN &&
-						new_value !== current_value && new_value > 0)
-					{
+						new_value !== current_value && new_value > 0) {
 						$(selector).attr(field_attribute, new_value);
 						previewFormBuilder.highlightItem(selector);
 						dlayer.preview.changed = true;
-					}
-					else
-					{
-						if (optional == false)
-						{
+					} else {
+						if (optional == false) {
 							$(selector).attr(field_attribute, value);
 							$('#params-' + attribute).val(value);
-						}
-						else
-						{
+						} else {
 							$(selector).attr(field_attribute, '');
 							$('#params-' + attribute).val('');
 							previewFormBuilder.highlightItem(selector);
@@ -323,44 +318,44 @@
 		}
 		</code></pre>
 
-					<h3>Database changes</h3>
+            <h3>Database changes</h3>
 
-					<p>Contributions which require changes to the structure of
-						the database will need to include two patch files, one
-						that makes the necessary changes and another to undo
-						the changes.</p>
+            <p>Contributions which require changes to the structure of
+                the database will need to include two patch files, one
+                that makes the necessary changes and another to undo
+                the changes.</p>
 
-					<p>Contributions which only require content changes to
-						the database only need to include one patch file, an
-						undo patch file isn't required but will be
-						appreciated if included.</p>
+            <p>Contributions which only require content changes to
+                the database only need to include one patch file, an
+                undo patch file isn't required but will be
+                appreciated if included.</p>
 
-					<p><em>I plan to follow the above database guidelines myself once
-						v1.00 has been released, depending on how it goes
-						I may revert to just including dumps until the repo
-						is forked by another developer.</em></p>
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid">
-			<div class="row footer">
-				<div class="col-md-12 col-xs-12 muted text-center small">
-					<p>Dlayer originaly developed by
-						<a href="http://www.g3d-development.com/blog/">G3D
-						Development Limited</a> /
-						<a href="http://www.deanblackborough.com">Dean
-						Blackborough</a></p>
-					<p>Dlayer Copyright &copy; G3D Development 2016</p>
-					<p>Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a></p>
-					<p>Code <a href="https://github.com/Dlayer/dlayer/blob/master/LICENSE">licensed</a> under MIT</p>
-				</div>
-			</div>
-		</div>
+            <p><em>I plan to follow the above database guidelines myself once
+                v1.00 has been released, depending on how it goes
+                I may revert to just including dumps until the repo
+                is forked by another developer.</em></p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row footer">
+        <div class="col-md-12 col-xs-12 muted text-center small">
+            <p>Dlayer originaly developed by
+                <a href="http://www.g3d-development.com/blog/">G3D
+                    Development Limited</a> /
+                <a href="http://www.deanblackborough.com">Dean
+                    Blackborough</a></p>
+            <p>Dlayer Copyright &copy; G3D Development 2016</p>
+            <p>Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a></p>
+            <p>Code <a href="https://github.com/Dlayer/dlayer/blob/master/LICENSE">licensed</a> under MIT</p>
+        </div>
+    </div>
+</div>
 
-		<script src="bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="bower_components/prism/prism.js"></script>
-		<script src="bower_components/prism/components.js"></script>
-		<script src="bower_components/prism/components/prism-php.js"></script>
-	</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/prism/prism.js"></script>
+<script src="bower_components/prism/components.js"></script>
+<script src="bower_components/prism/components/prism-php.js"></script>
+</body>
 </html>
