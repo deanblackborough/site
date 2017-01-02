@@ -107,57 +107,62 @@
 
             <hr/>
 
-            <p class="lead">If you would like to contribute to Dlayer
-                please try to adhere to the coding standards detailed
-                below, if you have any questions or you think I
-                have missed something please contact me. As of 16th October I have
-                switched to PSR-1/2</p>
+            <p class="lead">If you would like to contribute to Dlayer, please try to adhere to the coding standards
+                I have detailed below, if you have any questions or believe I have missed something, please content
+                me. I am working towards moving to PSR-1/2, there may be minor differences listed below, if unsure
+                please check with me, it could be an error on this page, or I might have deliberately opted for
+                something different.</p>
 
-            <p class="text-muted">My own code, specifically the older
-                Dlayer code will not match these guidelines 100%, I am
-                however adhering to the coding standard with all new code and whenever I
-                touch a class or file in a non insignificant way.</p>
+            <p>There is an excellent chance that my code, specifically some of the older code; will not match these
+                guidelines. With all new code, I am coding to the standards, and anytime I touch a file in a
+                non-insignificant way I am updating the code. However, I am not going through the old code to
+                update it just for the sake of matching the standards.</p>
+
+            <p class="text-muted"><em>I will not turn away any code that does not adhere to these coding standards; I very much
+                understand how difficult it can be to change after years of development. I am still adjusting to the
+                coding standards, and as mentioned they don't apply to a significant amount of the Dlayer
+                code.</em></p>
+
+            <p class="text-muted"><em>Please just try to ensure that your coding style is consistent, that is far more important
+                than trying to adhere to any arbitrary rules.</em></p>
 
             <h3>Pull requests</h3>
 
-            <p>All pull requests should be made from a branch in your fork, please try and give your fork a
-                name which relates to the changes. Before creating a pull request please update your fork so
-                it is inline with Dlayer/master.</p>
+            <p>All pull requests need to made from a branch in your fork, please also try to give your branch a
+                name that relates to the change/feature you want me to merge. Most importantly, before creating a
+                pull request, please update your fork, so it is up to date with Dlayer/master.</p>
 
             <h3>Files</h3>
 
             <ul>
                 <li>Use <code>UTF-8</code> character encoding</li>
                 <li>Unix formatted, <code>(LF)</code></li>
-                <li>A line length of <code>120</code> characters is
-                    recommended but not in any way a fixed requirement,
-                    let context dictate, please don't make code harder
-                    to read by wrapping to hit a specific line
-                    length
-                </li>
+                <li>A line length of <code>120</code> characters, this is not in any way a fixed requirement,
+                    please let context dictate, don't make code harder to read by wrapping it to hit a particular
+                    line length</li>
                 <li>All code and comments should be in English</li>
-                <li><code>Spaces</code> should be used for all indenting, a setting of
-                    4 is recommended.
-                </li>
+                <li>Spaces for all indenting, I recommend <code>four spaces per tab</code></li>
             </ul>
 
             <h3>PHP</h3>
 
             <ul>
-                <li>Always use <code>&lt;?php ... ?&gt;</code> never
-                    <code>&lt;? ... ?&gt;</code> (Disagrees with PSR-1 but shoot me!)
+                <li>Please always use <code>&lt;?php ... ?&gt;</code>, never
+                    <code>&lt;? ... ?&gt;</code>, disagrees with PSR-1, shoot me!
                 </li>
-                <li>PHP CONSTANTS should all be in UPPERCASE.</li>
-                <li>PHP keywords should be in lowercase, including, true, false and null</li>
+                <li><code>PHP CONSTANTS</code> should all be in <code>UPPERCASE</code>.</li>
+                <li>PHP keywords should be in <code>lowercase</code>, including, <code>true</code>,
+                    <code>false</code> and <code>null</code></li>
                 <li>Braces on their own line for classes, namespaces and functions</li>
                 <li>Braces in line for if/while etc</li>
                 <li><code>UpperCamelCase</code> for classes, interfaces etc</li>
                 <li><code>lowerCamelCase</code> for methods and functions</li>
-                <li><code>lowercase_with_underscores</code> for multiple word vars</li>
-                <li>It is easier to show coding standards using a visual example, please
-                    check below and as stated above, contact me if you have any questions.
-                </li>
+                <li><code>lowercase_with_underscores</code> for multiple word variables</li>
             </ul>
+
+            <p>I believe it is easier to show coding standards using a visual example, please check the code snippet
+                below, contact me if you have any questions.</p>
+
 
             <pre>
 			<code class="language-php">/**
@@ -175,37 +180,37 @@
 				/**
 				 * This is a comment for the example method shown
 				 * below, method comments should explain the
-		                 * purpose and if helpful the
-                		 * context in which it could/should be used
+                 * purpose and if helpful the context in which
+                 * it will be used
 				 *
 				 * @param1 array Description
 				 * @param2 boolean Description
 				 * @return void Brief description of returned value if necessary
-		                 * @throws \Exception (if relevant)
+                 * @throws \Exception (if relevant)
 				 */
 				private function exampleMethod(array $param_one, $param_two)
 				{
 					// This is a single line comment
-					if($var1 === $var2) {
+					if ($var1 === $var2) {
 						// logic
 					}
 
 					/* This is an example of a multi-line comment, it
 					should detail what is happening below and why */
-					switch($var) {
+					switch ($var) {
 						case 1:
 							// logic
-						break;
+						    break;
 
 						case 2:
 						case 3:
 							// logic
-						break;
+						    break;
 
 						// Default case statement always included
 						default:
 							// logic
-						break:
+						    break:
 					}
 
 					for ($i=0; $i&lt;$n; $i++){
@@ -239,28 +244,17 @@
 					return $model_users->activeUsers(30);
 
 					return $model_users->activeUsers()
-                        			->limit(50)
-                        			->order('desc');
+                        ->limit(50)
+                        ->order('desc');
 				}
 			}
 			</code>
 		</pre>
 
-            <p>I will not turn away any codes that fails to adhere to these
-                coding standards, I very much understand how difficult
-                it can be to adapt after years of coding one way, I'm
-                still adjusting myself and the current coding standards
-                don't apply to a large amount of the Dlayer code some
-                of which dates back years.</p>
+            <h3>JavaScript</h3>
 
-            <p>Please just try to ensure that your coding
-                style is consistent, that matters far more than trying
-                to adhere to these specific rules.</p>
-
-            <h3>Javascript</h3>
-
-            <p>The Javascript coding standards pretty much match the PHP coding standards bar the obvious language
-                differences, booleans in low case, below is a excerpt from one of the preview Javascript files</p>
+            <p>The coding standards for JavaScript are as close as possible to the PHP coding standards, below is an
+                excerpt from one of the JavaScript files.</p>
 
             <pre><code class="language-javascript">
 		var previewFormBuilder =
@@ -320,22 +314,18 @@
 		}
 		</code></pre>
 
-            <h3>Database changes</h3>
+            <h3>Database</h3>
 
-            <p>Contributions which require changes to the structure of
-                the database will need to include two patch files, one
-                that makes the necessary changes and another to undo
-                the changes.</p>
+            <p>Any contributions which require a change to the structure or content of the database should include
+                two patch files, one to make the required changes and another to undo the changes if anything goes
+                wrong.</p>
 
-            <p>Contributions which only require content changes to
-                the database only need to include one patch file, an
-                undo patch file isn't required but will be
-                appreciated if included.</p>
+            <p>If you are only making minor content updates, I will accept one patch file, an undo patch file
+                isn't necessary but very much appreciated if included.</p>
 
-            <p><em>I plan to follow the above database guidelines myself once
-                v1.00 has been released, depending on how it goes
-                I may revert to just including dumps until the repo
-                is forked by another developer.</em></p>
+            <p>If you review the commits, you will discover very quickly spot I am not following the guidelines for
+                Database changes; I will adhere to them once I have the set-up/reset scripts in place.</p>
+
         </div>
     </div>
 </div>
