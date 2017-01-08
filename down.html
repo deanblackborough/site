@@ -63,9 +63,9 @@
 
 					<div class="hidden-sm-down">
 						<ul class="nav nav-pills nav-stacked">
-							<li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
+							<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
 							<li class="nav-item"><a href="/releases.html" class="nav-link">Releases</a></li>
-							<li class="nav-item"><a href="https://demo.dlayer.com/" class="nav-link">Demo</a></li>
+							<li class="nav-item"><a href="https://demo.dlayer.com/" class="nav-link active">Demo</a></li>
 							<li class="nav-item"><a href="http://blog.dlayer.com" class="nav-link">Blog</a></li>
 							<li class="nav-item"><a href="/docs/" class="nav-link">Docs</a></li>
 							<li class="nav-item"><a href="/coding-standards.html" class="nav-link">Coding standards</a></li>
@@ -75,23 +75,23 @@
 						<hr />
 
 						<p class="small hidden-sm-down">A
-						<a href="https://github.com/Dlayer">Dlayer</a>
-						project. Intial idea and development by
-						<a href="http://www.g3d-development.com/blog/">G3D
-						Development Limited</a> /
-						<a href="http://www.deanblackborough.com">Dean
-						Blackborough</a></p>
+							<a href="https://github.com/Dlayer">Dlayer</a>
+							project. Intial idea and development by
+							<a href="http://www.g3d-development.com/blog/">G3D
+								Development Limited</a> /
+							<a href="http://www.deanblackborough.com">Dean
+								Blackborough</a></p>
 					</div>
 
 					<div class="small hidden-md-up">
 						<ul class="nav nav-tabs">
-							<li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
+							<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dlayer</a>
+								<a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dlayer</a>
 								<div class="dropdown-menu">
 									<a class="dropdown-item" href="/releases.html">Releases</a>
-                                    <a class="dropdown-item" href="https://demo.dlayer.com">Demo</a>
-                                    <a class="dropdown-item" href="http://blog.dlayer.com">Blog</a>
+									<a class="dropdown-item" href="https://demo.dlayer.com">Demo</a>
+									<a class="dropdown-item" href="http://blog.dlayer.com">Blog</a>
 									<a class="dropdown-item" href="/coding-standards.html">Coding standards</a>
 									<a class="dropdown-item" href="/history.html">History</a>
 								</div>
@@ -105,32 +105,52 @@
 
 					<hr />
 
-					<p class="lead">The Dlayer demo is currently down, it is 
-						likely that I am simply in the middle of an upgrade, 
-						please check back in a few minutes to see if it is 
-						back.</p>
-						
-					<p>You don't have to leave there are plenty of things to 
-						do here, you could...</p>
-						
-					<ul>
-						<li>Read the <a href="/docs/">docs</a></li>
-						<li>Read the <a href="/releases.html">release history</a></li>
-						<li>Check out the project on <a href="https://github.com/Dlayer/dlayer">GitHub</a></li>
-						<li>or read about the <a href="/history.html">history</a> of Dlayer</li>
-					</ul>
+					<p class="lead">The Dlayer demo is down; this is more than likely only temporary while I release
+                        a new version, please check back in a few minutes, releases typically don't take much
+                        longer than the time it takes to make a decent cup of tea.</p>
 
-					<p>I could do with some help, if you can code, design, 
-						write documentation or think you can help in another 
-						way please let me know via 
-						<a href="https://github.com/Dlayer/dlayer">GitHub</a>.</p>
+                    <p>If I am in the middle of a release, there will probably be activity on the Dlayer blog,
+                        Twitter or Facebook.</p>
+
+                    <ul>
+                        <li><a href="http://blog.dlayer.com>">Dlayer blog</a></li>
+                        <li><a href="https://twitter.com/dlayer_app">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/dlayer.web">Facebook</a></li>
+                    </ul>
+
+                    <p>I could do with some help, if you can code, design, write documentation, review code, bug hunt
+                        or think you can assist in another way, please let me know via
+                        <a href="https://github.com/Dlayer/dlayer">GitHub</a>.</p>
+
+                    <p>The changelog for the current release is below:</p>
+
+                    <h3><span class="label label-success">v1.03</span> UX improvements <small class="text-muted">(7th January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.03">GitHub</a>)</small></h3>
+
+                    <ul>
+                        <li>The page tool is now auto selected in the designer, both on initial entry and whenever you click the cancel button. It is stupid to force you to choose the page when there is only ever one page which always needs to be selected. [UX]</li>
+                        <li>Added select parent row to the column tool, now easier to go back. [UX]</li>
+                        <li>Added select parent column/page to the row tool, now easier to go back. [UX]</li>
+                        <li>Added nesting support for rows and columns. [Feature]</li>
+                        <li>The 'Add row' and 'Add content' tools are aware of state, they will only display when relevant. [UX]</li>
+                        <li>I have added the ability to collapse top level rows so you can concentrate on a particular area of the design. [UX]</li>
+                        <li>The min-height on a page is only applied when the page is empty.</li>
+                        <li>I have updated the sample site for all three demo users.</li>
+                        <li>Creating a default site no longer errors, an issue with insert default text weights. [Bugfix]</li>
+                        <li>Removed the log links, not currently necessary</li>
+                        <li>Updated the code hinting in all view files, now correctly shows all view helpers</li>
+                        <li>Added select parent row and column to content item tools, now easier to go back. [UX]</li>
+                        <li>I have reduced the size of all the buttons in the designer. [UI]</li>
+                        <li>I have updated the content for the demo home page and the Content Manager home page.</li>
+                        <li>Set the stable version to v1.03</li>
+                        <li>Refactoring</li>
+                    </ul>
 				</div>
 			</div>
 		</div>
 		<div class="container-fluid">
 			<div class="row footer">
 				<div class="col-md-12 col-xs-12 muted text-center small">
-					<p>Dlayer originaly developed by
+					<p>Dlayer originally developed by
 						<a href="http://www.g3d-development.com/blog/">G3D
 						Development Limited</a> /
 						<a href="http://www.deanblackborough.com">Dean
