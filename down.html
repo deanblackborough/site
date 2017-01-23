@@ -124,20 +124,23 @@
 
                     <p>The changelog for the current release is below:</p>
 
-					<h3><span class="label label-success">v1.05</span> Database setup <small class="text-muted">(17th January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.05">GitHub</a>)</small></h3>
+					<h3><span class="label label-success">v1.06</span> Responsive layouts and a control bar <small class="text-muted">(23rd January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.06">GitHub</a>)</small></h3>
 
 					<ul>
-						<li>I have added a live preview when editing text, jumbotron and heading content items.
-							[Feature]</li>
-						<li>Corrected the class names for the heading tool; it will now correctly load in the demo.
-							[Bugfix]</li>
-						<li>Added a setting to application.ini which controls whether or not the test credentials
-							display on the sign-in page. [Feature]</li>
-						<li>Split the database export into three files per table, one for the structure, another for
-							the data and a third to define the foreign keys.</li>
-						<li>I have added a setup module; this allows you to create the tables for the database and
-							imports the required data, there are four options, import demo database, import base
-							database, reset to demo state and reset to clean state. [Feature]</li>
+						<li>Removed additional terminators in SQL data file [Bugfix]</li>
+						<li>Added a settings sub tool to columns, allows the column width and offset to defined.
+                            [Feature]</li>
+						<li>Added a glyph style field to tool tabs table, added to allow glyph icons to be rotated.</li>
+						<li>Moved column type from the columns structure table, now a separate table. [Database]</li>
+						<li>Added a responsive sub tool to columns, allows the column with to be defined for the 'xs',
+                            'sm' and 'lg' layouts, Dlayer defaults to 'md'. [Feature]</li>
+						<li>Added a control bar to the bottom of the designer, houses the cancel button and navigation
+                            controls for Content Manager. [UX]</li>
+						<li>The tool buttons are now in the new control bar. [UX]</li>
+						<li>Added missing foreign keys. [Database]</li>
+						<li>Removed redundant tables from the database. [Database]</li>
+						<li>Updated the tool ribbon classes, general refactoring.</li>
+						<li>Other minor fixes and improvements.</li>
 					</ul>
 				</div>
 			</div>
