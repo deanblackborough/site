@@ -24,7 +24,8 @@
     <script>
         var _prum = [['id', '586d2ba4aa6959fe4202e95f'],
             ['mark', 'firstbyte', (new Date()).getTime()]];
-        (function() {
+        (function ()
+        {
             var s = document.getElementsByTagName('script')[0]
                 , p = document.createElement('script');
             p.async = 'async';
@@ -74,17 +75,19 @@
             <hr/>
 
             <div class="hidden-sm-down">
-                <ul class="nav nav-pills nav-stacked">
-                    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="/releases.html" class="nav-link">Releases</a></li>
-                    <li class="nav-item"><a href="https://demo.dlayer.com/" class="nav-link">The demo</a></li>
-                    <li class="nav-item"><a href="http://blog.dlayer.com" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="/docs/" class="nav-link">Docs</a></li>
-                    <li class="nav-item"><a href="/coding-standards.html" class="nav-link active">Coding standards</a>
+                <ul class="list-unstyled navigation">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="https://demo.dlayer.com">Demo</a>
+                        <ul>
+                            <li><a href="http://blog.dlayer.com">Development blog</a></li>
+                            <li><a href="/releases.html">Changelog</a></li>
+                            <li><a href="/docs/">Documentation</a></li>
+                            <li><a href="/coding-standards.html">Coding standards</a></li>
+                            <li><a href="/history.html">Dlayer history</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item"><a href="/history.html" class="nav-link">History</a></li>
-                    <li class="nav-item"><a href="http://www.deanblackborough.com" class="nav-link">DeanBlackborough.com</a></li>
-                    <li class="nav-item"><a href="http://www.g3d-development.com" class="nav-link">G3D-Development.com</a></li>
+                    <li><a href="http://www.deanblackborough.com">DeanBlackborough.com</a></li>
+                    <li><a href="http://www.g3d-development.com">G3D-Development.com</a></li>
                 </ul>
 
                 <hr/>
@@ -102,7 +105,8 @@
                 <ul class="nav nav-tabs">
                     <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dlayer</a>
+                        <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                           aria-haspopup="true" aria-expanded="false">Dlayer</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="/releases.html">Releases</a>
                             <a class="dropdown-item" href="/coding-standards.html">Coding standards</a>
@@ -112,7 +116,8 @@
                     </li>
                     <li class="nav-item"><a href="https://demo.dlayer.com" class="nav-link">The demo</a></li>
                     <li class="nav-item"><a href="http://blog.dlayer.com" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="http://www.deanblackborough.com" class="nav-link">DeanBlackborough.com</a></li>
+                    <li class="nav-item"><a href="http://www.deanblackborough.com"
+                                            class="nav-link">DeanBlackborough.com</a></li>
                 </ul>
             </div>
         </div>
@@ -132,12 +137,14 @@
                 non-insignificant way I am updating the code. However, I am not going through the old code to
                 update it just for the sake of matching the standards.</p>
 
-            <p class="text-muted"><em>I will not turn away any code that does not adhere to these coding standards; I very much
+            <p class="text-muted"><em>I will not turn away any code that does not adhere to these coding standards; I
+                very much
                 understand how difficult it can be to change after years of development. I am still adjusting to the
                 coding standards, and as mentioned they don't apply to a significant amount of the Dlayer
                 code.</em></p>
 
-            <p class="text-muted"><em>Please just try to ensure that your coding style is consistent, that is far more important
+            <p class="text-muted"><em>Please just try to ensure that your coding style is consistent, that is far more
+                important
                 than trying to adhere to any arbitrary rules.</em></p>
 
             <h3>Pull requests</h3>
@@ -153,7 +160,8 @@
                 <li>Unix formatted, <code>(LF)</code></li>
                 <li>A line length of <code>120</code> characters, this is not in any way a fixed requirement,
                     please let context dictate, don't make code harder to read by wrapping it to hit a particular
-                    line length</li>
+                    line length
+                </li>
                 <li>All code and comments should be in English</li>
                 <li>Spaces for all indenting, I recommend <code>four spaces per tab</code></li>
             </ul>
@@ -344,16 +352,16 @@
     </div>
 </div>
 <div class="container-fluid">
-    <div class="row footer">
-        <div class="col-md-12 col-xs-12 muted text-center small">
+    <div class="row">
+        <div class="col-md-12 col-xs-12 muted text-center">
             <p>Dlayer originally developed by
                 <a href="http://www.g3d-development.com/blog/">G3D
                     Development Limited</a> /
                 <a href="http://www.deanblackborough.com">Dean
-                    Blackborough</a></p>
-            <p>Dlayer Copyright &copy; G3D Development 2016</p>
-            <p>Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a></p>
-            <p>Code <a href="https://github.com/Dlayer/dlayer/blob/master/LICENSE">licensed</a> under MIT</p>
+                    Blackborough</a><br/>
+                Dlayer Copyright &copy; G3D Development 2015<br/>
+                Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a>,
+                Code <a href="https://github.com/Dlayer/dlayer/blob/master/LICENSE">licensed</a> under MIT</p>
         </div>
     </div>
 </div>

@@ -1,19 +1,46 @@
+html {
+    background-color: #818a91;
+}
+
 body {
-	padding-top: 2rem;
+    padding-top: 4rem;
+    border-top: 5px solid #818a91;
+}
+
+div.container {
+    background-color: #ffffff;
+}
+
+div.container-fluid {
+    padding: 2rem 0;
+    background-color: #818a91;
+    border-top: 1px solid #212121;
+}
+
+div.container-fluid p {
+    color: #ffffff;
+}
+
+div.container-fluid p > a {
+    color: #e8e8e8;
 }
 
 .releases h3 {
-	border-bottom: .0625rem solid rgba(0,0,0,.1);
+	border-bottom: .0625rem solid #818a91;
 	margin-bottom: 1rem;
 	padding-bottom: 1rem;
 }
 
-.footer {
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-	background-color: rgba(0,0,0,.1);
+ul.navigation li {
+    margin: 0.7rem 0;
 }
-
-.footer p {
-	margin-bottom: .2rem;
+ul.navigation a {
+    font-size: 1.3rem;
+    color: #818a91;
+}
+ul.navigation > li > ul > li {
+    margin: 0.3rem 0;
+}
+ul.navigation > li > ul > li > a {
+    font-size: 1rem;
 }
