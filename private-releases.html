@@ -1,975 +1,963 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Dlayer is a web development tool aimed primarily at users that don't have any web design or web development experience.">
-		<meta name="author" content="G3D Development Limited - Dean Blackborough">
-		<meta name="application-name" content="Dlayer.com"/>
-		<meta name="msapplication-TileColor" content="#FFFFFF"/>
-		<meta name="msapplication-starturl" content="http://www.dlayer.com"/>
-		<meta name="msapplication-tooltip" content="Dlayer.com: Web development simplified"/>
-		<link rel="shortcut icon" href="/images/favicon.ico" />
-		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-		<link rel="icon" sizes="192x192" href="/images/favicon-192x192.png" />
+<head>
+	<meta charset="utf-8">
+	<title>Dlayer: Private changelog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Dlayer is a web development tool aimed primarily at users that don't have any web design or web development experience.">
+	<meta name="author" content="G3D Development Limited - Dean Blackborough">
+	<meta name="application-name" content="Dlayer.com"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF"/>
+	<meta name="msapplication-starturl" content="http://www.dlayer.com"/>
+	<meta name="msapplication-tooltip" content="Dlayer.com: Web development simplified"/>
+	<link rel="shortcut icon" href="/images/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+	<link rel="icon" sizes="192x192" href="/images/favicon-192x192.png" />
+	<link href="/bower_components/bootstrap/dist/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="/css/site.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script>
+        var _prum = [['id', '586d2ba4aa6959fe4202e95f'],
+            ['mark', 'firstbyte', (new Date()).getTime()]];
+        (function() {
+            var s = document.getElementsByTagName('script')[0]
+                , p = document.createElement('script');
+            p.async = 'async';
+            p.src = '//rum-static.pingdom.net/prum.min.js';
+            s.parentNode.insertBefore(p, s);
+        })();
+	</script>
+</head>
+<body>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		<title>Dlayer - Private releases</title>
+    ga('create', 'UA-64736-3', 'auto');
+    ga('send', 'pageview');
 
-		<!-- Bootstrap core CSS -->
-		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/dlayer.css" rel="stylesheet">
+</script>
+<div class="container-fluid">
+	<nav class="navbar navbar-toggleable-md navbar-light">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="/">Dlayer</a>
 
-		<script>
-            var _prum = [['id', '586d2ba4aa6959fe4202e95f'],
-                ['mark', 'firstbyte', (new Date()).getTime()]];
-            (function() {
-                var s = document.getElementsByTagName('script')[0]
-                    , p = document.createElement('script');
-                p.async = 'async';
-                p.src = '//rum-static.pingdom.net/prum.min.js';
-                s.parentNode.insertBefore(p, s);
-            })();
-		</script>
-	</head>
-
-	<body>
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-64736-3', 'auto');
-			ga('send', 'pageview');
-
-		</script>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-					<h1>Dlayer.com</h1>
-
-					<p class="text-muted">Web Development simplified</p>
-
-					<p>
-						<a class="btn btn-primary-outline btn-sm" href="https://github.com/Dlayer/dlayer/zipball/master" role="button">Zip</a>
-						<a class="btn btn-primary-outline btn-sm" href="https://github.com/Dlayer/dlayer/tarball/master" role="button">Tar</a>
-						<a class="btn btn-primary btn-sm" href="https://github.com/Dlayer/dlayer" role="button">on GitHub</a>
-					</p>
-
-					<p class="text-muted">Visit GitHub to view the project</p>
-
-					<hr />
-
-					<div class="hidden-sm-down">
-						<ul class="list-unstyled navigation">
-							<li><a href="/">Home</a></li>
-							<li><a href="https://demo.dlayer.com">Demo</a>
-								<ul>
-									<li><a href="http://blog.dlayer.com">Development blog</a></li>
-									<li><a href="/releases.html">Changelog</a></li>
-									<li><a href="/docs/">Documentation</a></li>
-									<li><a href="/coding-standards.html">Coding standards</a></li>
-									<li><a href="/history.html">Dlayer history</a></li>
-								</ul>
-							</li>
-							<li><a href="http://www.deanblackborough.com">DeanBlackborough.com</a></li>
-							<li><a href="http://www.g3d-development.com">G3D-Development.com</a></li>
-						</ul>
-
-						<hr />
-
-						<p class="small hidden-sm-down">A
-						<a href="https://github.com/Dlayer">Dlayer</a>
-						project. Intial idea and development by
-						<a href="http://www.g3d-development.com/blog/">G3D
-						Development Limited</a> /
-						<a href="http://www.deanblackborough.com">Dean
-						Blackborough</a></p>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="https://demo.dlayer.com">Try the Demo</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://blog.dlayer.com/">Development blog</a>
+				</li>
+				<li class="nav-item active dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Docs and about
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="releases.html">Changelog</a>
+						<a class="dropdown-item disabled" href="#">Documentation (moving)</a>
+						<a class="dropdown-item" href="coding-standards.html">Coding standards</a>
+						<a class="dropdown-item" href="history.html">The history of Dlayer</a>
 					</div>
+				</li>
 
-                    <div class="small hidden-md-up">
-                        <ul class="nav nav-tabs">
-                            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dlayer</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="/releases.html">Releases</a>
-                                    <a class="dropdown-item" href="/coding-standards.html">Coding standards</a>
-                                    <a class="dropdown-item" href="/history.html">History</a>
-                                    <a class="dropdown-item" href="/docs/">Docs</a>
-                                </div>
-                            </li>
-                            <li class="nav-item"><a href="https://demo.dlayer.com" class="nav-link">The demo</a></li>
-                            <li class="nav-item"><a href="http://blog.dlayer.com" class="nav-link">Blog</a></li>
-                            <li class="nav-item"><a href="http://www.deanblackborough.com" class="nav-link">DeanBlackborough.com</a></li>
-                        </ul>
-                    </div>
-				</div>
-				<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 releases">
-					<h2 class="display-1">Private releases</h2>
+				<li class="nav-item">
+					<a class="nav-link" href="http://www.deanblackborough.com">DeanBlackborough.com</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://www.g3d-development.com/blog">G3D Development Ltd</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<div class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="display-2">Changelog</h1>
+				<p class="lead">The private changelog</p>
 
-					<hr />
-
-					<p class="lead">Listed below are all the releases prior to the decision to make the app Open Source.</p>
-
-					<p class="lead">The changes listed below are occasionally out of whack, I need to re-export the data from
-						GitHub/SVN to clean it up, I'll get round to it at some point.</p>
-
-					<h3>v0.79 (Internal) - Content area tool, multiple content rows and refatcoring. <small>19th Jun 2015</small></h3>
-					<ul>
-						<li>Added a password tool to the preset section in the Form builder.</li>
-						<li>Added a comment tool to the preset section in the Form builder.</li>
-						<li>Help tabs for Content manager tools update, now include a direct link to the Dlayer specification.</li>
-						<li>Tool tabs in form builder now use icons rather than text.</li>
-						<li>Moved and cleaned up the js for the image picker.</li>
-						<li>Moved and cleaned up the js for the colour picker.</li>
-					</ul>
-					<h3>v0.78.1 - Gremlins appear to have been involved in previous release. <small>10th Jun 2015</small></h3>
-					<ul>
-						<li>Split designer page object, now have page object and page style object.</li>
-						<li>Cleaned up the design controller in the Content manager, more code moved into designer page object.</li>
-						<li>Add content row tool updated, it can now create multiple content rows, the first row in the new set will be the one selected.
-						</li>
-						<li>Stripped out the old template styles code, will be replaced by the newer, more reusable content styles code when styling sub tools are added to the Template designer.
-						</li>
-						<li>User defined content area styles (background colour) now show in Content manager design view.</li>
-						<li>Bug fix: Sub tool not remaining selected in Content manager for structure tools, base tool tab is incorrectly being selected.
-						</li>
-						<li>Added ability to define the background colour for a content area in Content manager, assigned colour does not yet appear in the design view, only the tool.</li>
-						<li>Added a content area tool that is automatically selected when a content area is selected, currently just a place holder tool to allow access to sub tools.</li>
-					</ul>
-					<h3>v0.78 - More Form builder updates. <small>8th Jun 2015</small></h3>
-					<h3>v0.77.1 - Branding <small>4th Jun 2015</small></h3>
-					<ul>
-						<li>Minor style update to colour picker, now more closely resembles the image picker.</li>
-						<li>Added a range field to Dlayer, not yet implemented in Form builder as a selectable field type.</li>
-						<li>Bug fix: Help tab missing from content row tool.</li>
-						<li>Updated the base text for the ribbon in the Content manager, guides the user a little better.</li>
-						<li>Added submission email address to add new form and edit form.</li>
-						<li>Updated nav bar in settings, designer view nav bar being used.</li>
-						<li>Added a link to the Specification in navbar and footers.</li>
-						<li>Specification moved to specification.dlayer.com, reference on Dlayer updated.</li>
-						<li>Added a form settings tool to the Form builder, again, currently it is just a preview of the intended tool.</li>
-						<li>Added a form actions tool to the Form builder, currently it is just a preview of the intended tool.</li>
-					</ul>
-					<h3>v0.77 - More Form builder updates. <small>3rd Jun 2015</small></h3>
-					<ul>
-						<li>Added social icons to layouts.</li>
-						<li>Added a twitter feed to homepage, think of it as a temporary news feed.</li>
-					</ul>
-					<h3>v0.76 - Form builder, polish, bugs and updates. <small>30th May 2015</small></h3>
-					<ul>
-						<li>General bug fixes, Form builder tools.</li>
-						<li>Added an email tool to Form builder, standard field type, the email preset tool is now based on the email field type rather than the text field type.</li>
-						<li>Size attribute removed from fields when layout mode set to inline, messing with the layout.</li>
-						<li>Bug fix: Although description is optional, Javascript was stopping the value from being cleared.</li>
-						<li>Horizontal and standard layouts don't add description if not defined for a field.</li>
-						<li>Bug fix: Preset tools incorrectly being selected when field entered edit mode.</li>
-						<li>Description is now optional when adding a new field to a form.</li>
-						<li>Fixed an issue with the display ordering controls when form layout set to Horizontal mode</li>
-						<li>Updated the Form builder design view, now renders the form using the layout mode set using the layout tool.</li>
-						<li>Added layout options to layout tool in Form builder, user can define layout mode (standard, inline and horizontal) and the width values to use when form is in horizontal display mode, values not yet applied to the design view.</li>
-						<li>Added brand image for Dlayer, related to the G3D Development logo.
-						</li>
-					</ul>
-					<h3>v0.75 - Image picker in place, check the image content item tool. <small>26th May 2015</small></h3>
-					<ul>
-						<li>Updated create form, now enters default layout settings for the form and the language has been updated slightly.</li>
-						<li>Added four buttons to test how the form displays at different sizes, width of form can be set to 100%, 75%, 50% and 25% of the design view.</li>
-						<li>Updated the forms for the default sites,  transferred values from settings table to layout table.</li>
-						<li>Added a layout tool to Form builder, settings section. Initially this controls the name for the submit and optional reset buttons as well as the form title and optional sub title.
-						</li>
-						<li>Removed the settings tool from the Form builder, will be replaced by new tools
-						</li>
-						<li>Fieldset no longer applied to generated forms, in the short term this will allow me to provide additional layout options, fieldset will return when a feature requiring it is added to the Form builder.
-						</li>
-						<li>Bug fix: Custom form field styling was not being applied to preview view.</li>
-						<li>Added ability to select another field for editing when a field is selected.</li>
-						<li>Updated the standard field tools, fields which a user will rarely need to alter are hidden by default.</li>
-						<li>Updated the movement controls in Content manager and Form builder, now much more visible.</li>
-						<li>Added a view preview link to Form builder, shows the finished form without any of the Dlayer UI.</li>
-					</ul>
-					<h3>v0.73 - Settings and styles. <small>17th May 2015</small></h3>
-					<ul>
-						<li>Bug fix: Image picker was not correctly reading the session values, on refresh image picker state was being lost.</li>
-						<li>Bug fix: Suggested maximum size value not being used by add content item code.
-						</li>
-						<li>A preview is now shown below the select image button when an image is either selected via the picker or the image tool is in edit mode, prioritises the session data when working out what preview to display.</li>
-						<li>Image picker is functionally complete, I need to do some additional work to smooth out a couple of bugs as well as manage state. I also need to think about making it reusable so that like the Colour picker it can be attached to any input with two lines of code.</li>
-						<li>Minor Layout changes to the Image picker, Colour picker will be updated in a future version to match at some point soon(tm).</li>
-						<li>Switched tool tab names in Content manager from text to icons, testing before rolling out to other designers.</li>
-						<li>Cancel tool in Content manager now clears image picker session values. Tool Session values are also cleared upon tool selection if the mode is set to reset.</li>
-						<li>Added a session to manage the cross designer tools, initially the image picker. Category, Sub category, Image and Version id are saved to session.</li>
-					</ul>
-					<h3>v0.72 - Improved ability to move around design area in Content manager. <small>15th May 2015</small></h3>
-					<ul>
-						<li>Updated development plan.</li>
-						<li>Bug fix: Content manager preview wasn't applying any user styles, result was different to design view in Content manager.
-						</li>
-						<li>Styles defined in Form builder (row background) now appear in the Content manager</li>
-						<li>Defined font family in Form builder now carried over to the Content manager and used on imported forms.</li>
-						<li>Font family settings where not being used in Content manager and Form Builder.</li>
-						<li>Added an additional font settings to text settings.</li>
-						<li>Initial heading settings in Content manager now match base bootstrap settings.</li>
-					</ul>
-					<h3>v0.71 - Added image sub tools, updated preview mode and added support for expand option. <small>12th May 2015</small></h3>
-					<ul>
-						<li>Added a button option to the Jumbotron tool, if the button label is define a button appears after the sub text, currently a destination cannot be defined, that will be added once the web site manager is in development.</li>
-						<li>Added a select parent tool to the structure area, this allows a user to select the parent content row and content area for the currently selected content item, essentially step back up the tree, they can also return to the edit screen for the selected content item.</li>
-						<li>When a content item is selected it is now possible to select a sibling content item, one from the same content row.</li>
-						<li>When a content row is selected it is now possible to select a sibling content row, one from the same content area.</li>
-						<li>Bug fix: Content row tool not selected after add content row tool used.</li>
-					</ul>
-					<h3>v0.70 - Add image content item in place, also added ability to view preview of current design without Dlayer UI. <small>11th May 2015</small></h3>
-					<ul>
-						<li>Content updates.</li>
-						<li>Expand option for images now applied in preview, images open up in a modal dialog.</li>
-						<li>Design preview no longer shows helper content areas and content rows.</li>
-						<li>Added styling tab to image tool.</li>
-						<li>Added size and position tab to image tool.</li>
-					</ul>
-					<h3>v0.69 - Content update, now more in line with specification, also opened the base of the Widget designer. <small>5th May 2015</small></h3>
-					<ul>
-						<li>Preview link in Content manager nav bar, opens preview of current design in a new window, additional work still required because helper content areas and content rows are still visible.</li>
-						<li>Inserted images can now be edited.</li>
-						<li>Content updates, help text for Content manager tools.</li>
-						<li>Added a suggested maximum size to the suggested size logic, instead of content items automatically spanning the entire width of a content row they will be now be set to the suggested maximum size on initial insertion, for images this defaults to six.</li>
-						<li>Added a caption to the insert image tool, caption appears below image.</li>
-						<li>Image can now be inserted using the image tool, simple select to choose image at the moment, image picker not functional yet.</li>
-						<li>Some fields in Content manager not marked as required when they are.</li>
-						<li>Initial tool view code in place for add image, doesn't yet use Image picker and tool processing code not in place.</li>
-						<li>Minor update to Image library UI.</li>
-						<li>Minor updates to the layout of the colour picker, closer to new image picker design.</li>
-						<li>Initial design work on Image picker.</li>
-						<li>Bug fix: Code which fetches the background colour for an item, container and row no longer doesn't select the defined colour if the item is selected in the designer, the selected status has been updated, code no longer relevant.
-						</li>
-					</ul>
-					<h3>v0.68 - Initial development for image content item support. <small>23rd Apr 2015</small></h3>
-					<ul>
-						<li>Added widget designer overview and initial settings pages.</li>
-						<li>Content update - Image library overview.</li>
-						<li>Minor UX updates to Template designer, mirror previous changes to Content manager.</li>
-						<li>Updated the History of Dlayer page, now includes a little more background, What is Dlayer? page, Web site manager overview and Form builder overview.</li>
-						<li>Reworked the help text content and layout in the side panel in the Template designer, guides the user first, explains afterwards.</li>
-						<li>Content update - Template designer overview.</li>
-						<li>Reworked the help text content and layout in the side panel in the Content manager, guides the user first, explains afterwards.</li>
-						<li>Content update - Content manager overview and home page once logged in.</li>
-					</ul>
-					<h3>v0.67 - UI and UX updates. <small>22nd Apr 2015</small></h3>
-					<ul>
-						<li>Required asterisks missing from tool form fields in Form builder.</li>
-						<li>Updated the sample site for each test user to display a small image content item from the relevant Image library.</li>
-						<li>Added code to handle displaying images within the Content manager, users are not yet able to add an image via a tool, only works because I've added the entries in the database.</li>
-						<li>Minor UI changes to library view, also added the number of versions next to the image name.</li>
-						<li>Updated library view code that checks revisions, not looking at correct information - versions not yet creatable by users.</li>
-						<li>Minor changes to Image library, changed initial category and added new sample images.</li>
-					</ul>
-					<h3>v0.66 - Added live editing previews for Content manager tools. <small>12th Apr 2015</small></h3>
-					<ul>
-						<li>Bug fix: Return to previous designer button on Form builder (after jumping from Content manager) was disappearing after changes in the Form builder.</li>
-						<li>Updated the styles for selectors, selectable items or areas turn yellow when the mouse is hovered over them, selected items or areas have a dotted blue border, less invasive to the designer.</li>
-						<li>Updated tool section in Form builder, now includes sub titles and collapses the standard section when not being used.</li>
-						<li>After fields are added using the pre-set tools in the Form builder the user is now correctly returned to the designer with the relevant standard tool selected.</li>
-						<li>Added toggle to collapse tool sections in  Content manager, import tool section collapsed by default unless an import tool is in use.</li>
-						<li>Moved import form tool into the create section.</li>
-						<li>Added a &quot;Why use Dlayer?&quot; page.</li>
-					</ul>
-					<h3>v0.65 - Fixed selector bug and added logic to calculate sensible default sizes for newly added content items <small>31st Mar 2015</small></h3>
-					<ul>
-						<li>Updated integrity of database, foreign keys where removed from some tables during major restructure.</li>
-						<li>Added live editing previews for heading tool, changes to heading content, size, offset and background colours now show live in the designer.</li>
-						<li>Added live editing previews for Jumbotron tool, changes to jumbotron content, size, offset and background colour now show live in the designer.</li>
-						<li>Added live editing previews for Import form tool, changes to form content item size, offset, background colour and container background colour now show in the designer during editing.</li>
-						<li>Added live editing previews for text content item container and element background colours, works in exactly the same way as the similar feature in the Form builder.</li>
-						<li>Added live editing preview for text item size and offset values, updates the design view based on the sets sizes, combined size and offset cannot exceed 12, JavaScript will limit inputs as necessary.</li>
-						<li>Added the live editing preview methods for text content changes, designer updates the design view in real-time when the content is altered.</li>
-					</ul>
-					<h3>v0.64 - Added ability to define styling for content rows, initially just background colour. <small>26th Mar 2015</small></h3>
-					<ul>
-						<li>Suggested size now calculated for heading, jumbotron content items tools and all import items, uses the rules outlined on the tool help tabs.</li>
-						<li>Calculate a suggested size for a new text content item and use that to create items, uses rules outlined on help tab.</li>
-						<li>Filed a new bug, preset tools in Form builder.</li>
-						<li>Bug fix: Updated content item selector, now clears the background colour for content item and content item container if defined, helps with selecting content items.</li>
-						<li>Bug fix: Updated the content row selector, clears the background colour for a content item and content item container if defined to ease with selecting content rows.</li>
-						<li>Bug fix: Content area selector now clears defined content row background colours to aid with content area selection.</li>
-					</ul>
-					<h3>v0.63 - Added move item and move row tools, provide movement functions not covered by the visual tools in the designer. <small>19th Mar 2015</small></h3>
-					<ul>
-						<li>Designer view updated to apply styles to content rows if defined.</li>
-						<li>Updated auto tool code, now able to look for and load sub tools.</li>
-						<li>Background colour can now be defined for a content row using the styling sub tool.</li>
-						<li>UI in place for styling tab of content row tool, field to allow user to set background colour for row.</li>
-						<li>Selecting a content row now also selects the content row tool allowing access to the row sub tools.</li>
-						<li>Renamed add content row tool, need to add a new content row to allow management of the row.</li>
-					</ul>
-					<h3>v0.62 - Added ability to define the offset for content items and also added a new tool to the Content manager, Import jumbotron. <small>16th Mar 2015</small></h3>
-					<ul>
-						<li>Added logic to update the new environment state after move row and move item tool processing, all done invisibly to the user so they can continue working without realising another content area and content row may have been selected.</li>
-						<li>Added move item tool, allows a content item to be moved to another content row, movement within a content row is managed by the visual controls in the designer when a content row is selected.</li>
-						<li>Reworked the logic that displays tools in Content manager, needed to be aware of difference between structure based tools and standard tools, differing logic controls tool visibility.</li>
-						<li>Added a reordering function that reorders content rows when a row is moved out of an content area, in place to stop issues when using the visual movement tools after the move row tool has been used.</li>
-						<li>Updated the logic for the auto tools, more of the returned data is definable within the tools.</li>
-						<li>Added move row tool, allows a content row to be moved from one content area to another, movement within a content area is managed via the visual tools upon row hover.</li>
-					</ul>
-					<h3>v0.61 - Added import heading and import text tool to Content manager. <small>14th Mar 2015</small></h3>
-					<ul>
-						<li>Added import jumbotron tool, similar to the import text and heading tools, using existing data.</li>
-						<li>Modified the tools section in the Content manager, added a heading to clearly separate sections allowing for slightly simpler tool names.</li>
-						<li>Jumbotron, Heading and Form content items now allow the offset to be defined on the size and position tab.</li>
-						<li>Text content view helper now aware of offset value and applies relevant class when required.</li>
-						<li>Added ability to define the offset for a text content item on the size and position tab.</li>
-					</ul>
-					<h3>v0.60 - Added ability to move content items within a row and also added styling and size and position tabs to the Jumbotron content item tool. <small>12th Mar 2015</small></h3>
-					<ul>
-						<li>Processing code now in place for the import heading tool.</li>
-						<li>UI for import heading tool now in place in Content manager.</li>
-						<li>Bug fix: Edit Jumbotron throwing an error.</li>
-						<li>Added ability to allow user to update name for reference text data, Text, Heading and Jumbotron tools</li>
-						<li>Processing code now in place for the import text tool.</li>
-						<li>UI for Import form tool in place in Content manager.</li>
-					</ul>
-					<h3>v0.59 - Content item background colour and new content item. <small>5th Mar 2015</small></h3>
-					<ul>
-						<li>Processing code in place to allow user to alter the display of content items within a content row.</li>
-						<li>Added movement controls for content items, adjust display order, had to move the selection class for the content items up to the parent element, not yet functional.</li>
-						<li>Added the styling tab to the Jumbotron tool, initially it only allows you to define the background colour for the Jumbotron itself.</li>
-						<li>Added the size and position tab to the Jumbotron tool, initially only allows you to control the size of the item.</li>
-						<li>Required tool fields now have red asterisk to identify them.</li>
-						<li>Updated the default colour palettes, switched them with two that match the base Bootstrap styles.</li>
-					</ul>
-					<h3>v0.58 - Styles tab added to Text, Heading and Import form tool <small>2nd Mar 2015</small></h3>
-					<ul>
-						<li>New sample content page data for the three test web sites.</li>
-						<li>Added ability to select and edit a jumbotron content item.</li>
-						<li>Added ability to create a jumbotron (masthead) content item.</li>
-						<li>Added ability to define background colour for heading and form content items.</li>
-						<li>Added ability to define text content item background colour.</li>
-					</ul>
-					<h3>v0.57 - Size and position tab added to Content manager Text, Heading and Import form tool. <small>26th Feb 2015</small></h3>
-					<ul>
-						<li>Updated the bugs page.</li>
-						<li>Added ability to define content container background colour for Heading and Form content items, styles tab now appears when in edit mode.</li>
-						<li>Added content container view helper, calls child view helpers to generate style string for content items, applied to the text, heading and form content items.</li>
-						<li>Reworked the page view helper to support content row styles and content container styles being defined along with content item styles.</li>
-						<li>Updated development plan.</li>
-						<li>Added ability to define background colour for the text content item container, value not yet used within the design view.</li>
-						<li>Updated the tool tab styling, now smaller to allow more tabs per tool. Added spacing below the Return to previous designer button in Form builder.</li>
-						<li>Updated logic for Form, tab of import form tool, data now comes from a ribbon data class.</li>
-						<li>Added small support to the heading content item tool, sub heading text is optional.</li>
-					</ul>
-					<h3>v0.56 - Import form tool <small>24th Feb 2015</small></h3>
-					<ul>
-						<li>Size and position tab added to heading content item tool, size can be set as a value between one and twelve.</li>
-						<li>Size and position tab added to import form tool, size can be set as a value between one and twelve.</li>
-						<li>Size and position tab added to text content item tool, size can be set as a value between one and twelve.</li>
-					</ul>
-					<h3>v0.55 - Content manager text item tool. <small>19th Feb 2015</small></h3>
-					<ul>
-						<li>New sample data for the three test users.</li>
-						<li>Added ability to move content rows within a content area, up and down controls display when hovering over a selectable content row.</li>
-						<li>Movement controls show for content rows when parent content area selected.</li>
-						<li>Moved check for defined content in page view helper, incorrect height setting being defined when content exists.</li>
-						<li>Added ability to jump from selected form in Content manager to the Form builder with the form selected. You can also jump back to the Content manager with state maintained.</li>
-						<li>Import form tool now allows user to change the form linked to the item, edit mode.</li>
-						<li>Fixed a bug in form builder, unable to add form field, error with sub query.</li>
-						<li>Updated the import form tool, add function now in place.</li>
-						<li>Updated selector to allow forms to be selected in Content manager.</li>
-					</ul>
-					<h3>v0.54 - Template designer and Content manager now open. <small>18th Feb 2015</small></h3>
-					<ul>
-						<li>Template designer now shows a visual notification of dependant content items when a content area is selected, not the specific content items as there may be many types, just a  generic item.</li>
-						<li>Moved the instances input definition to the base Content manager tool class, can be called by any tool form when required.</li>
-						<li>Edit text content item works.</li>
-						<li>Add text item tool works, updated selector to allow selection of text content items ready for edit mode.</li>
-						<li>Base Content manager tool class more capable, moved shared methods into it and set up new abstract methods.</li>
-						<li>Updated the form and tool data class for text content item.</li>
-					</ul>
-					<h3>v0.53.5 - Template designer update complete, creates bootstrap valid templates, limited to a single tool currently, create rows. <small>3rd Feb 2015</small></h3>
-					<ul>
-						<li>New sample content page for each of the test sites, only selectable content item being headings.</li>
-						<li>Edit content heading item working, also reworked the code to handle management of content instances.</li>
-						<li>Add content item tool now works again, required a fairly large rework of the base content item management code.</li>
-						<li>Reworked the Content manager process method for tools, the base data methods to fetch the data for tools and the interface for the tools themselves.</li>
-						<li>Add content row tool in place, reworked the process controller to handle auto tools, previously all tools were manual tools.</li>
-						<li>Added a second selected state to the Content manager ribbon, now have default, area selected and row selected, all guide the user.</li>
-						<li>Text, Heading and Form content items now display again on generated pages, work within the new page structure, tools and selection still need to be updated</li>
-						<li>Added the content row view helper, it is called by the page view helper. The content row view helper now calls the base content view helper, it was previously being called by the page view helper.</li>
-						<li>Content manager page updated to support new template structure.</li>
-						<li>New layout for Content manager, design area, tools and default ribbon views complete.</li>
-					</ul>
-					<h3>v0.53 - Image library update complete. <small>25th Jan 2015</small></h3>
-					<ul>
-						<li>Template designer content blocks now named according to height setting, content block metrics now display when a block is selected rather than block and tool, valid to need to switch height setting without selecting a tool.</li>
-						<li>Added a sample template for each user and site, initially just a simple header, content area and footer based template.</li>
-						<li>Added content block metrics to Template designer, show when a tool is selected, allow a user to switch a content block between fixed and dynamic height setting. Modified the create rows tool in Template designer, custom tool was not taken the 15px bootstrap defined padding into account.
-						</li>
-						<li>Updated split horizontal tool, all divs are now created as dynamic height, design height is set for designer view, ignored when content applied.</li>
-						<li>Content update, designer overview pages now have more information and the text for the template designer tools has been made simpler.</li>
-						<li>Disabled the modifier system, no longer called by Template designer.</li>
-						<li>Disabled all Template designer tools except split horizontal.</li>
-						<li>New layout for Template designer tools, preset section custom to Template designer.</li>
-					</ul>
-					<h3>v0.52 - Web site manager styling update complete, access returned. <small>20th Jan 2015</small></h3>
-					<ul>
-						<li>New sample form data for all three users.</li>
-						<li>Fixed bug with add to library, mime checks failing. Fixed the sorting options, failing for size because data was moved to a meta table.
-						</li>
-						<li>New layout and styling for Image library, library and detail view.</li>
-						<li>Updated logic for showing and hiding tools, depends on whether a tool is selected and whether an image is selected, now don't show library management tools (category, add) when an image is selected.</li>
-						<li>Styling updates to Image library tools, ribbon and tool forms.</li>
-					</ul>
-					<h3>v0.51.1 - Content update. <small>16th Jan 2015</small></h3>
-					<ul>
-						<li>New layout and styling for the management area in the Web site manager, can now collapse sections and controls are more clear.</li>
-						<li>New styling for Web site manager tool bar, ribbon and tools.</li>
-					</ul>
-					<h3>v0.51 - Form builder update complete, now wearing a new Bootstrap style as per the rest of the redesign. <small>15th Jan 2015</small></h3>
-					<h3>v0.50 - Base styling complete, access to app restored. Access to designers disabled till styling updates complete, will be enabled on a module by module basis. <small>9th Jan 2015</small></h3>
-					<ul>
-						<li>Bootstrap styling now complete in the form builder, this was quite a larger task in the end because I needed to update all the tools and tabs as well as the designer UI. Updating the other designers, bar a few tool issues in the Template designer should be simpler to complete.</li>
-						<li>New colour picker styling, simple Bootstrap panel.</li>
-						<li>Updated move controls for form fields, not working after Bootstrap updates.</li>
-						<li>Updated the live previews in the Form builder, wasn’t updating the field description after Bootstrap styling updates.</li>
-						<li>Mobile styling, in place for all pages except the designers, you can now manage all settings and basic management using a tablet or phone. At this time I am not going to add mobile support to the designers, not worth the effort until they are more functional and even then support is questionable.</li>
-						<li>Setting minimum form width under form settings no longer has any effect, need to work out how to handle this given the change to creating bootstrap driven sites.</li>
-					</ul>
-					<h3>v0.49 - External pages now all styled using bootstrap, access to app disabled till designer styling complete. <small>19th Dec 2014</small></h3>
-					<ul>
-						<li>Base styling for Web site manager and Image library. Updated action links in module overviews, now buttons.</li>
-						<li>Base styling in Content manager and Form builder, management and settings.</li>
-						<li>Base styling complete in the Template designer, management and settings.</li>
-						<li>Styling complete in base module (dlayer)</li>
-					</ul>
-					<h3>v0.48 - Library development for Image library resize and Image library crop tool. <small>9th Aug 2014</small></h3>
-										<h3>v0.47 - Added a copy tool to the Image library along with an Edit tool which lets the user edit the base details for a library image. <small>24th Jul 2014</small></h3>
-					<ul>
-						<li>Extended advanced resizer for Image library, now able to define destination path and filename and resize images smaller than required width and height, Small images placed in the middle of the destination canvas with the relevant padding.</li>
-						<li>Created png and gif versions of cropper to go along with the jpeg cropper.</li>
-						<li>Created a crop class, crops the supplied image validating all the params, required for the crop tool processing.</li>
-						<li>Added maintain aspect ratio setting to resizers, if left as TRUE, images are best fit with padding, if set to FALSE, images are stretched to fit.</li>
-						<li>Added advanced image resizers (jpeg, png and gif), in addition to image size these allow the user to define canvas background colour, quality/compression and file name suffix.</li>
-						<li>Added gif and png resizers.</li>
-						<li>Created basic jpeg resizer, maintains aspect ratio when creating thumbnail.</li>
-						<li>Added a development module, this is so new library code can be tested, developing a basic image resizer which will then be used to generate thumbnails in the Image library.</li>
-					</ul>
-					<h3>v0.46.1 - Updated Add to library tool, category and sub category selects now pulling the correct data. <small>23rd Jul 2014</small></h3>
-					<ul>
-						<li>Added the ability to edit the base details for a library image, name, description, category and sub category.</li>
-						<li>Copy tool now copies image in files system.</li>
-						<li>Copy tool creates a new copy of the selected image and version.</li>
-						<li>Updated copy tool, now uses same AJAX to select sub category based on selected category.</li>
-					</ul>
-					<h3>v0.46 - Add to library tool now functional. <small>22nd Jul 2014</small></h3>
-					<ul>
-						<li>Updated add to library form, category options now pulled from database for selected site. Sub category select defaults top empty, added AJAX call to populate values when category selected.</li>
-					</ul>
-					<h3>v0.45 - Added pagination to Image library, defaults to 24 thumbnails per page, also added a display all sub category. <small>21st Jul 2014</small></h3>
-					<ul>
-						<li>Added image type to detail page, for example image/jpeg.</li>
-						<li>Fixed a few small issues with image library, wasn't always pulling the correct info for an image.</li>
-						<li>Add to library tool now works, new image added to library along with all relevant image data. Thumbnails aren't yet created by the uploader, thumbnails are the original images with width and height set.</li>
-						<li>Updated validation for edit versions of Category and Sub category tool.</li>
-						<li>Updated the image library tools, now able to return and set multiple session ids after processing tool.</li>
-					</ul>
-					<h3>v0.44 - Detail page now dynamic, added sort to the library and other minor updates. <small>20th Jul 2014</small></h3>
-					<ul>
-						<li>Added pagination to the Image library, defaults to 24 images per page, only shows when relevant.</li>
-						<li>All subcategory returns all the images in the base category sort as per the sort settings.</li>
-						<li>Added an all option to the sub category select and updated the sub category tool so that a all category cannot be created by the user.</li>
-						<li>Sort options only display if there are images in the category and sub category, not relevant otherwise.</li>
-					</ul>
-					<h3>v0.43.1 - Fixed bug with Image session class. <small>16th Jul 2014</small></h3>
-					<ul>
-						<li>Added sort to library, initially the user can sort by name, size and uploaded date in ascending and descending order.</li>
-						<li>Detail page now shows the version history for the selected image, individual versions are selectable.</li>
-						<li>Updated database, added tool id into versions table to record the tool used to create version.</li>
-						<li>Added the help tab for the crop tool, required because I need a tool id for the version table to develop the version listing.</li>
-						<li>Added preview for copy tool, appears in the tool box when viewing the detail page as it requires an image to work on.</li>
-						<li>Added description to add to library tool form.</li>
-						<li>Detail data on image detail page now dynamic, not a static preview.</li>
-					</ul>
-					<h3>v0.43 - Preview of image detail page and tool updates. <small>16th Jul 2014</small></h3>
-					<h3>v0.42 - Image library preview updated. <small>15th Jul 2014</small></h3>
-					<ul>
-						<li>Filter hidden on the image detail page as it is not relevant.</li>
-						<li>Preview of image detail page in place, not functional.</li>
-						<li>Added ability to select image and get directed to detail page (empty), selected tool is cancelled as it won't relate to the newly selected image.</li>
-						<li>Updated tools in Image library, version id now passed in along with other environment params.</li>
-						<li>Added version to image session, user needs to be able to select a specific version of an Image library image.</li>
-					</ul>
-					<h3>v0.41 - Bug fixes and house keeping tasks. <small>9th Jul 2014</small></h3>
-					<ul>
-						<li>Added ability to edit categories and sub categories in Image library, user is not allowed to edit initial category of auto created sub categories.</li>
-						<li>Added the ability to create a sub category in the Image library.</li>
-						<li>Added the ability to create a category in the Image library, automatically creates the initial sub category.</li>
-						<li>Reworked the image library tools, ids are now passed into the validate methods ready for later use, used to be the process methods, tools are starting to require environment ids for validation, other modules need to be updated in the same manner.</li>
-						<li>Filter form in place, shows categories and sub categories, AJAX to update sub categories select and submission sets new session values.</li>
-						<li>Default category and sub category set and/or created when user browses to Image library.</li>
-						<li>Thumbnails are now displaying using data from the database, not a static preview.</li>
-						<li>Updated the image library session class, now has methods for setting and fetching the sort and order values, initially limited to name, uploaded and size in ascending and descending order.</li>
-						<li>Initial database layout for Image library and categories in place, includes versioning tables.</li>
-					</ul>
-					<h3>v0.40 - Image library preview. <small>7th Jul 2014</small></h3>
-					<ul>
-						<li>Updated Form builder, set some tool tabs to multi use, tool, and tab remain selected after valid submission.</li>
-						<li>Content manager tools now multi use, div, content item and tool tab remain selected after processing if request valid.</li>
-						<li>Updated the import form tool, now won't allow the user to import a a form into a page container that is too small for the form, if the form is too small a clear message is show above the form.</li>
-						<li>Updated import form tool, submit button now disabled by default until valid selection made in form select.</li>
-						<li>Updated Image library preview, multi use param now passed from database to Image library tool forms.</li>
-						<li>Updated the Form builder, multi use param now passed down from database to Tool forms, not manually set.</li>
-						<li>Updated Content manager tools, multi use param now passed from database to tool forms through tool data classes.</li>
-						<li>Edit mode status now passed into the form builder ribbon forms.</li>
-					</ul>
-					<h3>v0.39 - More form settings. <small>25th Jun 2014</small></h3>
-					<ul>
-						<li>Preview of filter form for Image library.</li>
-						<li>Preview of add to library tool in place in Image library.</li>
-						<li>Preview of add sub category tool in place in Image library.</li>
-						<li>Additional improvements to form styling.</li>
-						<li>Preview of add category tool in place in Image library.</li>
-						<li>Image library ribbon data classes in place, differ to other ribbon data classes because three ids can exist, image, category and sub category.</li>
-						<li>Initial module code in place for Image library, need to work on layout.</li>
-						<li>Design colours were not consistent across entire site, now are.</li>
-					</ul>
-					<h3>v0.38 - First form option added, minimum width, also partly resolved one of the known bugs. <small>24th Jun 2014</small></h3>
-					<ul>
-						<li>Updated form settings tool, can now define the submit button text.</li>
-						<li>Updated top menu, designer menu item is now a drop down that includes links to the other designers.</li>
-						<li>Added description for pages, on both add and edit page forms.</li>
-						<li>Updated Form builder and Content manager, legend now show on all user created and imported forms.</li>
-						<li>Added ability to define form legend to form settings tool.</li>
-					</ul>
-					<h3>v0.37 - Initial template div now a 'real' div. <small>23rd Jun 2014</small></h3>
-					<ul>
-						<li>Add new form now inserts a default value for minimum width, for now the value is defined as 600.</li>
-						<li>Import form tool updated, on add the tool checks to ensure submitted width is not smaller than the minimum form width, on edit the width field is updated with a min attribute.
-						</li>
-						<li>Form builder now shows the form at the requested minimum width, defaults to 600 pixels.</li>
-						<li>Added ability to define the minimum width for a form in the Form builder, first of many settings.</li>
-						<li>Content updates: Updated the default tool bar text in Form builder and development plan.</li>
-					</ul>
-					<h3>v0.36 - Fixed live preview and other minor tweaks. <small>21st Jun 2014</small></h3>
-					<ul>
-						<li>The base div for a template is now a real div, as such all the Template designer tools can now be used on it increasing design options.</li>
-						<li>Styling updates for notices and development messages. Now unable to import form if not forms exist for site. Create new page form no longer shows if no templates exist for site. Content updates.</li>
-					</ul>
-					<h3>v0.35 - Live previews in Content manager. (Release 0.34 was to test git release management) <small>19th Jun 2014</small></h3>
-					<ul>
-						<li>Preset position quick links now trigger the margin preview methods.</li>
-						<li>Updated margin (position) preview methods, weren't taking into account other attributes which affect container width.</li>
-						<li>Updated base font styling for Dlayer. Modified the layout and styling for the setting pages.</li>
-						<li>Moved all preview state vars and methods above module properties.</li>
-						<li>Tool tab switch now looks at the preview state properties, if there are unsaved changes the designer does a window.replace after switching the tab, this resets the designer view.</li>
-						<li>Removed all the old js files now that the entire Dlayer object is within a single file. Updated environment settings, couple of minor issues after initial release from github.</li>
-					</ul>
-					<h3>Moved everything to GitHub after Codespaces.com collapsed. <small>18th Jun 2014</small></h3>
-					<ul>
-						<li>Data for previews now passed from ribbon data class to view.</li>
-						<li>Tested preview functions for heading tool, text tool and import form tool, all function correctly.</li>
-					</ul>
-					<h3>v0.33 - Added import heading tool. <small>16th Jun 2014</small></h3>
-					<ul>
-						<li>Created base js functions which will alter content item content.</li>
-						<li>Created base js functions which will alter individual padding values, both top and bottom which don’t affect container width and left and right which do.</li>
-						<li>Created base js functions which will update the width and padding for a content container taking into account all the other attributes that affect the total width of an item.</li>
-						<li>Moved all js back into a single file, Dlayer object being split over multiple files was causing issues with code completion, will split later in development.</li>
-						<li>Added live edit preview for container container position updates.</li>
-						<li>Added live edit preview for set content container background colour in Content manager.</li>
-						<li>Added highlight effect to form field preview changes in form builder. Slightly modified tool controls styling.</li>
-					</ul>
-					<h3>v0.32 - Added import text tool. <small>15th Jun 2014</small></h3>
-					<ul>
-						<li>Added import heading tool, same functionality as import text tool.</li>
-						<li>Updated the help text for the import text tool.</li>
-					</ul>
-					<h3>v0.31 - Text data for text and heading tools now assigned by reference, not static, text data can be used by multiple items. <small>12th Jun 2014</small></h3>
-					<ul>
-						<li>Updated settings, when base level is selected, user now directed to first setting within group.</li>
-						<li>Updated form class, added a view mode param, in view mode ids are not added to form field rows.</li>
-						<li>Import tool now functional, allows used to choose existing text to import into a new content container.</li>
-						<li>Initial AJAX in place to populate the textarea when the user chooses to text to import.</li>
-						<li>Import text tool added, currently not functional, forms and tool classes created.</li>
-					</ul>
-					<h3>v0.30 - Text and heading content tools reference based. <small>9th Jun 2014</small></h3>
-					<ul>
-						<li>Heading and text tools correctly update data based on the instances option.</li>
-						<li>Instances select added to edit heading and text tools, when the content item data is being used by more than the selected content item the user now has a choice about whether to update the text data for all instances or just the selected content item - not yet functional, just displays option when appropriate.</li>
-						<li>Edit mode status boolean made available to all ribbon forms.</li>
-						<li>Updated all ribbon data classes, edit mode boolean now passed in so it can be forwarded to forms.</li>
-					</ul>
-					<h3>v0.29 - Preview system bug fixes and module jumping. <small>3rd Jun 2014</small></h3>
-					<ul>
-						<li>Minor styling updates for all forms.</li>
-						<li>Updated heading and text tools, now aware of content data tables and either insert new content data item or fetch id of existing data item based on supplied content.</li>
-						<li>Added name to text and heading tool forms, will be used to identity text data items so they can easily be re-used.</li>
-						<li>Heading and text tools forms updated, now pull data from the linked data tables. Add and edit not yet updated to write to new table and check for duplicate content.</li>
-						<li>Text and heading data now pulled from linked data tables, no longer static in the content container item tables.</li>
-						<li>Added data tables for text and heading content to database.</li>
-					</ul>
-					<h3>v0.28 - Form builder now has live previews when form data is being amended. <small>1st Jun 2014</small></h3>
-					<ul>
-						<li>Link now appears in Form builder when a user jumps to it from the Content manager, takes them back to exactly where they were.</li>
-						<li>Link now takes user directly to Form builder with form selected.</li>
-						<li>Added tab to import form tool in Content manager, include a link to jump directly to Form builder (non functional)</li>
-						<li>Clear link for row background colour now correctly clears the background colour in the picker and the form field row. Need to add a reset link to return the value to the original value if it existed.</li>
-						<li>Preview code to set original value if field empty was overriding changed values on keyup (tab)</li>
-						<li>Moved preview data for editing field data from controller to ribbon data classes as per styling preview data.</li>
-					</ul>
-					<h3>v0.27 - Content item metrics and colour picker history. <small>27th May 2014</small></h3>
-					<ul>
-						<li>Existing data for row background colour now passed through to js preview methods. Updated the ribbon data classes, edit mode is now passed through to all data classes to reduce work in default tool mode.</li>
-						<li>Created the js for the row background colour change preview. Modified the selected style, now includes a top and bottom border for when the user clears the row background colour, this way the selected item is still visible. Colour picker now triggers a change even on the hidden input used to store the colour.</li>
-						<li>Edit previews now displays for all form builder field types.</li>
-						<li>Form builder was not using correct builder method for name and email inputs, needs to use custom method so later specific validation rules and options can be set. Data changed method (form builder edit preview) firing sometimes when data hadn't changed. Updated the styling for the Data changed message, now can't be missed</li>
-						<li>Preview js methods and data now pulled from the database for the selected field, currently limited to text fields.</li>
-						<li>Updated the preview methods for form field params, now aware of types, strings and integers, only process when values are valid. Added tables to manage links between preview methods and form field attributes base on attribute type.</li>
-						<li>Message now displays when data needs to be saved, displays above form when any data is modified, called by the preview functions.</li>
-						<li>Updated the live preview js, now two base methods, one that deals with html element values and one that handles form field attribute values.</li>
-						<li>Added in js to preview form field label changes, updates designer live, if the field is marked as required in the tool form clearing the value resets it to the initial value.</li>
-					</ul>
-					<h3>v0.26 - Added page container metrics blocks to Content manager and Template designer and fixed two bugs in the Template designer. <small>19th May 2014</small></h3>
-					<ul>
-						<li>Refactoring.</li>
-						<li>Updated site content.</li>
-						<li>All tools that use a colour now write to the colour history table, previously the colour palette was showing 5 static history colours.</li>
-						<li>Content item metrics block now shows correct data for heading and form content types.</li>
-						<li>Content manager now shows content item metrics for text content items.</li>
-						<li>Added the html and styling for the content item metrics section in the Content manager, also included the JS to toggle the metrics.</li>
-					</ul>
-					<h3>v0.25 - Styling tab in Form builder. <small>12th May 2014</small></h3>
-					<ul>
-						<li>Page container metrics in Template designer and Content manager now hidden behind toggle.</li>
-						<li>Fixed a bug with the split tools, by default all newly creating blocks are now fixed height, converted to dynamic height automatically if children are added, another split. - Later the system will allow the user to override this and set the height manually, either pixels or dynamic.</li>
-						<li>Added page container metrics blocks to Template designer, shows when a page container and tool are selected.</li>
-						<li>Added an information block in Content manager when both page container and tool selected, gives width of content container and its height.</li>
-						<li>Fixed a bug with the manual split tools in template designer, occasionaly not sending request through.</li>
-					</ul>
-					<h3>v0.24 - UX improvements. <small>3rd May 2014</small></h3>
-					<ul>
-						<li>Updated sample data for websites.</li>
-						<li>Fixed bug in Form builder, after addition quick fields not remaining selected.</li>
-						<li>Fixed bug with select content item in Content manager, when a margin is applied content item not selectable when user clicks margin around item.</li>
-						<li>Added styling tab to Name, Email and Password tools, as per other sub tools, only shows on edit.</li>
-						<li>Added styling tab to textarea tool in Form builder, only shows when editing a field.</li>
-						<li>Defined background colours for form field rows now appear when in the Content manager.</li>
-						<li>Moved content view models, placement didn't fit with addition of content style view models.</li>
-						<li>Form builder now displays the assigned styles in the designer view.</li>
-						<li>Styling sub tool for text field now allows a user to define row background colour, update it and delete it.</li>
-						<li>Added styling sub tool to Form builder text tool, shows control which will allow a background colour to be set for the row, not yet functional, just display at this point.</li>
-						<li>Updated Content manager process controller, now knows to look for sub tools.</li>
-						<li>Added support for edit mode only tool tabs in the Form builder, same functionality as the Content manager.</li>
-					</ul>
-					<h3>v0.22 - Position tab added to import form and heading tools. <small>2nd May 2014</small></h3>
-					<ul>
-						<li>Quick tools in Form builder (name and email) no longer show the form when the user is adding the field, only when they are editing the field.</li>
-						<li>Preset links added to the heading and text tools position tabs, same functionality as import form.</li>
-						<li>Added three preset links to the import form tool position tab, sets the margin values to left, right and center align the selected content item.</li>
-						<li>Removed the headings from the content sub tools tabs, duplicated tab text and pushed text/controls down.</li>
-					</ul>
-					<h3>v0.21 - Position tab added to text content item tool. <small>30th Apr 2014</small></h3>
-					<ul>
-						<li>Updated login page, focus now goes straight to username.</li>
-						<li>Updated modifier system, now aware of margins applied to form and heading content containers.</li>
-						<li>Updated the form and heading view helpers, now aware of container margins.</li>
-						<li>Enabled position tabs for Heading and Import form tools.</li>
-						<li>Added heading position and import form position sub tools.</li>
-					</ul>
-					<h3>v0.20 - Added two quick tools to the Form builder, name and email, these add a pre populated text field, as the Form builder develops these tools will add the correct validation rules and set other options.  <small>17th Apr 2014</small></h3>
-					<ul>
-						<li>Updated the modifier system, now aware of margin values (position) on text content items, value taken into account when calculating how the width needs to be adjusted.</li>
-						<li>Position tab disabled for Heading and Import form tools, will be enabled in next release.</li>
-						<li>Updated Container width modifier, now aware of position values (margin) for a text content item. margin values only used in calculations, not modified, this will change in a later development branch as the modifier system gets more smart, it should prioritise margin changes over content item width changes.</li>
-						<li>Edit text content item updated, validation now includes container position (margin) values when calculating if content item will be larger than the page container.</li>
-						<li>Content text view helper now correctly sizes the selectable content item container if margin (position) values have been set.</li>
-						<li>Content item view helper now uses defined margin values.</li>
-						<li>Styling tab of text content tool now adds the position values (margins) to the database, can be updated and deleted dependant on posted data.</li>
-						<li>Added position model, will be used by the Content manger sub tools.</li>
-						<li>Updated margins container table in database, fields don't need margin_ prefixed, margin table so top, right, bottom and left is sufficient.</li>
-						<li>Added position tab to heading and text content item tools, not yet functional.</li>
-						<li>Added position tab to Import form tool, has inputs for top, right, bottom and left.</li>
-					</ul>
-					<h3>v0.19 - Maintenance release, refactoring, tweaks and bug fixes. <small>13th Apr 2014</small></h3>
-					<ul>
-						<li>Updated maintenance page, text wasn't accurate.</li>
-						<li>Form builder now has field type and tool as properties, updated selectors and movers to take new params into account, new name and email fields where being selected as text fields, their base type.</li>
-						<li>Updated form builder in designer, wasn't selecting the correct tool when editing using a quick tool, name and email.</li>
-						<li>Added a name and email tool to the form builder, these are quick versions of the text tool, values preset. Currently only the field values are preset, as the system evolves validation values and other attributes will be preset as well.</li>
-						<li>Styling issue with tool forms, some fields not displaying using the correct font families.</li>
-						<li>Added field type to Form builder tools, works in conjunction with tool value for when the tool and field type don't match, an example being the email field which is a text field.</li>
-					</ul>
-					<h3>v0.18 - Added a styling tab to each of the Content manager tools. <small>16th Mar 2014</small></h3>
-					<ul>
-						<li>Minor styling updates to designers.</li>
-						<li>Fixed a few minor bugs found during pre release testing.</li>
-						<li>Create site script now inserts initial values into the colour history table.</li>
-						<li>Added a base form class for app level forms, updated all base level forms to extend new base class.</li>
-						<li>Fixed a bug with create site script, was attempting to create an extra heading that couldn't be referenced back to designer headings.</li>
-						<li>Edit field forms in the Form builder not always behaving correctly, occasionally a new field was being added rather than the selected one being edited. Updated all the Form builder tool forms, now all derive from a base form for the Form builder, this extends the base Dlayer form.</li>
-						<li>Fixed a bug with Template designer, unable to select base block with a new template.</li>
-						<li>Updated all the Content manager tool forms, now all derive from a base form for the Content manager, this extends the base Dlayer form. Updated all the Content manager tool data classes, now all derive from a base tool data class for the Content manager, this extends the base tool class.</li>
-					</ul>
-					<h3>v0.17 - Colour picker in place in Template designer. <small>6th Mar 2014</small></h3>
-					<ul>
-						<li>Added ability to define a background colour for an imported form item, use styling tab.</li>
-						<li>Content tools set to multi use, return user back to editor with tool still selected.</li>
-						<li>Added a styling tab to the heading content item tool when in edit mode, allows user to define background colour for heading container.</li>
-						<li>Mouse cursor now correctly switching when choosing a page block.</li>
-						<li>Edit mode Content manager, selecting a different tool wasn't clearing the content id, tabs which should only appear in edit mode were showing for other content tools.</li>
-						<li>Text content item containers now use the background colour defined in the tools styling tab.</li>
-						<li>Renamed style view helper classes, responsible only for templates so changing name accordingly to make way for content versions.</li>
-						<li>Sub tool in place which allows a user to define the background colour for a text content item, edit the colour and then clear the colour if they want to.</li>
-						<li>Modified the Content manager process controller to look to see if request should be sent to a sub tool rather than the base tool for the content item type.</li>
-						<li>Added ability to define whether a clear link should be added after the colour selector, with container styling it is valid that a user want to reset a colour.</li>
-						<li>Added the forms and view data for the container styling tab of the text tool.</li>
-						<li>Modifying the tool system in the Content manager to support sub tools.</li>
-						<li>Updated the help tabs for the five active tools in the Template designer, give a much more detailed overview for each tool.</li>
-						<li>Extended Zend forms, added a colour picker input, includes hidden element for value and the div invoke the picker.</li>
-						<li>Content manager tools updated, added the ability to allow tabs which only show in edit mode, for each tool this is currently a styling tab.</li>
-						<li>Updated the help tabs for the three active tools in the Content manager, give a more detailed overview of the tool.</li>
-					</ul>
-					<h3>v0.16 - Web site manager preview. <small>24th Feb 2014</small></h3>
-					<ul>
-						<li>Added colour picker to both tabs of the border tool. Switched colour picker to be a class rather than an id, javascript was failing with ajax caching issue, not all close.</li>
-						<li>Moved all colour picker logic into a view helper, will be called multiple times within app, developer gets to define which of the three sections they want to include in the picker.</li>
-						<li>Added colour picker to custom tab of background colour tool, allows user to choose colour from palettes, history and create a custom colour, history section not yet updated with new values.</li>
-						<li>Added a history table for used colours, colour picker now shows the last five used unique colours.</li>
-						<li>Colour picker shows the live data for the three palettes.</li>
-						<li>Initial design for the colour picker in place, not yet functional.</li>
-					</ul>
-					<h3>v0.15 - Content release, new content and also includes base code required by the Website manager. <small>19th Feb 2014</small></h3>
-					<ul>
-						<li>Initial preview design for web site manager added, non functional, just shows initial tools and controls.</li>
-						<li>Minor styling updates to tools and tool options/ribbon.</li>
-					</ul>
-					<h3>v0.14 - Bug fix release, a couple of bugs appeared in the last version, now fixed, affected text modifier and add text tool. <small>16th Feb 2014</small></h3>
-					<ul>
-						<li>Content update, A bug was listed in the development plan but really needed to also be in the bugs section. Added new sections to the development plan.</li>
-						<li>Web site manager framework code in place, still working on the preview.</li>
-						<li>Updated the tools, removed fields and logic no longer required now that the tools are text buttons not images.</li>
-					</ul>
-					<h3>v0.13 - Maintenance release, reworked some of the tools code and added ability to move assigned form fields around. <small>14th Feb 2014</small></h3>
-					<h3>v0.12 - Major milestone release, three modules are now communicating with each other, the Template designer, Form builder and Content manager. The import form tool is now in place, a form can be added as a content item. All forms retain their links with the Form builder so changes are shown immediately. <small>1st Feb 2014</small></h3>
-					<ul>
-						<li>Stopped showing the move up and move down controls for the first and last form fields respectively.</li>
-						<li>Added ability to move form fields around on the form, same controls as content manager.</li>
-						<li>Added movement controls view helper for form builder.</li>
-						<li>Added a mover view helper, generates the html for the movement controls in the content manager.</li>
-						<li>Updated the content module tool and model classes, much clearer now because the content type will not always match the tool type, method names were not obvious.</li>
-						<li>Updated the currently disabled modules, been lots of base changes that hadn’t be carried across, now all consistent.</li>
-						<li>Both setting menus, section and setting now come from the database, tied to the modules so settings groups and settings will only show if module, group and setting are active.</li>
-						<li>Moved model methods required by modifiers into their own model classes, need to keep separate from the general user processing code.</li>
-						<li>Styling updates. Designer hover styling, text area font size and also the movement controls in the content manager.</li>
-					</ul>
-					<h3>v0.11 - Minor release, housekeeping <small>25th Jan 2014</small></h3>
-					<ul>
-						<li>Added a page for known bugs.</li>
-						<li>Updated container width modifier, now looks at form content items.</li>
-						<li>Added ability to edit the details for the selected form in the content manager.</li>
-						<li>Updated process controller in content manager, needed to stop using tool for processing, no longer always going to match the content type so need separate vars.</li>
-						<li>Updated select and move js, with earlier tools, content type and tool where the same, that changed with the import form tool.</li>
-						<li>Added ability to move form content items around in the content manager, same movement controls as text and heading content items.</li>
-						<li>Content manager design view now shows the imported form, styling is not working correctly.</li>
-						<li>Import form tool in content manager allows user to add form as a content item, not yet rendered in the designer or or editable.</li>
-						<li>Development plan now shows progress messages.</li>
-						<li>Updated the definition for the module session reset methods, wasn't completely clear about what would be cleared. Initial validation in place for import form tool, doesn't yet calculate and approximate width for a form and whether it will fit in the page block, that will be added later.</li>
-						<li>Inputs all displays for the import form tool.</li>
-						<li>Show identity (email) on menu bar to assist users that use more than one account.</li>
-						<li>Import form tool added to tool bar and relevant entries added to database, data form not yet in place.</li>
-						<li>Added a footer to the app, provides access to development log and development plan when in the designers.</li>
-						<li>Reworked the settings pages, now possible to jump between modules without having the leave the settings section.</li>
-						<li>Styling updates, also added another font family to the base font family settings.</li>
-						<li>Added ability to define placeholder text for text, text area and password tools in the Form builder.</li>
-					</ul>
-					<h3>v0.10 - Minor release, added custom option for back colour in the template designer and switched a few form elements over to HTML5 <small>25th Jan 2014</small></h3>
-					<h3>v0.09 - Minor release, contains the base code which I will build to allow forms to be added as content items in the form builder. <small>24th Jan 2014</small></h3>
-					<ul>
-						<li>Updated the content manager heading style setting forms, now use HTML5 elements where appropriate.</li>
-						<li>Upgraded the tool controls in the content manager and form builder, now also using HTML5 elements where appropriate.</li>
-						<li>Upgraded the tool controls in the template design, now using HTML5 elements where appropriate.</li>
-						<li>Custom option for background color now allows the user to choose a color using the HTML5 color picker.</li>
-					</ul>
-					<h3>v0.08 - New release, new cleaner design for all the designers, bugs fixes and tweaks. <small>20th Jan 2014</small></h3>
-					<ul>
-						<li>Additional base development to allow forms to be added a content item.</li>
-						<li>Minor style and content changes.</li>
-						<li>Updated 'What is Dlayer?' page.</li>
-						<li>Database work to support allowing a form to be imported as a content item.</li>
-					</ul>
-					<h3>v0.07 - Minor release, content items can be moved and heading content item updated. <small>23rd Dec 2013</small></h3>
-					<ul>
-						<li>If there is no data for a new user a sample site is created, three colour palettes are created and default values are set for the heading styles and base font family settings. Pages, templates and forms are not created, when the designers are more functional there will be sample templates, forms and pages for the sampkle site.</li>
-						<li>Adding a new website now inserts initial values for the base font family to use in the content manager and form builder.</li>
-						<li>Adding a new website now inserts initial values for the content manager heading styles, can be updated by the user in the settings.</li>
-						<li>Add new site wasn't creating three default palettes for the user, later users will be able to define their own palettes during create site or modify the default palettes.</li>
-						<li>Top menu updated to show state.</li>
-						<li>Reworked the toolbar panels, now only show tools when relevant, the selected tool is clearer and styling has been updated. Tool options styling has been simplified, forms are now clearer.</li>
-						<li>When I resized the designers I realised I had sinned, the width and heights were defaulted within the code, now corrected, there is no such thing as a value that won't need to be changed at some point during the projects life.</li>
-						<li>Fixed the content manager heading tool, the left margin value wasn't being passed through in the post data array, this was causing the validate method to return FALSE and the tool to never process correctly. The heading tool now checks the size of the page block it is being added, this is done so that sensible defaults can be calculated and to ensure that a user can't add a heading container which is larger than the page block.</li>
-						<li>Updated the styling in the form builder, matches the new design.</li>
-						<li>Updated the styling in the content manager, matches the new design.</li>
-						<li>Expand and Contract options for resize tool now no longer shows the options that can't be used for the selected block, previously all options were shown and the form button was disabled if not relevant. The ribbon has been moved to the right hand side below the tool buttons, no longer pushes the design down.</li>
-						<li>Updated the styling in the template designer, matches the new design.</li>
-						<li>Removed the mode switching buttons, don't really do anything yet, also, not sure where to add them in the new designer yet.</li>
-						<li>Modified the base width of the app, now 1366 pixels, this will match the Windows 8 version of Dlayer when developed. All the base pages have been updated along with the setting sections.</li>
-					</ul>
-					<h3>v0.06 -  Minor release, validation, settings and general small fixes. <small>4th Dec 2013</small></h3>
-					<ul>
-						<li>Content items in the content manager can now be moved around, the user needs to select the page block then as they hover over the content items up and down movement links appear.</li>
-						<li>Movement controls added to content items, not yet active.</li>
-						<li>Added a container div around content items in the content designer, js hover and click events moved to the parent container item, this is so that the movement controls will only show for each content item on hover.</li>
-						<li>Added width and left margin to heading content type, width and left padding when summed can be no larger than the containing page block.</li>
-					</ul>
-					<h3>v0.05 - Modifier system, password tool in form builder, new settings for form builder, template designer tool restrictions and general tweaks. <small>1st Dec 2013</small></h3>
-					<ul>
-						<li>Base font family settings set for the content manager and form builder now used in the designers.</li>
-						<li>Container for text content can now no be larger that the page block it is being added to.</li>
-						<li>Abstract validate and autoValidate methods moved from base tool class down a level into the base module tool class, additional context data will be needed for validations and it will differ by module.</li>
-					</ul>
-					<h3>v0.04 - Authentication system in place. <small>17th Nov 2013</small></h3>
-					<ul>
-						<li>Border tool re-instated in the template designer when a user chooses to work on a template block which has content applied to it on a page based upon the current template. A change width modifier has been added, this modifier checks all the content items to see if the widths for the containers need to be updated (The width of a page div will change if a border is added, edited or removed on a  template block). </li>
-						<li>Base modifier system in place, this is called when there needs to be interaction between modules, if a user changes something in one module that affects data in another module modifiers can be sent requests to check to see if any changes are required and then make them if necessary.</li>
-						<li>History of Dlayer split out from the What is Dlayer? page.</li>
-						<li>Temporarily added the resize tool in the template designer to the disabled tools list if template div has content on an active page. I need to develop a system that makes changes to pages in the background when a template is updated, because the resize tool affects more than the selected div I have for now disabled access until I develop the system which updates data between modules.</li>
-						<li>Added password tool to form builder, users can now add password fields to their forms.</li>
-						<li>Updated the help text in form builder for text and textarea field tools, little more clear on what happens after a field has been added to their form.</li>
-						<li>Added base font family settings to the form builder module, as per content manager module, value is not yet used in the designer.</li>
-						<li>Updated the set tool action, when a tool has been disabled in the view the set tool action checks to ensure that the disabled URL can’t be called manually by the user.</li>
-						<li>Added new icons for disabled toolbar buttons, desaturated version of the icon.</li>
-						<li>In the template designer a tool can now be disabled if using it would be destructive. For example when a page is created from a template if the specified template div has content assigned to it on one or more pages, splitting the div would currently make the content appear to disappear. Logic needs to be added to gracefully handle these destructive changes, for now though the app just forbids access.</li>
-						<li>Updated server to PHP 5.4, switched crypt() over to SHA_512, test identity credentials updated.</li>
-					</ul>
-					<h3>v0.03 - Minor release, added the base creation tools, new site, template, form and page. <small>10th Nov 2013</small></h3>
-					<ul>
-						<li>Once you create a page from a template there need to be restrictions in place to either limit what tools can be used on an active template or extra code to manage structural  changes behind the scenes. Until I put some initial restrictions in place I have disabled the template designer, hoping to re-enable it within the next two weeks.</li>
-						<li>Added 1 sample site, 1 sample template and 1 sample page for each user, enough to allow people to play.</li>
-						<li>Fixed a bug with the activate methods, validate template id action helper was using the wrong session when in the content module.</li>
-						<li>Updated database, added defaults for all settings for the three test sites.</li>
-						<li>Notification next to username/password combinations if the account if currently logged in. Added a &quot;What is dlayer?&quot; page, it gives a brief overview of Dlayer and the history behind it.
-						</li>
-						<li>No longer able to edit the name of the first sample site, used by the history tables and always defaulted if no other data in the system for identity.</li>
-						<li>Site list now pulls sites based on identity. Updated site history table/code and action helper to check site id validity, now all use the current identity.</li>
-						<li>Release messages highlighted in the development log.</li>
-						<li>Added my authentication system to Dlayer, because demo usernames and passwords are exposed an account can only login from one location, timeout on session is an hour so if a user exists without logging out the account will become available for another user after an hour. </li>
-					</ul>
-					<h3>v0.02 - Minor release, fixed heading tool and made some UX tweaks to tools <small>23rd Oct 2013</small></h3>
-					<ul>
-						<li>Add and edit new page in place, user needs to choose template to base page upon, enter a name and also the title to use for the page, as the system evolves more will need to be defined. Removed addDefaultElementDecorators() methods from site form classes, no need to override the default in the base form class as nothing was being changed. </li>
-						<li>Added add and edit form, currently a form is just a unique name for the site.</li>
-						<li>Added add and edit template, currently a template is just a unique name for the site.</li>
-						<li>Updated the formInputsData methods in forms, now checks the return type of model data and then acts accordingly, form elements now check to ensure data index exists before setting value.</li>
-						<li>Added the ability to edit a site, as per add site a site is currently just a unique name, this will develop later.</li>
-						<li>A user can now create a new site, a site is currently just a unique name.</li>
-						<li>Added an activate method to allow the user to switch the template, page or form they are working on with the site.</li>
-						<li>Template list, page list and form list now come from the database, not static text, design options only show for active item.</li>
-						<li>Added a validate content id view helper, checks content id is valid, as in exists in the database and belongs to the site id in the session.</li>
-						<li>Added a validate form id view helper, checks form id is valid, as in exists in the database and belongs to the site id in the session.</li>
-						<li>Added a validate template id view helper, checks template id is valid, as in exists in the database and belongs to the site id in the session.</li>
-						<li>Added a validate site id view helper, checks site id exists in session and also a valid site id, later it will also check against the user/auth id.</li>
-						<li>User is now able to choose a new site to work on from the sites list. On selecting the last accessed site is updated so that the next time the user accesses Dlayer the last accessed site is selected. As there is no authentication system yet site changes will affect all users.</li>
-						<li>List of sites now pulled from database on home page, adding a link to allow user to activate a site rather than default to the first.</li>
-					</ul>
-					<h3>v0.01 - Initial alpha release! <small>14th Oct 2013</small></h3>
-					<ul>
-						<li>Fixed a small bug with heading tool, view script folder case incorrect, errored on case indifferent servers.</li>
-						<li>After adding or editing a text block the base content block remains selected, tool and content ids now cleared, better usability than previous set up.</li>
-						<li>There are two exit modes for a tool, multi-use where all session values remain and non multi-use when they are all cleared, for the content manager added a third mode to enable some vars to be kept.</li>
-					</ul>
-					<h3>Started publically showing updates, SVN log extends much further back in history but I saw no need to transfer messages across. <small>4th Apr 2013</small></h3>
-					<ul>
-						<li>Set sensible values for text box width and padding, uses the containing div as a guide.</li>
-						<li>Added the ability to edit both the heading and text content types. User chooses a div and then the content block, ribbon updates and they make the required changes.</li>
-						<li>Modified the styling, switched to a light theme, going to work better for the alpha due to the limited number of tools in all the modules, darker theme can be added back in as an option later.</li>
-						<li>Base content view helper, div_id was incorrectly commented as being the id of the div currently selected on the page, for adding content. Code and comments updated to make it clear that it actually refers to the id of the current div in the content data array. Added a method to set the id for the the currently selected div, if any.</li>
-						<li>Render method on the base view helper was being called twice because of the way it was designer, removed the call to render() in toString() and now call render directly.</li>
-						<li>Simple text content block can now be added to the selected element.</li>
-						<li>Heading tool class now in place, heading can be added to the selected element, get positioned at the end of any existing content, obviously this will change with additional development.</li>
-						<li>Ribbon forms in place for add heading and add text, now need to work on the tool processing code.</li>
-						<li>Initial content module ribbon development, ribbon classes and models.</li>
-						<li>Added new tool icons for the form builder and content manager and updated the cancel image for all three modules, didn't match the rest of the images.</li>
-						<li>Split the content data methods out into their own models to match the rest of the system and as pre-planning for additional changes. Moved the margin settings for a heading, was defined in the heading styles settings, now defined per heading.</li>
-						<li>Fixed a bug with the manual split tools, javascript wasn't taking the border of the parent element into account when drawing and calculating the split position and size of the new children.</li>
-						<li>At the start of building this version of Dlayer I modified my development approach a little for this project. Typically I can plan the models and classes required to solve a problem fairly easily, with Dlayer because of the complexity I opted for a more procedural approach, this allowed me to put in place the structure for the first designer (template designer) which I then duplicated and modified for the form builder and content manager.
-
-							All three modules ended up with a very similar base, for the last week I’ve been refactoring the code adding core classes and models which handle the majority of the base functionality for each module, the ribbon, tool bars and tool processing code.
-						</li>
-						<li>Reworked the form module ribbon data classes, now rely more on the base abstract class and there is less duplication, system mirrors the more functional template designer.</li>
-						<li>Reworked the template module ribbon data classes, now rely more on the base abstract class and there is less duplication, fixed a small bug when changing borders, incorrect id var was being used.</li>
-						<li>Added a selected state to the toolbar buttons in the template designer, content manager and form builder.</li>
-						<li>Full app testing, fixed three minor bugs relating to the resize and border tools.</li>
-						<li>Site id was missing from 6 of the child layout tables, added site id, updated the models and simplified some of the layout queries that no longer need to do a join.</li>
-						<li>There was a layout file per module, because of the app design this wasn't needed, now use one layout file and the controller has an array of the css and js includes required for the controller actions.</li>
-						<li>My standard development practice is to add enabled fields to most tables, the app takes the status fields into account and either processes, adds etc based on the status. Dlayer is an alpha level app at the moment, even though it is small, currently 36 tables, I don't need anything complicating the code, as such I have removed the enabled field from most tables. It still exists in a few base tables which control access to modules and access to tools but has been removed elsewhere. As parts of the app get more stable I will add back in the status fields as required.</li>
-						<li>Added a font size validator, PHP and JS. Added a hex regex for validation to the Dlayer JS object. Updated all the text in the app, now simpler and more consistent. Added custom titles to all pages. Updated for form formatting in the form builder, now appears against a white preview div.</li>
-						<li>Added new ribbon helper images for the resize tool and border tool</li>
-						<li>Added new ribbon helper images for the split vertical and split horizontal tool, in the style of the new tool icons.</li>
-						<li>Added new tool icons for the template designer, setting the new style for the app, going for a sketchy look.</li>
-						<li>Updated the tool bars in the three designers, tool icons are going to be larger.</li>
-						<li>Re-skinned the designers, content manager, template designer and form builder</li>
-						<li>Re-skinned the app, new styling on the splash page, setting pages, base pages and development log.</li>
-						<li>Added a splash page to the app, this will be where the user logs in to get to their control panel.</li>
-						<li>Added the ability to define the base font family in the content module, the value is not currently being used by the designer, that support will be added shortly.</li>
-						<li>Added a base font families table to the database and a corresponding font families settings table, allows the user to define the base font family per site/module, as in a base font family for the content manager and then the base font family for forms, support for the widget designer will be added later.</li>
-						<li>Added the heading content type view helper to the content module, initially it adds all the header tag styles inline, this will be rectified later.</li>
-						<li>Updated database and code, all fields relating to colour update to color_hex as that is currently what the field contains, later we can add a colour object is required with the RGB values and palette data, keeping things simple initially.</li>
-						<li>Removed RGB entries for colours in the database, not required at the moment, going to just use hex values initially.</li>
-						<li>Updated static validation helper class, now calls the new colorHex validation class</li>
-						<li>Added some default styling to the app, a tags and list items.</li>
-						<li>Added tabs to the content manager settings page, going to be too many settings for one page and the new layout will allow more detail to be given to the user.</li>
-						<li>Moved all the jquery required for the initial content module settings into the Dlayer js object.</li>
-						<li>Upgraded to jquery-1.10.2, fixed a small jquery issue with chrome, multi-line comment at top of script.</li>
-						<li>Refactored the designer js, all modules, simplifed the base dlayer object and moved all the js that was sitting in view files. Structure of the scripts folder now matches images and styles folders.</li>
-						<li>Added live preview to the content settings page (header styles) defaults to show saved styles and then on change updates the previews.</li>
-						<li>Added initial styling for the heading setting forms and added initial styling for the heading previews.</li>
-						<li>Added the forms for the content headings to the content settings page, initially it just allows the user to update the params for the headings, there is no live preview or formatting.</li>
-						<li>Template module tool process methods now double check that the tool posted matches the tool defined in the session.</li>
-						<li>Pagination view helper wasn't escaping all developer defined text.</li>
-						<li>Fixed a bug with the expand and contact tabs of the resize tool in the template designer, border widths were not being added to div width meaning that the split positions were not being calculated correctly.</li>
-						<li>Form fields not being pulled from database in correct order.</li>
-						<li>Multi use tool setting was not being respected in the form builder when adding a new field, field id was not being stored in session.</li>
-						<li>Updated the template module and template session class, updated names of some logic vars, names more clear, wasn't always obvious what a var referred to.</li>
-						<li>Edit mode in place for form text fields and form textarea fields</li>
-						<li>Form module ribbon forms now show existing values when in edit mode.</li>
-						<li>Public set methods (div and form field) now check that the given id belongs to the currently set template/form and site.</li>
-						<li>Reworked the javascript, selector functions have been moved to the module javascript files rather than the base Dlayer object.</li>
-						<li>Field attributes are now saved to the database and then pulled in the form builder and attached to the inputs.</li>
-						<li>The add field forms in the form builder now add the attributes for the text and textarea field types.</li>
-						<li>Added initial styling for the form builder forms.</li>
-						<li>Form builder now supports and displayed text area fields which have been added to the form defintion.</li>
-						<li>Text area field can now be added to the form, edit mode still needs to be added.</li>
-						<li>Text field can now be added to a form in the form builder, still need to add supporting for editing a field.</li>
-						<li>Added base tool process model for the form builder, working on the add text field process tool model.</li>
-						<li>Updated the pagination view helper, can now show either 'item n-m of o' or 'page n of m' between the next and previous links.</li>
-						<li>Added the form for the add textarea tool in the forms builder.</li>
-						<li>Updated all the help text for the template designer, simpler language.</li>
-						<li>Updated the base forms class, addElementsToForm() method updated, now able to create multiple fieldsets within a form, one fieldset per method call</li>
-						<li>Added the form for the add text field tool in the forms builder.</li>
-						<li>Updated the default styling for tables, header rows and table rows.</li>
-						<li>Updated the pagination view helper, added the ability to define text to use for links and also updated the logic for 'of n' text.</li>
-						<li>Added a helper class to the library, initially only a couple of static helper functions.</li>
-						<li>Added a pagination view helper, update of my existing pagination view helper.</li>
-						<li>Added a development log to Dlayer to show changes to the application, two reasons, one to spur on my development, two, to show the public what I am adding.</li>
-					</ul>
-				</div>
+				<p>
+					<a class="btn btn-secondary" href="https://github.com/Dlayer/dlayer/zipball/master" role="button">Download: Zip</a>
+					<a class="btn btn-secondary" href="https://github.com/Dlayer/dlayer/tarball/master" role="button">Download: Tar</a>
+					<a class="btn btn-primary" href="https://github.com/Dlayer/dlayer" role="button">Find on GitHub</a>
+				</p>
 			</div>
 		</div>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12 col-xs-12 muted text-center">
-					<p>Dlayer originally developed by
-						<a href="http://www.g3d-development.com/blog/">G3D
-							Development Limited</a> /
-						<a href="http://www.deanblackborough.com">Dean
-							Blackborough</a><br />
-						Dlayer Copyright &copy; G3D Development 2015<br />
-						Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a>,
-						Code <a href="https://github.com/Dlayer/dlayer/blob/master/LICENSE">licensed</a> under MIT</p>
-				</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<p class="lead">Listed below are all the releases prior to the decision to make the app Open Source.</p>
+
+			<p class="lead">The changes listed below are occasionally out of whack, I need to re-export the data from
+				GitHub/SVN to clean it up, I'll get round to it at some point.</p>
+
+			<h3>v0.79 (Internal) - Content area tool, multiple content rows and refatcoring. <small>19th Jun 2015</small></h3>
+			<ul>
+				<li>Added a password tool to the preset section in the Form builder.</li>
+				<li>Added a comment tool to the preset section in the Form builder.</li>
+				<li>Help tabs for Content manager tools update, now include a direct link to the Dlayer specification.</li>
+				<li>Tool tabs in form builder now use icons rather than text.</li>
+				<li>Moved and cleaned up the js for the image picker.</li>
+				<li>Moved and cleaned up the js for the colour picker.</li>
+			</ul>
+			<h3>v0.78.1 - Gremlins appear to have been involved in previous release. <small>10th Jun 2015</small></h3>
+			<ul>
+				<li>Split designer page object, now have page object and page style object.</li>
+				<li>Cleaned up the design controller in the Content manager, more code moved into designer page object.</li>
+				<li>Add content row tool updated, it can now create multiple content rows, the first row in the new set will be the one selected.
+				</li>
+				<li>Stripped out the old template styles code, will be replaced by the newer, more reusable content styles code when styling sub tools are added to the Template designer.
+				</li>
+				<li>User defined content area styles (background colour) now show in Content manager design view.</li>
+				<li>Bug fix: Sub tool not remaining selected in Content manager for structure tools, base tool tab is incorrectly being selected.
+				</li>
+				<li>Added ability to define the background colour for a content area in Content manager, assigned colour does not yet appear in the design view, only the tool.</li>
+				<li>Added a content area tool that is automatically selected when a content area is selected, currently just a place holder tool to allow access to sub tools.</li>
+			</ul>
+			<h3>v0.78 - More Form builder updates. <small>8th Jun 2015</small></h3>
+			<h3>v0.77.1 - Branding <small>4th Jun 2015</small></h3>
+			<ul>
+				<li>Minor style update to colour picker, now more closely resembles the image picker.</li>
+				<li>Added a range field to Dlayer, not yet implemented in Form builder as a selectable field type.</li>
+				<li>Bug fix: Help tab missing from content row tool.</li>
+				<li>Updated the base text for the ribbon in the Content manager, guides the user a little better.</li>
+				<li>Added submission email address to add new form and edit form.</li>
+				<li>Updated nav bar in settings, designer view nav bar being used.</li>
+				<li>Added a link to the Specification in navbar and footers.</li>
+				<li>Specification moved to specification.dlayer.com, reference on Dlayer updated.</li>
+				<li>Added a form settings tool to the Form builder, again, currently it is just a preview of the intended tool.</li>
+				<li>Added a form actions tool to the Form builder, currently it is just a preview of the intended tool.</li>
+			</ul>
+			<h3>v0.77 - More Form builder updates. <small>3rd Jun 2015</small></h3>
+			<ul>
+				<li>Added social icons to layouts.</li>
+				<li>Added a twitter feed to homepage, think of it as a temporary news feed.</li>
+			</ul>
+			<h3>v0.76 - Form builder, polish, bugs and updates. <small>30th May 2015</small></h3>
+			<ul>
+				<li>General bug fixes, Form builder tools.</li>
+				<li>Added an email tool to Form builder, standard field type, the email preset tool is now based on the email field type rather than the text field type.</li>
+				<li>Size attribute removed from fields when layout mode set to inline, messing with the layout.</li>
+				<li>Bug fix: Although description is optional, Javascript was stopping the value from being cleared.</li>
+				<li>Horizontal and standard layouts don't add description if not defined for a field.</li>
+				<li>Bug fix: Preset tools incorrectly being selected when field entered edit mode.</li>
+				<li>Description is now optional when adding a new field to a form.</li>
+				<li>Fixed an issue with the display ordering controls when form layout set to Horizontal mode</li>
+				<li>Updated the Form builder design view, now renders the form using the layout mode set using the layout tool.</li>
+				<li>Added layout options to layout tool in Form builder, user can define layout mode (standard, inline and horizontal) and the width values to use when form is in horizontal display mode, values not yet applied to the design view.</li>
+				<li>Added brand image for Dlayer, related to the G3D Development logo.
+				</li>
+			</ul>
+			<h3>v0.75 - Image picker in place, check the image content item tool. <small>26th May 2015</small></h3>
+			<ul>
+				<li>Updated create form, now enters default layout settings for the form and the language has been updated slightly.</li>
+				<li>Added four buttons to test how the form displays at different sizes, width of form can be set to 100%, 75%, 50% and 25% of the design view.</li>
+				<li>Updated the forms for the default sites,  transferred values from settings table to layout table.</li>
+				<li>Added a layout tool to Form builder, settings section. Initially this controls the name for the submit and optional reset buttons as well as the form title and optional sub title.
+				</li>
+				<li>Removed the settings tool from the Form builder, will be replaced by new tools
+				</li>
+				<li>Fieldset no longer applied to generated forms, in the short term this will allow me to provide additional layout options, fieldset will return when a feature requiring it is added to the Form builder.
+				</li>
+				<li>Bug fix: Custom form field styling was not being applied to preview view.</li>
+				<li>Added ability to select another field for editing when a field is selected.</li>
+				<li>Updated the standard field tools, fields which a user will rarely need to alter are hidden by default.</li>
+				<li>Updated the movement controls in Content manager and Form builder, now much more visible.</li>
+				<li>Added a view preview link to Form builder, shows the finished form without any of the Dlayer UI.</li>
+			</ul>
+			<h3>v0.73 - Settings and styles. <small>17th May 2015</small></h3>
+			<ul>
+				<li>Bug fix: Image picker was not correctly reading the session values, on refresh image picker state was being lost.</li>
+				<li>Bug fix: Suggested maximum size value not being used by add content item code.
+				</li>
+				<li>A preview is now shown below the select image button when an image is either selected via the picker or the image tool is in edit mode, prioritises the session data when working out what preview to display.</li>
+				<li>Image picker is functionally complete, I need to do some additional work to smooth out a couple of bugs as well as manage state. I also need to think about making it reusable so that like the Colour picker it can be attached to any input with two lines of code.</li>
+				<li>Minor Layout changes to the Image picker, Colour picker will be updated in a future version to match at some point soon(tm).</li>
+				<li>Switched tool tab names in Content manager from text to icons, testing before rolling out to other designers.</li>
+				<li>Cancel tool in Content manager now clears image picker session values. Tool Session values are also cleared upon tool selection if the mode is set to reset.</li>
+				<li>Added a session to manage the cross designer tools, initially the image picker. Category, Sub category, Image and Version id are saved to session.</li>
+			</ul>
+			<h3>v0.72 - Improved ability to move around design area in Content manager. <small>15th May 2015</small></h3>
+			<ul>
+				<li>Updated development plan.</li>
+				<li>Bug fix: Content manager preview wasn't applying any user styles, result was different to design view in Content manager.
+				</li>
+				<li>Styles defined in Form builder (row background) now appear in the Content manager</li>
+				<li>Defined font family in Form builder now carried over to the Content manager and used on imported forms.</li>
+				<li>Font family settings where not being used in Content manager and Form Builder.</li>
+				<li>Added an additional font settings to text settings.</li>
+				<li>Initial heading settings in Content manager now match base bootstrap settings.</li>
+			</ul>
+			<h3>v0.71 - Added image sub tools, updated preview mode and added support for expand option. <small>12th May 2015</small></h3>
+			<ul>
+				<li>Added a button option to the Jumbotron tool, if the button label is define a button appears after the sub text, currently a destination cannot be defined, that will be added once the web site manager is in development.</li>
+				<li>Added a select parent tool to the structure area, this allows a user to select the parent content row and content area for the currently selected content item, essentially step back up the tree, they can also return to the edit screen for the selected content item.</li>
+				<li>When a content item is selected it is now possible to select a sibling content item, one from the same content row.</li>
+				<li>When a content row is selected it is now possible to select a sibling content row, one from the same content area.</li>
+				<li>Bug fix: Content row tool not selected after add content row tool used.</li>
+			</ul>
+			<h3>v0.70 - Add image content item in place, also added ability to view preview of current design without Dlayer UI. <small>11th May 2015</small></h3>
+			<ul>
+				<li>Content updates.</li>
+				<li>Expand option for images now applied in preview, images open up in a modal dialog.</li>
+				<li>Design preview no longer shows helper content areas and content rows.</li>
+				<li>Added styling tab to image tool.</li>
+				<li>Added size and position tab to image tool.</li>
+			</ul>
+			<h3>v0.69 - Content update, now more in line with specification, also opened the base of the Widget designer. <small>5th May 2015</small></h3>
+			<ul>
+				<li>Preview link in Content manager nav bar, opens preview of current design in a new window, additional work still required because helper content areas and content rows are still visible.</li>
+				<li>Inserted images can now be edited.</li>
+				<li>Content updates, help text for Content manager tools.</li>
+				<li>Added a suggested maximum size to the suggested size logic, instead of content items automatically spanning the entire width of a content row they will be now be set to the suggested maximum size on initial insertion, for images this defaults to six.</li>
+				<li>Added a caption to the insert image tool, caption appears below image.</li>
+				<li>Image can now be inserted using the image tool, simple select to choose image at the moment, image picker not functional yet.</li>
+				<li>Some fields in Content manager not marked as required when they are.</li>
+				<li>Initial tool view code in place for add image, doesn't yet use Image picker and tool processing code not in place.</li>
+				<li>Minor update to Image library UI.</li>
+				<li>Minor updates to the layout of the colour picker, closer to new image picker design.</li>
+				<li>Initial design work on Image picker.</li>
+				<li>Bug fix: Code which fetches the background colour for an item, container and row no longer doesn't select the defined colour if the item is selected in the designer, the selected status has been updated, code no longer relevant.
+				</li>
+			</ul>
+			<h3>v0.68 - Initial development for image content item support. <small>23rd Apr 2015</small></h3>
+			<ul>
+				<li>Added widget designer overview and initial settings pages.</li>
+				<li>Content update - Image library overview.</li>
+				<li>Minor UX updates to Template designer, mirror previous changes to Content manager.</li>
+				<li>Updated the History of Dlayer page, now includes a little more background, What is Dlayer? page, Web site manager overview and Form builder overview.</li>
+				<li>Reworked the help text content and layout in the side panel in the Template designer, guides the user first, explains afterwards.</li>
+				<li>Content update - Template designer overview.</li>
+				<li>Reworked the help text content and layout in the side panel in the Content manager, guides the user first, explains afterwards.</li>
+				<li>Content update - Content manager overview and home page once logged in.</li>
+			</ul>
+			<h3>v0.67 - UI and UX updates. <small>22nd Apr 2015</small></h3>
+			<ul>
+				<li>Required asterisks missing from tool form fields in Form builder.</li>
+				<li>Updated the sample site for each test user to display a small image content item from the relevant Image library.</li>
+				<li>Added code to handle displaying images within the Content manager, users are not yet able to add an image via a tool, only works because I've added the entries in the database.</li>
+				<li>Minor UI changes to library view, also added the number of versions next to the image name.</li>
+				<li>Updated library view code that checks revisions, not looking at correct information - versions not yet creatable by users.</li>
+				<li>Minor changes to Image library, changed initial category and added new sample images.</li>
+			</ul>
+			<h3>v0.66 - Added live editing previews for Content manager tools. <small>12th Apr 2015</small></h3>
+			<ul>
+				<li>Bug fix: Return to previous designer button on Form builder (after jumping from Content manager) was disappearing after changes in the Form builder.</li>
+				<li>Updated the styles for selectors, selectable items or areas turn yellow when the mouse is hovered over them, selected items or areas have a dotted blue border, less invasive to the designer.</li>
+				<li>Updated tool section in Form builder, now includes sub titles and collapses the standard section when not being used.</li>
+				<li>After fields are added using the pre-set tools in the Form builder the user is now correctly returned to the designer with the relevant standard tool selected.</li>
+				<li>Added toggle to collapse tool sections in  Content manager, import tool section collapsed by default unless an import tool is in use.</li>
+				<li>Moved import form tool into the create section.</li>
+				<li>Added a &quot;Why use Dlayer?&quot; page.</li>
+			</ul>
+			<h3>v0.65 - Fixed selector bug and added logic to calculate sensible default sizes for newly added content items <small>31st Mar 2015</small></h3>
+			<ul>
+				<li>Updated integrity of database, foreign keys where removed from some tables during major restructure.</li>
+				<li>Added live editing previews for heading tool, changes to heading content, size, offset and background colours now show live in the designer.</li>
+				<li>Added live editing previews for Jumbotron tool, changes to jumbotron content, size, offset and background colour now show live in the designer.</li>
+				<li>Added live editing previews for Import form tool, changes to form content item size, offset, background colour and container background colour now show in the designer during editing.</li>
+				<li>Added live editing previews for text content item container and element background colours, works in exactly the same way as the similar feature in the Form builder.</li>
+				<li>Added live editing preview for text item size and offset values, updates the design view based on the sets sizes, combined size and offset cannot exceed 12, JavaScript will limit inputs as necessary.</li>
+				<li>Added the live editing preview methods for text content changes, designer updates the design view in real-time when the content is altered.</li>
+			</ul>
+			<h3>v0.64 - Added ability to define styling for content rows, initially just background colour. <small>26th Mar 2015</small></h3>
+			<ul>
+				<li>Suggested size now calculated for heading, jumbotron content items tools and all import items, uses the rules outlined on the tool help tabs.</li>
+				<li>Calculate a suggested size for a new text content item and use that to create items, uses rules outlined on help tab.</li>
+				<li>Filed a new bug, preset tools in Form builder.</li>
+				<li>Bug fix: Updated content item selector, now clears the background colour for content item and content item container if defined, helps with selecting content items.</li>
+				<li>Bug fix: Updated the content row selector, clears the background colour for a content item and content item container if defined to ease with selecting content rows.</li>
+				<li>Bug fix: Content area selector now clears defined content row background colours to aid with content area selection.</li>
+			</ul>
+			<h3>v0.63 - Added move item and move row tools, provide movement functions not covered by the visual tools in the designer. <small>19th Mar 2015</small></h3>
+			<ul>
+				<li>Designer view updated to apply styles to content rows if defined.</li>
+				<li>Updated auto tool code, now able to look for and load sub tools.</li>
+				<li>Background colour can now be defined for a content row using the styling sub tool.</li>
+				<li>UI in place for styling tab of content row tool, field to allow user to set background colour for row.</li>
+				<li>Selecting a content row now also selects the content row tool allowing access to the row sub tools.</li>
+				<li>Renamed add content row tool, need to add a new content row to allow management of the row.</li>
+			</ul>
+			<h3>v0.62 - Added ability to define the offset for content items and also added a new tool to the Content manager, Import jumbotron. <small>16th Mar 2015</small></h3>
+			<ul>
+				<li>Added logic to update the new environment state after move row and move item tool processing, all done invisibly to the user so they can continue working without realising another content area and content row may have been selected.</li>
+				<li>Added move item tool, allows a content item to be moved to another content row, movement within a content row is managed by the visual controls in the designer when a content row is selected.</li>
+				<li>Reworked the logic that displays tools in Content manager, needed to be aware of difference between structure based tools and standard tools, differing logic controls tool visibility.</li>
+				<li>Added a reordering function that reorders content rows when a row is moved out of an content area, in place to stop issues when using the visual movement tools after the move row tool has been used.</li>
+				<li>Updated the logic for the auto tools, more of the returned data is definable within the tools.</li>
+				<li>Added move row tool, allows a content row to be moved from one content area to another, movement within a content area is managed via the visual tools upon row hover.</li>
+			</ul>
+			<h3>v0.61 - Added import heading and import text tool to Content manager. <small>14th Mar 2015</small></h3>
+			<ul>
+				<li>Added import jumbotron tool, similar to the import text and heading tools, using existing data.</li>
+				<li>Modified the tools section in the Content manager, added a heading to clearly separate sections allowing for slightly simpler tool names.</li>
+				<li>Jumbotron, Heading and Form content items now allow the offset to be defined on the size and position tab.</li>
+				<li>Text content view helper now aware of offset value and applies relevant class when required.</li>
+				<li>Added ability to define the offset for a text content item on the size and position tab.</li>
+			</ul>
+			<h3>v0.60 - Added ability to move content items within a row and also added styling and size and position tabs to the Jumbotron content item tool. <small>12th Mar 2015</small></h3>
+			<ul>
+				<li>Processing code now in place for the import heading tool.</li>
+				<li>UI for import heading tool now in place in Content manager.</li>
+				<li>Bug fix: Edit Jumbotron throwing an error.</li>
+				<li>Added ability to allow user to update name for reference text data, Text, Heading and Jumbotron tools</li>
+				<li>Processing code now in place for the import text tool.</li>
+				<li>UI for Import form tool in place in Content manager.</li>
+			</ul>
+			<h3>v0.59 - Content item background colour and new content item. <small>5th Mar 2015</small></h3>
+			<ul>
+				<li>Processing code in place to allow user to alter the display of content items within a content row.</li>
+				<li>Added movement controls for content items, adjust display order, had to move the selection class for the content items up to the parent element, not yet functional.</li>
+				<li>Added the styling tab to the Jumbotron tool, initially it only allows you to define the background colour for the Jumbotron itself.</li>
+				<li>Added the size and position tab to the Jumbotron tool, initially only allows you to control the size of the item.</li>
+				<li>Required tool fields now have red asterisk to identify them.</li>
+				<li>Updated the default colour palettes, switched them with two that match the base Bootstrap styles.</li>
+			</ul>
+			<h3>v0.58 - Styles tab added to Text, Heading and Import form tool <small>2nd Mar 2015</small></h3>
+			<ul>
+				<li>New sample content page data for the three test web sites.</li>
+				<li>Added ability to select and edit a jumbotron content item.</li>
+				<li>Added ability to create a jumbotron (masthead) content item.</li>
+				<li>Added ability to define background colour for heading and form content items.</li>
+				<li>Added ability to define text content item background colour.</li>
+			</ul>
+			<h3>v0.57 - Size and position tab added to Content manager Text, Heading and Import form tool. <small>26th Feb 2015</small></h3>
+			<ul>
+				<li>Updated the bugs page.</li>
+				<li>Added ability to define content container background colour for Heading and Form content items, styles tab now appears when in edit mode.</li>
+				<li>Added content container view helper, calls child view helpers to generate style string for content items, applied to the text, heading and form content items.</li>
+				<li>Reworked the page view helper to support content row styles and content container styles being defined along with content item styles.</li>
+				<li>Updated development plan.</li>
+				<li>Added ability to define background colour for the text content item container, value not yet used within the design view.</li>
+				<li>Updated the tool tab styling, now smaller to allow more tabs per tool. Added spacing below the Return to previous designer button in Form builder.</li>
+				<li>Updated logic for Form, tab of import form tool, data now comes from a ribbon data class.</li>
+				<li>Added small support to the heading content item tool, sub heading text is optional.</li>
+			</ul>
+			<h3>v0.56 - Import form tool <small>24th Feb 2015</small></h3>
+			<ul>
+				<li>Size and position tab added to heading content item tool, size can be set as a value between one and twelve.</li>
+				<li>Size and position tab added to import form tool, size can be set as a value between one and twelve.</li>
+				<li>Size and position tab added to text content item tool, size can be set as a value between one and twelve.</li>
+			</ul>
+			<h3>v0.55 - Content manager text item tool. <small>19th Feb 2015</small></h3>
+			<ul>
+				<li>New sample data for the three test users.</li>
+				<li>Added ability to move content rows within a content area, up and down controls display when hovering over a selectable content row.</li>
+				<li>Movement controls show for content rows when parent content area selected.</li>
+				<li>Moved check for defined content in page view helper, incorrect height setting being defined when content exists.</li>
+				<li>Added ability to jump from selected form in Content manager to the Form builder with the form selected. You can also jump back to the Content manager with state maintained.</li>
+				<li>Import form tool now allows user to change the form linked to the item, edit mode.</li>
+				<li>Fixed a bug in form builder, unable to add form field, error with sub query.</li>
+				<li>Updated the import form tool, add function now in place.</li>
+				<li>Updated selector to allow forms to be selected in Content manager.</li>
+			</ul>
+			<h3>v0.54 - Template designer and Content manager now open. <small>18th Feb 2015</small></h3>
+			<ul>
+				<li>Template designer now shows a visual notification of dependant content items when a content area is selected, not the specific content items as there may be many types, just a  generic item.</li>
+				<li>Moved the instances input definition to the base Content manager tool class, can be called by any tool form when required.</li>
+				<li>Edit text content item works.</li>
+				<li>Add text item tool works, updated selector to allow selection of text content items ready for edit mode.</li>
+				<li>Base Content manager tool class more capable, moved shared methods into it and set up new abstract methods.</li>
+				<li>Updated the form and tool data class for text content item.</li>
+			</ul>
+			<h3>v0.53.5 - Template designer update complete, creates bootstrap valid templates, limited to a single tool currently, create rows. <small>3rd Feb 2015</small></h3>
+			<ul>
+				<li>New sample content page for each of the test sites, only selectable content item being headings.</li>
+				<li>Edit content heading item working, also reworked the code to handle management of content instances.</li>
+				<li>Add content item tool now works again, required a fairly large rework of the base content item management code.</li>
+				<li>Reworked the Content manager process method for tools, the base data methods to fetch the data for tools and the interface for the tools themselves.</li>
+				<li>Add content row tool in place, reworked the process controller to handle auto tools, previously all tools were manual tools.</li>
+				<li>Added a second selected state to the Content manager ribbon, now have default, area selected and row selected, all guide the user.</li>
+				<li>Text, Heading and Form content items now display again on generated pages, work within the new page structure, tools and selection still need to be updated</li>
+				<li>Added the content row view helper, it is called by the page view helper. The content row view helper now calls the base content view helper, it was previously being called by the page view helper.</li>
+				<li>Content manager page updated to support new template structure.</li>
+				<li>New layout for Content manager, design area, tools and default ribbon views complete.</li>
+			</ul>
+			<h3>v0.53 - Image library update complete. <small>25th Jan 2015</small></h3>
+			<ul>
+				<li>Template designer content blocks now named according to height setting, content block metrics now display when a block is selected rather than block and tool, valid to need to switch height setting without selecting a tool.</li>
+				<li>Added a sample template for each user and site, initially just a simple header, content area and footer based template.</li>
+				<li>Added content block metrics to Template designer, show when a tool is selected, allow a user to switch a content block between fixed and dynamic height setting. Modified the create rows tool in Template designer, custom tool was not taken the 15px bootstrap defined padding into account.
+				</li>
+				<li>Updated split horizontal tool, all divs are now created as dynamic height, design height is set for designer view, ignored when content applied.</li>
+				<li>Content update, designer overview pages now have more information and the text for the template designer tools has been made simpler.</li>
+				<li>Disabled the modifier system, no longer called by Template designer.</li>
+				<li>Disabled all Template designer tools except split horizontal.</li>
+				<li>New layout for Template designer tools, preset section custom to Template designer.</li>
+			</ul>
+			<h3>v0.52 - Web site manager styling update complete, access returned. <small>20th Jan 2015</small></h3>
+			<ul>
+				<li>New sample form data for all three users.</li>
+				<li>Fixed bug with add to library, mime checks failing. Fixed the sorting options, failing for size because data was moved to a meta table.
+				</li>
+				<li>New layout and styling for Image library, library and detail view.</li>
+				<li>Updated logic for showing and hiding tools, depends on whether a tool is selected and whether an image is selected, now don't show library management tools (category, add) when an image is selected.</li>
+				<li>Styling updates to Image library tools, ribbon and tool forms.</li>
+			</ul>
+			<h3>v0.51.1 - Content update. <small>16th Jan 2015</small></h3>
+			<ul>
+				<li>New layout and styling for the management area in the Web site manager, can now collapse sections and controls are more clear.</li>
+				<li>New styling for Web site manager tool bar, ribbon and tools.</li>
+			</ul>
+			<h3>v0.51 - Form builder update complete, now wearing a new Bootstrap style as per the rest of the redesign. <small>15th Jan 2015</small></h3>
+			<h3>v0.50 - Base styling complete, access to app restored. Access to designers disabled till styling updates complete, will be enabled on a module by module basis. <small>9th Jan 2015</small></h3>
+			<ul>
+				<li>Bootstrap styling now complete in the form builder, this was quite a larger task in the end because I needed to update all the tools and tabs as well as the designer UI. Updating the other designers, bar a few tool issues in the Template designer should be simpler to complete.</li>
+				<li>New colour picker styling, simple Bootstrap panel.</li>
+				<li>Updated move controls for form fields, not working after Bootstrap updates.</li>
+				<li>Updated the live previews in the Form builder, wasn’t updating the field description after Bootstrap styling updates.</li>
+				<li>Mobile styling, in place for all pages except the designers, you can now manage all settings and basic management using a tablet or phone. At this time I am not going to add mobile support to the designers, not worth the effort until they are more functional and even then support is questionable.</li>
+				<li>Setting minimum form width under form settings no longer has any effect, need to work out how to handle this given the change to creating bootstrap driven sites.</li>
+			</ul>
+			<h3>v0.49 - External pages now all styled using bootstrap, access to app disabled till designer styling complete. <small>19th Dec 2014</small></h3>
+			<ul>
+				<li>Base styling for Web site manager and Image library. Updated action links in module overviews, now buttons.</li>
+				<li>Base styling in Content manager and Form builder, management and settings.</li>
+				<li>Base styling complete in the Template designer, management and settings.</li>
+				<li>Styling complete in base module (dlayer)</li>
+			</ul>
+			<h3>v0.48 - Library development for Image library resize and Image library crop tool. <small>9th Aug 2014</small></h3>
+			<h3>v0.47 - Added a copy tool to the Image library along with an Edit tool which lets the user edit the base details for a library image. <small>24th Jul 2014</small></h3>
+			<ul>
+				<li>Extended advanced resizer for Image library, now able to define destination path and filename and resize images smaller than required width and height, Small images placed in the middle of the destination canvas with the relevant padding.</li>
+				<li>Created png and gif versions of cropper to go along with the jpeg cropper.</li>
+				<li>Created a crop class, crops the supplied image validating all the params, required for the crop tool processing.</li>
+				<li>Added maintain aspect ratio setting to resizers, if left as TRUE, images are best fit with padding, if set to FALSE, images are stretched to fit.</li>
+				<li>Added advanced image resizers (jpeg, png and gif), in addition to image size these allow the user to define canvas background colour, quality/compression and file name suffix.</li>
+				<li>Added gif and png resizers.</li>
+				<li>Created basic jpeg resizer, maintains aspect ratio when creating thumbnail.</li>
+				<li>Added a development module, this is so new library code can be tested, developing a basic image resizer which will then be used to generate thumbnails in the Image library.</li>
+			</ul>
+			<h3>v0.46.1 - Updated Add to library tool, category and sub category selects now pulling the correct data. <small>23rd Jul 2014</small></h3>
+			<ul>
+				<li>Added the ability to edit the base details for a library image, name, description, category and sub category.</li>
+				<li>Copy tool now copies image in files system.</li>
+				<li>Copy tool creates a new copy of the selected image and version.</li>
+				<li>Updated copy tool, now uses same AJAX to select sub category based on selected category.</li>
+			</ul>
+			<h3>v0.46 - Add to library tool now functional. <small>22nd Jul 2014</small></h3>
+			<ul>
+				<li>Updated add to library form, category options now pulled from database for selected site. Sub category select defaults top empty, added AJAX call to populate values when category selected.</li>
+			</ul>
+			<h3>v0.45 - Added pagination to Image library, defaults to 24 thumbnails per page, also added a display all sub category. <small>21st Jul 2014</small></h3>
+			<ul>
+				<li>Added image type to detail page, for example image/jpeg.</li>
+				<li>Fixed a few small issues with image library, wasn't always pulling the correct info for an image.</li>
+				<li>Add to library tool now works, new image added to library along with all relevant image data. Thumbnails aren't yet created by the uploader, thumbnails are the original images with width and height set.</li>
+				<li>Updated validation for edit versions of Category and Sub category tool.</li>
+				<li>Updated the image library tools, now able to return and set multiple session ids after processing tool.</li>
+			</ul>
+			<h3>v0.44 - Detail page now dynamic, added sort to the library and other minor updates. <small>20th Jul 2014</small></h3>
+			<ul>
+				<li>Added pagination to the Image library, defaults to 24 images per page, only shows when relevant.</li>
+				<li>All subcategory returns all the images in the base category sort as per the sort settings.</li>
+				<li>Added an all option to the sub category select and updated the sub category tool so that a all category cannot be created by the user.</li>
+				<li>Sort options only display if there are images in the category and sub category, not relevant otherwise.</li>
+			</ul>
+			<h3>v0.43.1 - Fixed bug with Image session class. <small>16th Jul 2014</small></h3>
+			<ul>
+				<li>Added sort to library, initially the user can sort by name, size and uploaded date in ascending and descending order.</li>
+				<li>Detail page now shows the version history for the selected image, individual versions are selectable.</li>
+				<li>Updated database, added tool id into versions table to record the tool used to create version.</li>
+				<li>Added the help tab for the crop tool, required because I need a tool id for the version table to develop the version listing.</li>
+				<li>Added preview for copy tool, appears in the tool box when viewing the detail page as it requires an image to work on.</li>
+				<li>Added description to add to library tool form.</li>
+				<li>Detail data on image detail page now dynamic, not a static preview.</li>
+			</ul>
+			<h3>v0.43 - Preview of image detail page and tool updates. <small>16th Jul 2014</small></h3>
+			<h3>v0.42 - Image library preview updated. <small>15th Jul 2014</small></h3>
+			<ul>
+				<li>Filter hidden on the image detail page as it is not relevant.</li>
+				<li>Preview of image detail page in place, not functional.</li>
+				<li>Added ability to select image and get directed to detail page (empty), selected tool is cancelled as it won't relate to the newly selected image.</li>
+				<li>Updated tools in Image library, version id now passed in along with other environment params.</li>
+				<li>Added version to image session, user needs to be able to select a specific version of an Image library image.</li>
+			</ul>
+			<h3>v0.41 - Bug fixes and house keeping tasks. <small>9th Jul 2014</small></h3>
+			<ul>
+				<li>Added ability to edit categories and sub categories in Image library, user is not allowed to edit initial category of auto created sub categories.</li>
+				<li>Added the ability to create a sub category in the Image library.</li>
+				<li>Added the ability to create a category in the Image library, automatically creates the initial sub category.</li>
+				<li>Reworked the image library tools, ids are now passed into the validate methods ready for later use, used to be the process methods, tools are starting to require environment ids for validation, other modules need to be updated in the same manner.</li>
+				<li>Filter form in place, shows categories and sub categories, AJAX to update sub categories select and submission sets new session values.</li>
+				<li>Default category and sub category set and/or created when user browses to Image library.</li>
+				<li>Thumbnails are now displaying using data from the database, not a static preview.</li>
+				<li>Updated the image library session class, now has methods for setting and fetching the sort and order values, initially limited to name, uploaded and size in ascending and descending order.</li>
+				<li>Initial database layout for Image library and categories in place, includes versioning tables.</li>
+			</ul>
+			<h3>v0.40 - Image library preview. <small>7th Jul 2014</small></h3>
+			<ul>
+				<li>Updated Form builder, set some tool tabs to multi use, tool, and tab remain selected after valid submission.</li>
+				<li>Content manager tools now multi use, div, content item and tool tab remain selected after processing if request valid.</li>
+				<li>Updated the import form tool, now won't allow the user to import a a form into a page container that is too small for the form, if the form is too small a clear message is show above the form.</li>
+				<li>Updated import form tool, submit button now disabled by default until valid selection made in form select.</li>
+				<li>Updated Image library preview, multi use param now passed from database to Image library tool forms.</li>
+				<li>Updated the Form builder, multi use param now passed down from database to Tool forms, not manually set.</li>
+				<li>Updated Content manager tools, multi use param now passed from database to tool forms through tool data classes.</li>
+				<li>Edit mode status now passed into the form builder ribbon forms.</li>
+			</ul>
+			<h3>v0.39 - More form settings. <small>25th Jun 2014</small></h3>
+			<ul>
+				<li>Preview of filter form for Image library.</li>
+				<li>Preview of add to library tool in place in Image library.</li>
+				<li>Preview of add sub category tool in place in Image library.</li>
+				<li>Additional improvements to form styling.</li>
+				<li>Preview of add category tool in place in Image library.</li>
+				<li>Image library ribbon data classes in place, differ to other ribbon data classes because three ids can exist, image, category and sub category.</li>
+				<li>Initial module code in place for Image library, need to work on layout.</li>
+				<li>Design colours were not consistent across entire site, now are.</li>
+			</ul>
+			<h3>v0.38 - First form option added, minimum width, also partly resolved one of the known bugs. <small>24th Jun 2014</small></h3>
+			<ul>
+				<li>Updated form settings tool, can now define the submit button text.</li>
+				<li>Updated top menu, designer menu item is now a drop down that includes links to the other designers.</li>
+				<li>Added description for pages, on both add and edit page forms.</li>
+				<li>Updated Form builder and Content manager, legend now show on all user created and imported forms.</li>
+				<li>Added ability to define form legend to form settings tool.</li>
+			</ul>
+			<h3>v0.37 - Initial template div now a 'real' div. <small>23rd Jun 2014</small></h3>
+			<ul>
+				<li>Add new form now inserts a default value for minimum width, for now the value is defined as 600.</li>
+				<li>Import form tool updated, on add the tool checks to ensure submitted width is not smaller than the minimum form width, on edit the width field is updated with a min attribute.
+				</li>
+				<li>Form builder now shows the form at the requested minimum width, defaults to 600 pixels.</li>
+				<li>Added ability to define the minimum width for a form in the Form builder, first of many settings.</li>
+				<li>Content updates: Updated the default tool bar text in Form builder and development plan.</li>
+			</ul>
+			<h3>v0.36 - Fixed live preview and other minor tweaks. <small>21st Jun 2014</small></h3>
+			<ul>
+				<li>The base div for a template is now a real div, as such all the Template designer tools can now be used on it increasing design options.</li>
+				<li>Styling updates for notices and development messages. Now unable to import form if not forms exist for site. Create new page form no longer shows if no templates exist for site. Content updates.</li>
+			</ul>
+			<h3>v0.35 - Live previews in Content manager. (Release 0.34 was to test git release management) <small>19th Jun 2014</small></h3>
+			<ul>
+				<li>Preset position quick links now trigger the margin preview methods.</li>
+				<li>Updated margin (position) preview methods, weren't taking into account other attributes which affect container width.</li>
+				<li>Updated base font styling for Dlayer. Modified the layout and styling for the setting pages.</li>
+				<li>Moved all preview state vars and methods above module properties.</li>
+				<li>Tool tab switch now looks at the preview state properties, if there are unsaved changes the designer does a window.replace after switching the tab, this resets the designer view.</li>
+				<li>Removed all the old js files now that the entire Dlayer object is within a single file. Updated environment settings, couple of minor issues after initial release from github.</li>
+			</ul>
+			<h3>Moved everything to GitHub after Codespaces.com collapsed. <small>18th Jun 2014</small></h3>
+			<ul>
+				<li>Data for previews now passed from ribbon data class to view.</li>
+				<li>Tested preview functions for heading tool, text tool and import form tool, all function correctly.</li>
+			</ul>
+			<h3>v0.33 - Added import heading tool. <small>16th Jun 2014</small></h3>
+			<ul>
+				<li>Created base js functions which will alter content item content.</li>
+				<li>Created base js functions which will alter individual padding values, both top and bottom which don’t affect container width and left and right which do.</li>
+				<li>Created base js functions which will update the width and padding for a content container taking into account all the other attributes that affect the total width of an item.</li>
+				<li>Moved all js back into a single file, Dlayer object being split over multiple files was causing issues with code completion, will split later in development.</li>
+				<li>Added live edit preview for container container position updates.</li>
+				<li>Added live edit preview for set content container background colour in Content manager.</li>
+				<li>Added highlight effect to form field preview changes in form builder. Slightly modified tool controls styling.</li>
+			</ul>
+			<h3>v0.32 - Added import text tool. <small>15th Jun 2014</small></h3>
+			<ul>
+				<li>Added import heading tool, same functionality as import text tool.</li>
+				<li>Updated the help text for the import text tool.</li>
+			</ul>
+			<h3>v0.31 - Text data for text and heading tools now assigned by reference, not static, text data can be used by multiple items. <small>12th Jun 2014</small></h3>
+			<ul>
+				<li>Updated settings, when base level is selected, user now directed to first setting within group.</li>
+				<li>Updated form class, added a view mode param, in view mode ids are not added to form field rows.</li>
+				<li>Import tool now functional, allows used to choose existing text to import into a new content container.</li>
+				<li>Initial AJAX in place to populate the textarea when the user chooses to text to import.</li>
+				<li>Import text tool added, currently not functional, forms and tool classes created.</li>
+			</ul>
+			<h3>v0.30 - Text and heading content tools reference based. <small>9th Jun 2014</small></h3>
+			<ul>
+				<li>Heading and text tools correctly update data based on the instances option.</li>
+				<li>Instances select added to edit heading and text tools, when the content item data is being used by more than the selected content item the user now has a choice about whether to update the text data for all instances or just the selected content item - not yet functional, just displays option when appropriate.</li>
+				<li>Edit mode status boolean made available to all ribbon forms.</li>
+				<li>Updated all ribbon data classes, edit mode boolean now passed in so it can be forwarded to forms.</li>
+			</ul>
+			<h3>v0.29 - Preview system bug fixes and module jumping. <small>3rd Jun 2014</small></h3>
+			<ul>
+				<li>Minor styling updates for all forms.</li>
+				<li>Updated heading and text tools, now aware of content data tables and either insert new content data item or fetch id of existing data item based on supplied content.</li>
+				<li>Added name to text and heading tool forms, will be used to identity text data items so they can easily be re-used.</li>
+				<li>Heading and text tools forms updated, now pull data from the linked data tables. Add and edit not yet updated to write to new table and check for duplicate content.</li>
+				<li>Text and heading data now pulled from linked data tables, no longer static in the content container item tables.</li>
+				<li>Added data tables for text and heading content to database.</li>
+			</ul>
+			<h3>v0.28 - Form builder now has live previews when form data is being amended. <small>1st Jun 2014</small></h3>
+			<ul>
+				<li>Link now appears in Form builder when a user jumps to it from the Content manager, takes them back to exactly where they were.</li>
+				<li>Link now takes user directly to Form builder with form selected.</li>
+				<li>Added tab to import form tool in Content manager, include a link to jump directly to Form builder (non functional)</li>
+				<li>Clear link for row background colour now correctly clears the background colour in the picker and the form field row. Need to add a reset link to return the value to the original value if it existed.</li>
+				<li>Preview code to set original value if field empty was overriding changed values on keyup (tab)</li>
+				<li>Moved preview data for editing field data from controller to ribbon data classes as per styling preview data.</li>
+			</ul>
+			<h3>v0.27 - Content item metrics and colour picker history. <small>27th May 2014</small></h3>
+			<ul>
+				<li>Existing data for row background colour now passed through to js preview methods. Updated the ribbon data classes, edit mode is now passed through to all data classes to reduce work in default tool mode.</li>
+				<li>Created the js for the row background colour change preview. Modified the selected style, now includes a top and bottom border for when the user clears the row background colour, this way the selected item is still visible. Colour picker now triggers a change even on the hidden input used to store the colour.</li>
+				<li>Edit previews now displays for all form builder field types.</li>
+				<li>Form builder was not using correct builder method for name and email inputs, needs to use custom method so later specific validation rules and options can be set. Data changed method (form builder edit preview) firing sometimes when data hadn't changed. Updated the styling for the Data changed message, now can't be missed</li>
+				<li>Preview js methods and data now pulled from the database for the selected field, currently limited to text fields.</li>
+				<li>Updated the preview methods for form field params, now aware of types, strings and integers, only process when values are valid. Added tables to manage links between preview methods and form field attributes base on attribute type.</li>
+				<li>Message now displays when data needs to be saved, displays above form when any data is modified, called by the preview functions.</li>
+				<li>Updated the live preview js, now two base methods, one that deals with html element values and one that handles form field attribute values.</li>
+				<li>Added in js to preview form field label changes, updates designer live, if the field is marked as required in the tool form clearing the value resets it to the initial value.</li>
+			</ul>
+			<h3>v0.26 - Added page container metrics blocks to Content manager and Template designer and fixed two bugs in the Template designer. <small>19th May 2014</small></h3>
+			<ul>
+				<li>Refactoring.</li>
+				<li>Updated site content.</li>
+				<li>All tools that use a colour now write to the colour history table, previously the colour palette was showing 5 static history colours.</li>
+				<li>Content item metrics block now shows correct data for heading and form content types.</li>
+				<li>Content manager now shows content item metrics for text content items.</li>
+				<li>Added the html and styling for the content item metrics section in the Content manager, also included the JS to toggle the metrics.</li>
+			</ul>
+			<h3>v0.25 - Styling tab in Form builder. <small>12th May 2014</small></h3>
+			<ul>
+				<li>Page container metrics in Template designer and Content manager now hidden behind toggle.</li>
+				<li>Fixed a bug with the split tools, by default all newly creating blocks are now fixed height, converted to dynamic height automatically if children are added, another split. - Later the system will allow the user to override this and set the height manually, either pixels or dynamic.</li>
+				<li>Added page container metrics blocks to Template designer, shows when a page container and tool are selected.</li>
+				<li>Added an information block in Content manager when both page container and tool selected, gives width of content container and its height.</li>
+				<li>Fixed a bug with the manual split tools in template designer, occasionaly not sending request through.</li>
+			</ul>
+			<h3>v0.24 - UX improvements. <small>3rd May 2014</small></h3>
+			<ul>
+				<li>Updated sample data for websites.</li>
+				<li>Fixed bug in Form builder, after addition quick fields not remaining selected.</li>
+				<li>Fixed bug with select content item in Content manager, when a margin is applied content item not selectable when user clicks margin around item.</li>
+				<li>Added styling tab to Name, Email and Password tools, as per other sub tools, only shows on edit.</li>
+				<li>Added styling tab to textarea tool in Form builder, only shows when editing a field.</li>
+				<li>Defined background colours for form field rows now appear when in the Content manager.</li>
+				<li>Moved content view models, placement didn't fit with addition of content style view models.</li>
+				<li>Form builder now displays the assigned styles in the designer view.</li>
+				<li>Styling sub tool for text field now allows a user to define row background colour, update it and delete it.</li>
+				<li>Added styling sub tool to Form builder text tool, shows control which will allow a background colour to be set for the row, not yet functional, just display at this point.</li>
+				<li>Updated Content manager process controller, now knows to look for sub tools.</li>
+				<li>Added support for edit mode only tool tabs in the Form builder, same functionality as the Content manager.</li>
+			</ul>
+			<h3>v0.22 - Position tab added to import form and heading tools. <small>2nd May 2014</small></h3>
+			<ul>
+				<li>Quick tools in Form builder (name and email) no longer show the form when the user is adding the field, only when they are editing the field.</li>
+				<li>Preset links added to the heading and text tools position tabs, same functionality as import form.</li>
+				<li>Added three preset links to the import form tool position tab, sets the margin values to left, right and center align the selected content item.</li>
+				<li>Removed the headings from the content sub tools tabs, duplicated tab text and pushed text/controls down.</li>
+			</ul>
+			<h3>v0.21 - Position tab added to text content item tool. <small>30th Apr 2014</small></h3>
+			<ul>
+				<li>Updated login page, focus now goes straight to username.</li>
+				<li>Updated modifier system, now aware of margins applied to form and heading content containers.</li>
+				<li>Updated the form and heading view helpers, now aware of container margins.</li>
+				<li>Enabled position tabs for Heading and Import form tools.</li>
+				<li>Added heading position and import form position sub tools.</li>
+			</ul>
+			<h3>v0.20 - Added two quick tools to the Form builder, name and email, these add a pre populated text field, as the Form builder develops these tools will add the correct validation rules and set other options.  <small>17th Apr 2014</small></h3>
+			<ul>
+				<li>Updated the modifier system, now aware of margin values (position) on text content items, value taken into account when calculating how the width needs to be adjusted.</li>
+				<li>Position tab disabled for Heading and Import form tools, will be enabled in next release.</li>
+				<li>Updated Container width modifier, now aware of position values (margin) for a text content item. margin values only used in calculations, not modified, this will change in a later development branch as the modifier system gets more smart, it should prioritise margin changes over content item width changes.</li>
+				<li>Edit text content item updated, validation now includes container position (margin) values when calculating if content item will be larger than the page container.</li>
+				<li>Content text view helper now correctly sizes the selectable content item container if margin (position) values have been set.</li>
+				<li>Content item view helper now uses defined margin values.</li>
+				<li>Styling tab of text content tool now adds the position values (margins) to the database, can be updated and deleted dependant on posted data.</li>
+				<li>Added position model, will be used by the Content manger sub tools.</li>
+				<li>Updated margins container table in database, fields don't need margin_ prefixed, margin table so top, right, bottom and left is sufficient.</li>
+				<li>Added position tab to heading and text content item tools, not yet functional.</li>
+				<li>Added position tab to Import form tool, has inputs for top, right, bottom and left.</li>
+			</ul>
+			<h3>v0.19 - Maintenance release, refactoring, tweaks and bug fixes. <small>13th Apr 2014</small></h3>
+			<ul>
+				<li>Updated maintenance page, text wasn't accurate.</li>
+				<li>Form builder now has field type and tool as properties, updated selectors and movers to take new params into account, new name and email fields where being selected as text fields, their base type.</li>
+				<li>Updated form builder in designer, wasn't selecting the correct tool when editing using a quick tool, name and email.</li>
+				<li>Added a name and email tool to the form builder, these are quick versions of the text tool, values preset. Currently only the field values are preset, as the system evolves validation values and other attributes will be preset as well.</li>
+				<li>Styling issue with tool forms, some fields not displaying using the correct font families.</li>
+				<li>Added field type to Form builder tools, works in conjunction with tool value for when the tool and field type don't match, an example being the email field which is a text field.</li>
+			</ul>
+			<h3>v0.18 - Added a styling tab to each of the Content manager tools. <small>16th Mar 2014</small></h3>
+			<ul>
+				<li>Minor styling updates to designers.</li>
+				<li>Fixed a few minor bugs found during pre release testing.</li>
+				<li>Create site script now inserts initial values into the colour history table.</li>
+				<li>Added a base form class for app level forms, updated all base level forms to extend new base class.</li>
+				<li>Fixed a bug with create site script, was attempting to create an extra heading that couldn't be referenced back to designer headings.</li>
+				<li>Edit field forms in the Form builder not always behaving correctly, occasionally a new field was being added rather than the selected one being edited. Updated all the Form builder tool forms, now all derive from a base form for the Form builder, this extends the base Dlayer form.</li>
+				<li>Fixed a bug with Template designer, unable to select base block with a new template.</li>
+				<li>Updated all the Content manager tool forms, now all derive from a base form for the Content manager, this extends the base Dlayer form. Updated all the Content manager tool data classes, now all derive from a base tool data class for the Content manager, this extends the base tool class.</li>
+			</ul>
+			<h3>v0.17 - Colour picker in place in Template designer. <small>6th Mar 2014</small></h3>
+			<ul>
+				<li>Added ability to define a background colour for an imported form item, use styling tab.</li>
+				<li>Content tools set to multi use, return user back to editor with tool still selected.</li>
+				<li>Added a styling tab to the heading content item tool when in edit mode, allows user to define background colour for heading container.</li>
+				<li>Mouse cursor now correctly switching when choosing a page block.</li>
+				<li>Edit mode Content manager, selecting a different tool wasn't clearing the content id, tabs which should only appear in edit mode were showing for other content tools.</li>
+				<li>Text content item containers now use the background colour defined in the tools styling tab.</li>
+				<li>Renamed style view helper classes, responsible only for templates so changing name accordingly to make way for content versions.</li>
+				<li>Sub tool in place which allows a user to define the background colour for a text content item, edit the colour and then clear the colour if they want to.</li>
+				<li>Modified the Content manager process controller to look to see if request should be sent to a sub tool rather than the base tool for the content item type.</li>
+				<li>Added ability to define whether a clear link should be added after the colour selector, with container styling it is valid that a user want to reset a colour.</li>
+				<li>Added the forms and view data for the container styling tab of the text tool.</li>
+				<li>Modifying the tool system in the Content manager to support sub tools.</li>
+				<li>Updated the help tabs for the five active tools in the Template designer, give a much more detailed overview for each tool.</li>
+				<li>Extended Zend forms, added a colour picker input, includes hidden element for value and the div invoke the picker.</li>
+				<li>Content manager tools updated, added the ability to allow tabs which only show in edit mode, for each tool this is currently a styling tab.</li>
+				<li>Updated the help tabs for the three active tools in the Content manager, give a more detailed overview of the tool.</li>
+			</ul>
+			<h3>v0.16 - Web site manager preview. <small>24th Feb 2014</small></h3>
+			<ul>
+				<li>Added colour picker to both tabs of the border tool. Switched colour picker to be a class rather than an id, javascript was failing with ajax caching issue, not all close.</li>
+				<li>Moved all colour picker logic into a view helper, will be called multiple times within app, developer gets to define which of the three sections they want to include in the picker.</li>
+				<li>Added colour picker to custom tab of background colour tool, allows user to choose colour from palettes, history and create a custom colour, history section not yet updated with new values.</li>
+				<li>Added a history table for used colours, colour picker now shows the last five used unique colours.</li>
+				<li>Colour picker shows the live data for the three palettes.</li>
+				<li>Initial design for the colour picker in place, not yet functional.</li>
+			</ul>
+			<h3>v0.15 - Content release, new content and also includes base code required by the Website manager. <small>19th Feb 2014</small></h3>
+			<ul>
+				<li>Initial preview design for web site manager added, non functional, just shows initial tools and controls.</li>
+				<li>Minor styling updates to tools and tool options/ribbon.</li>
+			</ul>
+			<h3>v0.14 - Bug fix release, a couple of bugs appeared in the last version, now fixed, affected text modifier and add text tool. <small>16th Feb 2014</small></h3>
+			<ul>
+				<li>Content update, A bug was listed in the development plan but really needed to also be in the bugs section. Added new sections to the development plan.</li>
+				<li>Web site manager framework code in place, still working on the preview.</li>
+				<li>Updated the tools, removed fields and logic no longer required now that the tools are text buttons not images.</li>
+			</ul>
+			<h3>v0.13 - Maintenance release, reworked some of the tools code and added ability to move assigned form fields around. <small>14th Feb 2014</small></h3>
+			<h3>v0.12 - Major milestone release, three modules are now communicating with each other, the Template designer, Form builder and Content manager. The import form tool is now in place, a form can be added as a content item. All forms retain their links with the Form builder so changes are shown immediately. <small>1st Feb 2014</small></h3>
+			<ul>
+				<li>Stopped showing the move up and move down controls for the first and last form fields respectively.</li>
+				<li>Added ability to move form fields around on the form, same controls as content manager.</li>
+				<li>Added movement controls view helper for form builder.</li>
+				<li>Added a mover view helper, generates the html for the movement controls in the content manager.</li>
+				<li>Updated the content module tool and model classes, much clearer now because the content type will not always match the tool type, method names were not obvious.</li>
+				<li>Updated the currently disabled modules, been lots of base changes that hadn’t be carried across, now all consistent.</li>
+				<li>Both setting menus, section and setting now come from the database, tied to the modules so settings groups and settings will only show if module, group and setting are active.</li>
+				<li>Moved model methods required by modifiers into their own model classes, need to keep separate from the general user processing code.</li>
+				<li>Styling updates. Designer hover styling, text area font size and also the movement controls in the content manager.</li>
+			</ul>
+			<h3>v0.11 - Minor release, housekeeping <small>25th Jan 2014</small></h3>
+			<ul>
+				<li>Added a page for known bugs.</li>
+				<li>Updated container width modifier, now looks at form content items.</li>
+				<li>Added ability to edit the details for the selected form in the content manager.</li>
+				<li>Updated process controller in content manager, needed to stop using tool for processing, no longer always going to match the content type so need separate vars.</li>
+				<li>Updated select and move js, with earlier tools, content type and tool where the same, that changed with the import form tool.</li>
+				<li>Added ability to move form content items around in the content manager, same movement controls as text and heading content items.</li>
+				<li>Content manager design view now shows the imported form, styling is not working correctly.</li>
+				<li>Import form tool in content manager allows user to add form as a content item, not yet rendered in the designer or or editable.</li>
+				<li>Development plan now shows progress messages.</li>
+				<li>Updated the definition for the module session reset methods, wasn't completely clear about what would be cleared. Initial validation in place for import form tool, doesn't yet calculate and approximate width for a form and whether it will fit in the page block, that will be added later.</li>
+				<li>Inputs all displays for the import form tool.</li>
+				<li>Show identity (email) on menu bar to assist users that use more than one account.</li>
+				<li>Import form tool added to tool bar and relevant entries added to database, data form not yet in place.</li>
+				<li>Added a footer to the app, provides access to development log and development plan when in the designers.</li>
+				<li>Reworked the settings pages, now possible to jump between modules without having the leave the settings section.</li>
+				<li>Styling updates, also added another font family to the base font family settings.</li>
+				<li>Added ability to define placeholder text for text, text area and password tools in the Form builder.</li>
+			</ul>
+			<h3>v0.10 - Minor release, added custom option for back colour in the template designer and switched a few form elements over to HTML5 <small>25th Jan 2014</small></h3>
+			<h3>v0.09 - Minor release, contains the base code which I will build to allow forms to be added as content items in the form builder. <small>24th Jan 2014</small></h3>
+			<ul>
+				<li>Updated the content manager heading style setting forms, now use HTML5 elements where appropriate.</li>
+				<li>Upgraded the tool controls in the content manager and form builder, now also using HTML5 elements where appropriate.</li>
+				<li>Upgraded the tool controls in the template design, now using HTML5 elements where appropriate.</li>
+				<li>Custom option for background color now allows the user to choose a color using the HTML5 color picker.</li>
+			</ul>
+			<h3>v0.08 - New release, new cleaner design for all the designers, bugs fixes and tweaks. <small>20th Jan 2014</small></h3>
+			<ul>
+				<li>Additional base development to allow forms to be added a content item.</li>
+				<li>Minor style and content changes.</li>
+				<li>Updated 'What is Dlayer?' page.</li>
+				<li>Database work to support allowing a form to be imported as a content item.</li>
+			</ul>
+			<h3>v0.07 - Minor release, content items can be moved and heading content item updated. <small>23rd Dec 2013</small></h3>
+			<ul>
+				<li>If there is no data for a new user a sample site is created, three colour palettes are created and default values are set for the heading styles and base font family settings. Pages, templates and forms are not created, when the designers are more functional there will be sample templates, forms and pages for the sampkle site.</li>
+				<li>Adding a new website now inserts initial values for the base font family to use in the content manager and form builder.</li>
+				<li>Adding a new website now inserts initial values for the content manager heading styles, can be updated by the user in the settings.</li>
+				<li>Add new site wasn't creating three default palettes for the user, later users will be able to define their own palettes during create site or modify the default palettes.</li>
+				<li>Top menu updated to show state.</li>
+				<li>Reworked the toolbar panels, now only show tools when relevant, the selected tool is clearer and styling has been updated. Tool options styling has been simplified, forms are now clearer.</li>
+				<li>When I resized the designers I realised I had sinned, the width and heights were defaulted within the code, now corrected, there is no such thing as a value that won't need to be changed at some point during the projects life.</li>
+				<li>Fixed the content manager heading tool, the left margin value wasn't being passed through in the post data array, this was causing the validate method to return FALSE and the tool to never process correctly. The heading tool now checks the size of the page block it is being added, this is done so that sensible defaults can be calculated and to ensure that a user can't add a heading container which is larger than the page block.</li>
+				<li>Updated the styling in the form builder, matches the new design.</li>
+				<li>Updated the styling in the content manager, matches the new design.</li>
+				<li>Expand and Contract options for resize tool now no longer shows the options that can't be used for the selected block, previously all options were shown and the form button was disabled if not relevant. The ribbon has been moved to the right hand side below the tool buttons, no longer pushes the design down.</li>
+				<li>Updated the styling in the template designer, matches the new design.</li>
+				<li>Removed the mode switching buttons, don't really do anything yet, also, not sure where to add them in the new designer yet.</li>
+				<li>Modified the base width of the app, now 1366 pixels, this will match the Windows 8 version of Dlayer when developed. All the base pages have been updated along with the setting sections.</li>
+			</ul>
+			<h3>v0.06 -  Minor release, validation, settings and general small fixes. <small>4th Dec 2013</small></h3>
+			<ul>
+				<li>Content items in the content manager can now be moved around, the user needs to select the page block then as they hover over the content items up and down movement links appear.</li>
+				<li>Movement controls added to content items, not yet active.</li>
+				<li>Added a container div around content items in the content designer, js hover and click events moved to the parent container item, this is so that the movement controls will only show for each content item on hover.</li>
+				<li>Added width and left margin to heading content type, width and left padding when summed can be no larger than the containing page block.</li>
+			</ul>
+			<h3>v0.05 - Modifier system, password tool in form builder, new settings for form builder, template designer tool restrictions and general tweaks. <small>1st Dec 2013</small></h3>
+			<ul>
+				<li>Base font family settings set for the content manager and form builder now used in the designers.</li>
+				<li>Container for text content can now no be larger that the page block it is being added to.</li>
+				<li>Abstract validate and autoValidate methods moved from base tool class down a level into the base module tool class, additional context data will be needed for validations and it will differ by module.</li>
+			</ul>
+			<h3>v0.04 - Authentication system in place. <small>17th Nov 2013</small></h3>
+			<ul>
+				<li>Border tool re-instated in the template designer when a user chooses to work on a template block which has content applied to it on a page based upon the current template. A change width modifier has been added, this modifier checks all the content items to see if the widths for the containers need to be updated (The width of a page div will change if a border is added, edited or removed on a  template block). </li>
+				<li>Base modifier system in place, this is called when there needs to be interaction between modules, if a user changes something in one module that affects data in another module modifiers can be sent requests to check to see if any changes are required and then make them if necessary.</li>
+				<li>History of Dlayer split out from the What is Dlayer? page.</li>
+				<li>Temporarily added the resize tool in the template designer to the disabled tools list if template div has content on an active page. I need to develop a system that makes changes to pages in the background when a template is updated, because the resize tool affects more than the selected div I have for now disabled access until I develop the system which updates data between modules.</li>
+				<li>Added password tool to form builder, users can now add password fields to their forms.</li>
+				<li>Updated the help text in form builder for text and textarea field tools, little more clear on what happens after a field has been added to their form.</li>
+				<li>Added base font family settings to the form builder module, as per content manager module, value is not yet used in the designer.</li>
+				<li>Updated the set tool action, when a tool has been disabled in the view the set tool action checks to ensure that the disabled URL can’t be called manually by the user.</li>
+				<li>Added new icons for disabled toolbar buttons, desaturated version of the icon.</li>
+				<li>In the template designer a tool can now be disabled if using it would be destructive. For example when a page is created from a template if the specified template div has content assigned to it on one or more pages, splitting the div would currently make the content appear to disappear. Logic needs to be added to gracefully handle these destructive changes, for now though the app just forbids access.</li>
+				<li>Updated server to PHP 5.4, switched crypt() over to SHA_512, test identity credentials updated.</li>
+			</ul>
+			<h3>v0.03 - Minor release, added the base creation tools, new site, template, form and page. <small>10th Nov 2013</small></h3>
+			<ul>
+				<li>Once you create a page from a template there need to be restrictions in place to either limit what tools can be used on an active template or extra code to manage structural  changes behind the scenes. Until I put some initial restrictions in place I have disabled the template designer, hoping to re-enable it within the next two weeks.</li>
+				<li>Added 1 sample site, 1 sample template and 1 sample page for each user, enough to allow people to play.</li>
+				<li>Fixed a bug with the activate methods, validate template id action helper was using the wrong session when in the content module.</li>
+				<li>Updated database, added defaults for all settings for the three test sites.</li>
+				<li>Notification next to username/password combinations if the account if currently logged in. Added a &quot;What is dlayer?&quot; page, it gives a brief overview of Dlayer and the history behind it.
+				</li>
+				<li>No longer able to edit the name of the first sample site, used by the history tables and always defaulted if no other data in the system for identity.</li>
+				<li>Site list now pulls sites based on identity. Updated site history table/code and action helper to check site id validity, now all use the current identity.</li>
+				<li>Release messages highlighted in the development log.</li>
+				<li>Added my authentication system to Dlayer, because demo usernames and passwords are exposed an account can only login from one location, timeout on session is an hour so if a user exists without logging out the account will become available for another user after an hour. </li>
+			</ul>
+			<h3>v0.02 - Minor release, fixed heading tool and made some UX tweaks to tools <small>23rd Oct 2013</small></h3>
+			<ul>
+				<li>Add and edit new page in place, user needs to choose template to base page upon, enter a name and also the title to use for the page, as the system evolves more will need to be defined. Removed addDefaultElementDecorators() methods from site form classes, no need to override the default in the base form class as nothing was being changed. </li>
+				<li>Added add and edit form, currently a form is just a unique name for the site.</li>
+				<li>Added add and edit template, currently a template is just a unique name for the site.</li>
+				<li>Updated the formInputsData methods in forms, now checks the return type of model data and then acts accordingly, form elements now check to ensure data index exists before setting value.</li>
+				<li>Added the ability to edit a site, as per add site a site is currently just a unique name, this will develop later.</li>
+				<li>A user can now create a new site, a site is currently just a unique name.</li>
+				<li>Added an activate method to allow the user to switch the template, page or form they are working on with the site.</li>
+				<li>Template list, page list and form list now come from the database, not static text, design options only show for active item.</li>
+				<li>Added a validate content id view helper, checks content id is valid, as in exists in the database and belongs to the site id in the session.</li>
+				<li>Added a validate form id view helper, checks form id is valid, as in exists in the database and belongs to the site id in the session.</li>
+				<li>Added a validate template id view helper, checks template id is valid, as in exists in the database and belongs to the site id in the session.</li>
+				<li>Added a validate site id view helper, checks site id exists in session and also a valid site id, later it will also check against the user/auth id.</li>
+				<li>User is now able to choose a new site to work on from the sites list. On selecting the last accessed site is updated so that the next time the user accesses Dlayer the last accessed site is selected. As there is no authentication system yet site changes will affect all users.</li>
+				<li>List of sites now pulled from database on home page, adding a link to allow user to activate a site rather than default to the first.</li>
+			</ul>
+			<h3>v0.01 - Initial alpha release! <small>14th Oct 2013</small></h3>
+			<ul>
+				<li>Fixed a small bug with heading tool, view script folder case incorrect, errored on case indifferent servers.</li>
+				<li>After adding or editing a text block the base content block remains selected, tool and content ids now cleared, better usability than previous set up.</li>
+				<li>There are two exit modes for a tool, multi-use where all session values remain and non multi-use when they are all cleared, for the content manager added a third mode to enable some vars to be kept.</li>
+			</ul>
+			<h3>Started publically showing updates, SVN log extends much further back in history but I saw no need to transfer messages across. <small>4th Apr 2013</small></h3>
+			<ul>
+				<li>Set sensible values for text box width and padding, uses the containing div as a guide.</li>
+				<li>Added the ability to edit both the heading and text content types. User chooses a div and then the content block, ribbon updates and they make the required changes.</li>
+				<li>Modified the styling, switched to a light theme, going to work better for the alpha due to the limited number of tools in all the modules, darker theme can be added back in as an option later.</li>
+				<li>Base content view helper, div_id was incorrectly commented as being the id of the div currently selected on the page, for adding content. Code and comments updated to make it clear that it actually refers to the id of the current div in the content data array. Added a method to set the id for the the currently selected div, if any.</li>
+				<li>Render method on the base view helper was being called twice because of the way it was designer, removed the call to render() in toString() and now call render directly.</li>
+				<li>Simple text content block can now be added to the selected element.</li>
+				<li>Heading tool class now in place, heading can be added to the selected element, get positioned at the end of any existing content, obviously this will change with additional development.</li>
+				<li>Ribbon forms in place for add heading and add text, now need to work on the tool processing code.</li>
+				<li>Initial content module ribbon development, ribbon classes and models.</li>
+				<li>Added new tool icons for the form builder and content manager and updated the cancel image for all three modules, didn't match the rest of the images.</li>
+				<li>Split the content data methods out into their own models to match the rest of the system and as pre-planning for additional changes. Moved the margin settings for a heading, was defined in the heading styles settings, now defined per heading.</li>
+				<li>Fixed a bug with the manual split tools, javascript wasn't taking the border of the parent element into account when drawing and calculating the split position and size of the new children.</li>
+				<li>At the start of building this version of Dlayer I modified my development approach a little for this project. Typically I can plan the models and classes required to solve a problem fairly easily, with Dlayer because of the complexity I opted for a more procedural approach, this allowed me to put in place the structure for the first designer (template designer) which I then duplicated and modified for the form builder and content manager.
+
+					All three modules ended up with a very similar base, for the last week I’ve been refactoring the code adding core classes and models which handle the majority of the base functionality for each module, the ribbon, tool bars and tool processing code.
+				</li>
+				<li>Reworked the form module ribbon data classes, now rely more on the base abstract class and there is less duplication, system mirrors the more functional template designer.</li>
+				<li>Reworked the template module ribbon data classes, now rely more on the base abstract class and there is less duplication, fixed a small bug when changing borders, incorrect id var was being used.</li>
+				<li>Added a selected state to the toolbar buttons in the template designer, content manager and form builder.</li>
+				<li>Full app testing, fixed three minor bugs relating to the resize and border tools.</li>
+				<li>Site id was missing from 6 of the child layout tables, added site id, updated the models and simplified some of the layout queries that no longer need to do a join.</li>
+				<li>There was a layout file per module, because of the app design this wasn't needed, now use one layout file and the controller has an array of the css and js includes required for the controller actions.</li>
+				<li>My standard development practice is to add enabled fields to most tables, the app takes the status fields into account and either processes, adds etc based on the status. Dlayer is an alpha level app at the moment, even though it is small, currently 36 tables, I don't need anything complicating the code, as such I have removed the enabled field from most tables. It still exists in a few base tables which control access to modules and access to tools but has been removed elsewhere. As parts of the app get more stable I will add back in the status fields as required.</li>
+				<li>Added a font size validator, PHP and JS. Added a hex regex for validation to the Dlayer JS object. Updated all the text in the app, now simpler and more consistent. Added custom titles to all pages. Updated for form formatting in the form builder, now appears against a white preview div.</li>
+				<li>Added new ribbon helper images for the resize tool and border tool</li>
+				<li>Added new ribbon helper images for the split vertical and split horizontal tool, in the style of the new tool icons.</li>
+				<li>Added new tool icons for the template designer, setting the new style for the app, going for a sketchy look.</li>
+				<li>Updated the tool bars in the three designers, tool icons are going to be larger.</li>
+				<li>Re-skinned the designers, content manager, template designer and form builder</li>
+				<li>Re-skinned the app, new styling on the splash page, setting pages, base pages and development log.</li>
+				<li>Added a splash page to the app, this will be where the user logs in to get to their control panel.</li>
+				<li>Added the ability to define the base font family in the content module, the value is not currently being used by the designer, that support will be added shortly.</li>
+				<li>Added a base font families table to the database and a corresponding font families settings table, allows the user to define the base font family per site/module, as in a base font family for the content manager and then the base font family for forms, support for the widget designer will be added later.</li>
+				<li>Added the heading content type view helper to the content module, initially it adds all the header tag styles inline, this will be rectified later.</li>
+				<li>Updated database and code, all fields relating to colour update to color_hex as that is currently what the field contains, later we can add a colour object is required with the RGB values and palette data, keeping things simple initially.</li>
+				<li>Removed RGB entries for colours in the database, not required at the moment, going to just use hex values initially.</li>
+				<li>Updated static validation helper class, now calls the new colorHex validation class</li>
+				<li>Added some default styling to the app, a tags and list items.</li>
+				<li>Added tabs to the content manager settings page, going to be too many settings for one page and the new layout will allow more detail to be given to the user.</li>
+				<li>Moved all the jquery required for the initial content module settings into the Dlayer js object.</li>
+				<li>Upgraded to jquery-1.10.2, fixed a small jquery issue with chrome, multi-line comment at top of script.</li>
+				<li>Refactored the designer js, all modules, simplifed the base dlayer object and moved all the js that was sitting in view files. Structure of the scripts folder now matches images and styles folders.</li>
+				<li>Added live preview to the content settings page (header styles) defaults to show saved styles and then on change updates the previews.</li>
+				<li>Added initial styling for the heading setting forms and added initial styling for the heading previews.</li>
+				<li>Added the forms for the content headings to the content settings page, initially it just allows the user to update the params for the headings, there is no live preview or formatting.</li>
+				<li>Template module tool process methods now double check that the tool posted matches the tool defined in the session.</li>
+				<li>Pagination view helper wasn't escaping all developer defined text.</li>
+				<li>Fixed a bug with the expand and contact tabs of the resize tool in the template designer, border widths were not being added to div width meaning that the split positions were not being calculated correctly.</li>
+				<li>Form fields not being pulled from database in correct order.</li>
+				<li>Multi use tool setting was not being respected in the form builder when adding a new field, field id was not being stored in session.</li>
+				<li>Updated the template module and template session class, updated names of some logic vars, names more clear, wasn't always obvious what a var referred to.</li>
+				<li>Edit mode in place for form text fields and form textarea fields</li>
+				<li>Form module ribbon forms now show existing values when in edit mode.</li>
+				<li>Public set methods (div and form field) now check that the given id belongs to the currently set template/form and site.</li>
+				<li>Reworked the javascript, selector functions have been moved to the module javascript files rather than the base Dlayer object.</li>
+				<li>Field attributes are now saved to the database and then pulled in the form builder and attached to the inputs.</li>
+				<li>The add field forms in the form builder now add the attributes for the text and textarea field types.</li>
+				<li>Added initial styling for the form builder forms.</li>
+				<li>Form builder now supports and displayed text area fields which have been added to the form defintion.</li>
+				<li>Text area field can now be added to the form, edit mode still needs to be added.</li>
+				<li>Text field can now be added to a form in the form builder, still need to add supporting for editing a field.</li>
+				<li>Added base tool process model for the form builder, working on the add text field process tool model.</li>
+				<li>Updated the pagination view helper, can now show either 'item n-m of o' or 'page n of m' between the next and previous links.</li>
+				<li>Added the form for the add textarea tool in the forms builder.</li>
+				<li>Updated all the help text for the template designer, simpler language.</li>
+				<li>Updated the base forms class, addElementsToForm() method updated, now able to create multiple fieldsets within a form, one fieldset per method call</li>
+				<li>Added the form for the add text field tool in the forms builder.</li>
+				<li>Updated the default styling for tables, header rows and table rows.</li>
+				<li>Updated the pagination view helper, added the ability to define text to use for links and also updated the logic for 'of n' text.</li>
+				<li>Added a helper class to the library, initially only a couple of static helper functions.</li>
+				<li>Added a pagination view helper, update of my existing pagination view helper.</li>
+				<li>Added a development log to Dlayer to show changes to the application, two reasons, one to spur on my development, two, to show the public what I am adding.</li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center text-muted">
+				<hr />
+				<p>Dlayer originally developed by
+					<a href="http://www.g3d-development.com/blog/">G3D
+						Development Limited</a> /
+					<a href="http://www.deanblackborough.com">Dean
+						Blackborough</a><br>
+					Dlayer Copyright © G3D Development 2017<br>
+					Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a>,
+					Code <a href="https://github.com/Dlayer/dlayer/blob/master/LICENSE">licensed</a> under MIT</p>
 			</div>
 		</div>
-
-		<script src="bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	</body>
+	</div>
+</div>
+</body>
 </html>

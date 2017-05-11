@@ -1,580 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Dlayer is a web development tool aimed primarily at users that don't have any web design or web development experience.">
-		<meta name="author" content="G3D Development Limited - Dean Blackborough">
-		<meta name="application-name" content="Dlayer.com"/>
-		<meta name="msapplication-TileColor" content="#FFFFFF"/>
-		<meta name="msapplication-starturl" content="http://www.dlayer.com"/>
-		<meta name="msapplication-tooltip" content="Dlayer.com: Web development simplified"/>
-		<link rel="shortcut icon" href="/images/favicon.ico" />
-		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-		<link rel="icon" sizes="192x192" href="/images/favicon-192x192.png" />
+<head>
+	<meta charset="utf-8">
+	<title>Dlayer: Changelog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Dlayer is a web development tool aimed primarily at users that don't have any web design or web development experience.">
+	<meta name="author" content="G3D Development Limited - Dean Blackborough">
+	<meta name="application-name" content="Dlayer.com"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF"/>
+	<meta name="msapplication-starturl" content="http://www.dlayer.com"/>
+	<meta name="msapplication-tooltip" content="Dlayer.com: Web development simplified"/>
+	<link rel="shortcut icon" href="/images/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+	<link rel="icon" sizes="192x192" href="/images/favicon-192x192.png" />
+	<link href="/bower_components/bootstrap/dist/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="/css/site.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script>
+        var _prum = [['id', '586d2ba4aa6959fe4202e95f'],
+            ['mark', 'firstbyte', (new Date()).getTime()]];
+        (function() {
+            var s = document.getElementsByTagName('script')[0]
+                , p = document.createElement('script');
+            p.async = 'async';
+            p.src = '//rum-static.pingdom.net/prum.min.js';
+            s.parentNode.insertBefore(p, s);
+        })();
+	</script>
+</head>
+<body>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		<title>Dlayer - Releases</title>
+    ga('create', 'UA-64736-3', 'auto');
+    ga('send', 'pageview');
 
-		<!-- Bootstrap core CSS -->
-		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/dlayer.css" rel="stylesheet">
+</script>
+<div class="container-fluid">
+	<nav class="navbar navbar-toggleable-md navbar-light">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="/">Dlayer</a>
 
-		<script>
-            var _prum = [['id', '586d2ba4aa6959fe4202e95f'],
-                ['mark', 'firstbyte', (new Date()).getTime()]];
-            (function() {
-                var s = document.getElementsByTagName('script')[0]
-                    , p = document.createElement('script');
-                p.async = 'async';
-                p.src = '//rum-static.pingdom.net/prum.min.js';
-                s.parentNode.insertBefore(p, s);
-            })();
-		</script>
-	</head>
-
-	<body>
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-64736-3', 'auto');
-		  ga('send', 'pageview');
-
-		</script>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-					<h1>Dlayer.com</h1>
-
-					<p class="text-muted">Web Development simplified</p>
-
-					<p>
-						<a class="btn btn-primary-outline btn-sm" href="https://github.com/Dlayer/dlayer/zipball/master" role="button">Zip</a>
-						<a class="btn btn-primary-outline btn-sm" href="https://github.com/Dlayer/dlayer/tarball/master" role="button">Tar</a>
-						<a class="btn btn-primary btn-sm" href="https://github.com/Dlayer/dlayer" role="button">on GitHub</a>
-					</p>
-
-					<p class="text-muted">Visit GitHub to view the project</p>
-
-					<hr />
-
-					<div class="hidden-sm-down">
-                        <ul class="list-unstyled navigation">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="https://demo.dlayer.com">Demo</a>
-                                <ul>
-                                    <li><a href="http://blog.dlayer.com">Development blog</a></li>
-                                    <li><a href="/releases.html">Changelog</a></li>
-                                    <li><a href="/docs/">Documentation</a></li>
-                                    <li><a href="/coding-standards.html">Coding standards</a></li>
-                                    <li><a href="/history.html">Dlayer history</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="http://www.deanblackborough.com">DeanBlackborough.com</a></li>
-                            <li><a href="http://www.g3d-development.com">G3D-Development.com</a></li>
-                        </ul>
-
-						<hr />
-
-						<p class="small hidden-sm-down">A
-						<a href="https://github.com/Dlayer">Dlayer</a>
-						project. Intial idea and development by
-						<a href="http://www.g3d-development.com/blog/">G3D
-						Development Limited</a> /
-						<a href="http://www.deanblackborough.com">Dean
-						Blackborough</a></p>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="https://demo.dlayer.com">Try the Demo</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://blog.dlayer.com/">Development blog</a>
+				</li>
+				<li class="nav-item active dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Docs and about
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="releases.html">Changelog</a>
+						<a class="dropdown-item disabled" href="#">Documentation (moving)</a>
+						<a class="dropdown-item" href="coding-standards.html">Coding standards</a>
+						<a class="dropdown-item" href="history.html">The history of Dlayer</a>
 					</div>
-
-                    <div class="small hidden-md-up">
-                        <ul class="nav nav-tabs">
-                            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dlayer</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="/releases.html">Releases</a>
-                                    <a class="dropdown-item" href="/coding-standards.html">Coding standards</a>
-                                    <a class="dropdown-item" href="/history.html">History</a>
-                                    <a class="dropdown-item" href="/docs/">Docs</a>
-                                </div>
-                            </li>
-                            <li class="nav-item"><a href="https://demo.dlayer.com" class="nav-link">The demo</a></li>
-                            <li class="nav-item"><a href="http://blog.dlayer.com" class="nav-link">Blog</a></li>
-                            <li class="nav-item"><a href="http://www.deanblackborough.com" class="nav-link">DeanBlackborough.com</a></li>
-                        </ul>
-                    </div>
-				</div>
-				<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 releases">
-					<h2 class="display-1">Releases</h2>
-
-					<hr />
-
-
-					<p class="lead">This page lists all the Dlayer versions since August 2015 along with the changelog
-						that accompanied each release, if you would like additional detail, please visit
-						<a href="https://github.com/Dlayer/dlayer">GitHub</a> to see all the commits that went into
-						each release.</p>
-
-                    <h3><span class="label label-success">v1.16</span> Horizontal rule and styling <small class="text-muted">(13th March 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.16">GitHub</a>)</small></h3>
-
-                    <ul>
-                        <li>Enabled link support in Quill rich text fields. [v0.30.0 of PHP Quill renderer]</li>
-                        <li>Enabled superscript and subscript support in Quill rich text fields. [v0.40.0 of PHP Quill renderer]</li>
-                        <li>I have changed the name of the background colour property on the page styling sub tool; it is now called content background colour which is more accurate.</li>
-                        <li>I have added the ability to define the background colour for your website (Page background colour, in the future this will be configurable per template). [Feature]</li>
-                        <li>I have added a horizontal rule tool, under the content layout drop down. [Feature]</li>
-                        <li>I have added a styling sub tool for horizontal rule content items, allows the colour to be defined. [Feature]</li>
-                        <li>I have added a delete sub tool for horizontal rule content items. [Feature]</li>
-                        <li>I have made improvements to the styling code, less duplication of both data and code. [Refactoring]</li>
-                        <li>New tables to manage any styling attributes defined for the page, HTML and content items, additional refactoring required. [Database]</li>
-                        <li>Control bar improvements. [UX]</li>
-                        <li>General fixes and improvements.</li>
-                    </ul>
-
-					<h3><span class="label label-default">v1.15</span> Blog/Rich text content items <small class="text-muted">(3rd March 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.15">GitHub</a>)</small></h3>
-
-					<ul>
-						<li>Enabled the rich text content item tool. [Feature]</li>
-						<li>Added a blog post content item [Feature]</li>
-						<li>Added styling, typography and delete sub tools to rich text and blog post content items. [Feature]</li>
-						<li>Original text content item renamed to 'plain text'.</li>
-						<li>Added PHP Quill HTML renderer, used by the tools which have rich content areas.</li>
-						<li>Tool links inside an empty column dynamic.</li>
-						<li>Refactoring.</li>
-						<li>Minor fixes and improvements.</li>
-					</ul>
-
-					<h3><span class="label label-default">v1.14</span> Composite content items soon <small class="text-muted">(23rd February 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.14">GitHub</a>)</small></h3>
-
-					<ul>
-						<li>The New and Edit forms in the Form Builder expose the layout options visible within the Form Builder. [Feature]</li>
-						<li>The import SQL files don't define the module or tool ids. [Setup]</li>
-						<li>Added a preset 'Date of Birth' element tool to the Form Builder. [Feature]</li>
-						<li>Added alternate rows quick styling tool to the Form Builder. [Feature]</li>
-						<li>Updated the text for the Column, Row and Page tools, more conditional, aware of designer and design state. [UX]</li>
-						<li>Added shortcut buttons to Column, Row and Page tools. [UX]</li>
-						<li>The column contains content query only looks at enabled content. [Bugfix]</li>
-						<li>Added a toggle ribbon button to the right side of the control bar, it expands the ribbon to open up the form. [UX]</li>
-						<li>Control bar padding left and right set to 15px, was 0. [Bugfix]</li>
-						<li>Added a rich text content item to the Content Manager (disabled until I add a renderer for quill). [Disabled Feature]</li>
-						<li>Refactoring.</li>
-						<li>Minor fixes and improvements.</li>
-					</ul>
-
-					<h3><span class="label label-default">v1.13</span> Bugs & Date <small class="text-muted">(18th February 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.13">GitHub</a>)</small></h3>
-
-					<ul>
-						<li>Switching to a new sub tool clears any unsaved changes displaying in the designer. [Bugfix]</li>
-						<li>Select parent row code looks at whether a content item is selected and returns the column that is relevant to the current environment status. [Bugfix]</li>
-						<li>Added a Date Element tool to the Form Builder along with the Styling and Delete sub tools. [Feature]</li>
-						<li>Added a Heading & Date content item to the Content Manager along with the Styling, Typography and Delete sub tools. [Feature]</li>
-						<li>Clear the selected tool for the Form Builder upon logout. [Bugfix]</li>
-						<li>Refactoring.</li>
-					</ul>
-
-					<h3><span class="label label-default">v1.12</span> Mixed bag <small class="text-muted">(14th February 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.12">GitHub</a>)</small></h3>
-
-					<ul>
-						<li>Added a delete sub tool to each of the content items. [Feature]</li>
-						<li>The Content Manager does not display deleted content items; data remains pending feature to restore.</li>
-						<li>The re-order code which runs after an element is deleted in the Form Builder was sorting incorrectly. [Bugfix]</li>
-						<li>Added an admin controller to the Content Manager. [Refactoring]</li>
-						<li>Added an admin controller to the default module. [Refactoring]</li>
-						<li>Added the control bar to the Form Builder and Content Manager previews. There is a button to return to the Designer/Manager and in the Form Builder an option to set the width of the preview. [Feature]</li>
-						<li>The Form Builder displays the assigned title and subtitle. [Bugfix]</li>
-						<li>Model cleanup. [Refactoring]</li>
-						<li>Minor fixes and improvements.</li>
-					</ul>
-
-					<h3><span class="label label-default">v1.11</span> Form Builder part 5 (Layout and preset tools) <small class="text-muted">(10th February 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.11">GitHub</a>)</small></h3>
-
-                    <ul>
-	                    <li>Added layout tools to the Form Builder, forms can now use stacked, inline or horizontal layouts. [Feature]</li>
-	                    <li>I have moved the code for the delete element sub tool into the shared section for Form Builder tools.</li>
-	                    <li>Added the delete sub tool to the Password, Email and Textarea elements. [Feature]</li>
-	                    <li>Added titles tool to the Form Builder, the title and subtitle can now be set. [Feature]</li>
-	                    <li>Added button tool to the Form Builder, allows the labels for the submit and reset buttons to be defined. [Feature]</li>
-	                    <li>Added controls to preview form at full width, three-quarter width, half width and quarter width. [Feature]</li>
-	                    <li>Added four preset element tools to Form Builder, name, email, comment and address. They are standard elements with the values prefilled to assist with creating a new form. [Feature]</li>
-	                    <li>Additional tests added to the test suite. [Tests]</li>
-	                    <li>Minor fixes and improvements.</li>
-                    </ul>
-
-                    <h3><span class="label label-default">v1.10</span> Form Builder part 4 (Sub tools and live preview) <small class="text-muted">(4th February 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.10">GitHub</a>)</small></h3>
-
-                    <ul>
-                        <li>Added a styling sub tool to the Text, Textarea, Email and password element tools, row background colour can be set. [Feature]</li>
-                        <li>Form Builder and Form Builder preview show assigned background colours.</li>
-                        <li>Added live preview for changes to all element tools.</li>
-                        <li>Added live preview for element sub tools, row background colour.</li>
-                        <li>Added ability to re-order form elements. [Feature]</li>
-                        <li>Added ability to delete elements from a form. [Feature]</li>
-                        <li>Added additional tests to test suite. [Tests]</li>
-                        <li>Minor fixes and improvements.</li>
-                    </ul>
-
-                    <h3><span class="label label-default">v1.09</span> Form Builder part 3 (Tools) <small class="text-muted">(30th January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.09">GitHub</a>)</small></h3>
-
-					<ul>
-						<li>Select parent row and column buttons now have the correct URI when a content item is selected. [Bugfix]</li>
-						<li>Minor update to the signed in page. [UI]</li>
-						<li>Added the 'Text element` tool. [Feature]</li>
-						<li>Added the 'Textarea element` tool. [Feature]</li>
-						<li>Added the 'Email element` tool. [Feature]</li>
-						<li>Added the 'Password element` tool. [Feature]</li>
-						<li>Element label and description are now part of the attributes table. [Database]</li>
-						<li>Added form field selector. [Feature]</li>
-						<li>Starting to build up the test suite. [Tests]</li>
-						<li>The active site is visibly clearer on the signed in page. [UI]</li>
-						<li>Added the control bar to non-designer pages. [UX]</li>
-						<li>Minor update to the layout of Form Builder and Content Manager dashboards. [UI]</li>
-						<li>General refactoring and minor fixes.></li>
-					</ul>
-
-                    <h3><span class="label label-default">v1.08</span> Form Builder part 2 <small class="text-muted">(26th January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.08">GitHub</a>)</small></h3>
-
-                    <ul>
-                        <li>I have removed the full SQL exports, no longer required, setup module will be used for all imports.</li>
-                        <li>Added foundation for the Form Builder, this shows the currently selected form, the control bar and ribbon.</li>
-                        <li>Added a Preview mode to display the final form.</li>
-                        <li>Moving to a separate layout per designer.</li>
-                    </ul>
-
-					<h3><span class="label label-default">v1.07</span> Form Builder part 1 <small class="text-muted">(25th January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.07">GitHub</a>)</small></h3>
-
-			        <ul>
-			            <li>Added the foundation code for the Form Builder module.</li>
-			            <li>You can now add and edit form definitions, name and title as of this release.</li>
-			            <li>Added initial code for the Form Builder session class.</li>
-			            <li>Minor styling updates to forms, the further reading block and lists.</li>
-			        </ul>
-
-					<h3><span class="label label-default">v1.06</span> Responsive layouts and a control bar <small class="text-muted">(23rd January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.06">GitHub</a>)</small></h3>
-
-					<ul>
-						<li>Removed additional terminators in SQL data file [Bugfix]</li>
-						<li>Added a settings sub tool to columns, allows the column width and offset to defined.
-							[Feature]</li>
-						<li>Added a glyph style field to tool tabs table, added to allow glyph icons to be rotated.</li>
-						<li>Moved column type from the columns structure table, now a separate table. [Database]</li>
-						<li>Added a responsive sub tool to columns, allows the column with to be defined for the 'xs',
-							'sm' and 'lg' layouts, Dlayer defaults to 'md'. [Feature]</li>
-						<li>Added a control bar to the bottom of the designer, houses the cancel button and navigation
-							controls for Content Manager. [UX]</li>
-						<li>The tool buttons are now in the new control bar. [UX]</li>
-						<li>Added missing foreign keys. [Database]</li>
-						<li>Removed redundant tables from the database. [Database]</li>
-						<li>Updated the tool ribbon classes, general refactoring.</li>
-						<li>Other minor fixes and improvements.</li>
-					</ul>
-
-                    <h3><span class="label label-default">v1.05</span> Database setup <small class="text-muted">(17th January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.05">GitHub</a>)</small></h3>
-
-                    <ul>
-                        <li>I have added a live preview when editing text, jumbotron and heading content items.
-                            [Feature]</li>
-                        <li>Corrected the class names for the heading tool; it will now correctly load in the demo.
-                            [Bugfix]</li>
-                        <li>Added a setting to application.ini which controls whether or not the test credentials
-                            display on the sign-in page. [Feature]</li>
-                        <li>Split the database export into three files per table, one for the structure, another for
-                            the data and a third to define the foreign keys.</li>
-                        <li>I have added a setup module; this allows you to create the tables for the database and
-                            imports the required data, there are four options, import demo database, import base
-                            database, reset to demo state and reset to clean state. [Feature]</li>
-                    </ul>
-
-					<h3><span class="label label-default">v1.04</span> Bugs... <small class="text-muted">(8th January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.04">GitHub</a>)</small></h3>
-
-			        <ul>
-			            <li>I have updated the styling sub tools, the Form, Model and Tool classes extend from shared classes
-				            as per the typography sub tool.</li>
-			            <li>If you only have one page in the Content Manager, it is now automatically selected.</li>
-			            <li>The title and subtitle set for a form now display in the Content Manager [Bugfix].</li>
-			            <li>I have updated the content for the demo sign-in page; it now shows the changelog for the latest
-				            version.</li>
-			            <li>The heading type is now updateable for heading based content items [Bugfix].</li>
-			            <li>If you try to create a new content item when in edit mode for an existing content item you will no
-				            longer be met with a nasty error [Bugfix].</li>
-			            <li>I have added controls to select the sibling (next|previous) content items in a column; this should
-				            reduce the number of clicks when editing [UX].</li>
-			            <li>I have added titles above each of the new navigation controls, 'Parents' and
-				            'Column content items'.</li>
-			        </ul>
-
-                    <h3><span class="label label-default">v1.03</span> UX improvements <small class="text-muted">(7th January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.03">GitHub</a>)</small></h3>
-
-                    <ul>
-                        <li>The page tool is now auto selected in the designer, both on initial entry and whenever you click the cancel button. It is stupid to force you to choose the page when there is only ever one page which always needs to be selected. [UX]</li>
-                        <li>Added select parent row to the column tool, now easier to go back. [UX]</li>
-                        <li>Added select parent column/page to the row tool, now easier to go back. [UX]</li>
-                        <li>Added nesting support for rows and columns. [Feature]</li>
-                        <li>The 'Add row' and 'Add content' tools are aware of state, they will only display when relevant. [UX]</li>
-                        <li>I have added the ability to collapse top level rows so you can concentrate on a particular area of the design. [UX]</li>
-                        <li>The min-height on a page is only applied when the page is empty.</li>
-                        <li>I have updated the sample site for all three demo users.</li>
-                        <li>Creating a default site no longer errors, an issue with insert default text weights. [Bugfix]</li>
-                        <li>Removed the log links, not currently necessary</li>
-                        <li>Updated the code hinting in all view files, now correctly shows all view helpers</li>
-                        <li>Added select parent row and column to content item tools, now easier to go back. [UX]</li>
-                        <li>I have reduced the size of all the buttons in the designer. [UI]</li>
-                        <li>I have updated the content for the demo home page and the Content Manager home page.</li>
-                        <li>Set the stable version to v1.03</li>
-                        <li>Refactoring</li>
-                    </ul>
-
-                    <h3><span class="label label-default">v1.02</span> Shared tool classes <small class="text-muted">(31st December 2016 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.02">GitHub</a>)</small></h3>
-
-                    <ul>
-                        <li>Initial support for shared tool classes, for now simply extend from a Shared folder [Feature]</li>
-                        <li>Fixed a bug with typography sub tool, font family and text weight values not getting set, query had an excess inner join that wouldn't work if font family was null [Bug]</li>
-                        <li>Added text weight to typography sub tool for Form content items [Feature]</li>
-                        <li>Added text weight to typography sub tool for Heading content items [Feature]</li>
-                        <li>Added text weight to typography sub tool for Jumbotron content items [Feature]</li>
-                        <li>Added text weight to typography sub tool for Image content items [Feature]</li>
-                        <li>Added additional support for shared tools, simple to now have a shared form, tool, model or ribbon class</li>
-                        <li>Updated the colour of action buttons for tools, there were too many blue buttons</li>
-                        <li>Added a divider to tab p[ages that have multiple forms, for example, add row</li>
-                        <li>Added typography sub tool to HTML tool [Feature]</li>
-                        <li>Initial help text for Page, Column and Row tool tabs hidden behind a collapse</li>
-                    </ul>
-
-					<h3><span class="label label-default">v1.01</span> Release bugs and typography <small class="text-muted">(26th December 2016 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.01">GitHub</a>)</small></h3>
-
-					<ul>
-						<li>Correct ordinal for release date [Bug]</li>
-						<li>Directory separator incorrect [Bug]</li>
-						<li>Added ability to set text weight on text content items [Feature]</li>
-						<li>Updated model to only save typography values when necessary</li>
-						<li>Initial work on shared models</li>
-						<li>Added preview for text weight changes [Feature]</li>
-						<li>README updated to show latest stable/complete release</li>
-					</ul>
-
-					<h3><span class="label label-default">v1.00</span> Official Open Source release <small class="text-muted">(22nd December 2016 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.00">GitHub</a>)</small></h3>
-
-					<p>Thank you for taking the time to look at Dlayer, I've been working on this project for many years
-                        including the inevitable restarts, it has taken an inordinate amount of work to finally get here,
-                        now that I have a stable base I'm hoping to grow the project.</p>
-
-                    <p>Over the next few weeks, I am going to continue to polish the core of the Content manager,
-                        work on the set-up process and then start reintegrating the removed designers, first on the
-                        list is the Form builder.</p>
-
-                    <p>There have been several interim releases to get to this point; the major changes are below,
-                        for a complete picture, please visit GitHub.</p>
-
-                    <ul>
-                        <li>Simplified the ribbons, no need for the old Ribbon class</li>
-                        <li>Switching to PSR1/2</li>
-                        <li>Removed old code that handled styling, view helpers, Designer class, developed a simpler solution</li>
-                        <li>Initial styling sub tools, background colour for Heading and Text content items [Feature]</li>
-                        <li>Reworked session classes, move tool environment vars into Designer session</li>
-                        <li>Added app logging [Feature]</li>
-                        <li>I have stripped out all code not directly related to the Content manager; initial release will just be the Content manager</li>
-                        <li>Page background colour displays in Designer and the Designer preview.</li>
-                        <li>Logs deleted on logout</li>
-                        <li>Added additional app logging</li>
-                        <li>Typography sub tool for text content item [Feature]</li>
-                        <li>Updated toolbar, showing incorrect tool when column selected [Bug]</li>
-                        <li>Added two views to show app and error log output</li>
-                        <li>Added additional error and app logging, more in progress [Feature]</li>
-                        <li>Added helper buttons to the selected row, column and page if empty [Feature]</li>
-                        <li>Refactored the animate code to set background colour</li>
-                        <li>Added Typography sub tool for Heading content items [Feature]</li>
-                        <li>Added Typography sub tool for Jumbotron content items [Feature]</li>
-                        <li>Added Typography sub tool for Image content items [Feature]</li>
-                        <li>Added Typography sub tool for Form content items [Feature]</li>
-                    </ul>
-
-					<h3><span class="label label-default">v1.00-alpha-1</span>
-						Open Source release prep - Styling sub tools and back to MVP <small class="text-muted">(12th November 2016)</small></h3>
-
-					<p>Pre release for version 1.00, taking the app back to the MVP, Content manager only.</p>
-
-					<ul>
-						<li>Stripped out all code not directly related to the Content manager, initial release will just be the Content manager</li>
-						<li>Added app logging [Feature]</li>
-						<li>Reworked session classes, move tool environment vars into Designer session</li>
-						<li>Initial styling sub tools, background colour for Heading and Text content items [Feature]</li>
-						<li>Removed old code that handled styling, view helpers, Designer class, developed a simpler solution</li>
-						<li>Switching to PSR1/2</li>
-						<li>Simplified the ribbons, no need for the old Ribbon class</li>
-					</ul>
-
-					<h3><span class="label label-default">v0.99</span>
-						Open Source release prep - v1.00 incoming <small class="text-muted">(9th October 2016)</small></h3>
-
-					<p>All the modules have been updated to support modular tools, this has raised an issue though,
-						the other modules are not up to the quality of the Content manager, rather continue to delay
-						until I get things right I am going to launch with just the MVP which is Content manager
-						and add the other modules as I update them.</p>
-
-					<h3><span class="label label-default">v0.99-alpha-3</span>
-						Open Source release prep - Content Manager <small class="text-muted">(5th September 2016)</small></h3>
-
-					<p>This is an interim release, there is a lot of work to complete for v0.99 so I am doing interim
-						alpha releases until it is ready, there will be three or four alpha releases before v0.99.</p>
-
-					<ul>
-						<li>Content manager enabled</li>
-						<li>Added text tool to Content manager [Feature]</li>
-						<li>Added instances support to content items [Feature]</li>
-						<li>Collapse not working in tool bar [Bug fix]</li>
-						<li>Move row controls added [Feature]</li>
-						<li>Move column controls added [Feature]</li>
-						<li>Move content item controls added [Feature]</li>
-						<li>New base classes for Content managers tool, ribbons and forms</li>
-						<li>Added heading tool [Feature]</li>
-						<li>Added jumbotron tool [Feature]</li>
-						<li>Added import form tool [Feature]</li>
-						<li>Added import image tool [Feature]</li>
-						<li>Reworked the image picker [Feature]</li>
-						<li>Refactoring</li>
-						<li>Minor fixes and updates</li>
-					</ul>
-
-					<h3><span class="label label-default">v0.99-alpha-2</span>
-						Open Source release prep - Content Manager <small class="text-muted">(17th June 2016)</small></h3>
-
-					<p>This is an interim release, there is a lot of work to complete for v0.99 so I am doing interim
-						alpha releases until it is ready, there will be three or four alpha releases before v0.99.</p>
-
-					<ul>
-						<li>All new selectors in Content manager, page, row and column</li>
-						<li>New structure supports nesting rows</li>
-						<li>Added basic versions of the add row and column tools</li>
-						<li>Added new items tools for page, row and column</li>
-						<li>Content updates, trying to simplify the language within Dlayer</li>
-					</ul>
-
-					<h3><span class="label label-default">v0.99-alpha-1</span>
-						Open Source release prep - Content Manager <small class="text-muted">(12th June 2016)</small></h3>
-
-					<ul>
-						<li>Removed the Template designer, it will return after the Content manager is complete, it will essentially be a minified Content manager</li>
-						<li>Content manager is currently being reworked, I've ripped out the old div code, replacing it with a new system to fully support Bootstrap, columns and rows</li>
-						<li>Updated site content</li>
-						<li>Simplified add and edit for each designer, now have a single form rather than separate add and edit forms</li>
-						<li>Major rework of controllers to remove duplication that has developed over time, added action helper to help with this</li>
-						<li>Simplified the tool forms in the Content manager, now extend a base classes which does more of the heavy lifting</li>
-						<li>Moved Javascript preview functions for Form builder into their own file, will make it simpler to enable and disable the feature</li>
-						<li>Tool tabs now either have just glyphs or glyphs and text, depends on the current layout mode</li>
-						<li>Updates to the responsive layouts for all designers</li>
-						<li>Fixed a bug where sign out is shown on sign in page</li>
-						<li>Fixed a bug with move fields tool in Form builder, selector incorrect</li>
-						<li>Splitting and updating the Javascript, going back to per designer files</li>
-						<li>General fixes, improvements and clean up</li>
-						<li>Code style updates</li>
-					</ul>
-
-					<h3><span class="label label-default">v0.98</span>
-						Open Source release prep - Responsive Content Manager <small class="text-muted">(25th April 2016)</small></h3>
-
-					<p>The version number has been bumped because this release was supposed to be the official
-						beta v1.00 release. I need to rework the code that generates the structure of templates and
-						pages so have decided to delay the official beta v1.00 release slightly until those changes
-						have been made.</p>
-
-					<ul>
-						<li>Enabled content manager</li>
-						<li>Content manager now uses a new responsive layout, support for large desktop to mobile</li>
-						<li>Width and height removed from content area divs, not relevant with Bootstrap</li>
-						<li>Added live preview link back into navbar</li>
-						<li>Updated 970 design, bootstrap col classes being defined when not strictly necessary</li>
-						<li>Bug fixes</li>
-						<li>Content updates</li>
-					</ul>
-						
-					<h3><span class="label label-default">v0.84</span>
-						Open Source release prep - Responsive Form builder <small class="text-muted">(20th March 2016)</small></h3>
-					
-					<ul>
-						<li>New responsive 1170 design</li>
-						<li>Enabled Form builder</li>
-						<li>Updated navbar, brand link now points to dlayer.com not root of demo</li>
-						<li>Minor fixes to 970 design</li>
-						<li>Tool buttons moved below ribbon, content now next to tool forms</li>
-						<li>Added a new cancel button to 1170 design so user doesn't need to scroll</li>
-						<li>Updated text field labels descriptions for form builder tools</li>
-						<li>Reworked colour picker and made responsive, 970 version uses less vertical space</li>
-						<li>Starting to split dlayer.js file</li>
-					</ul>
-						
-					<h3><span class="label label-default">v0.83</span>
-						Open Source release prep - Web site manager <small class="text-muted">(5th March 2016)</small></h3>
-
-					<ul>
-						<li>Added quick check to enable maintenance mode for upgrades</li>
-						<li>Correct the docs link in README</li>
-						<li>Updated the web site manager to the responsive design</li>
-						<li>Removed down folder containing old down page</li>
-						<li>Removed Glyph table from database, no longer needed</li>
-					</ul>
-                        
-					<h3><span class="label label-default">v0.82</span>
-						Open Source release prep <small class="text-muted">(2nd March 2016)</small></h3>
-
-					<ul>
-						<li>Moved the link to main site/docs into nav bar</li>
-						<li>Cleaned up application.ini</li>
-						<li>Disabled/hidden tools and modules that aren't complete/updated</li>
-						<li>Updated the design of the settings section</li>
-						<li>Updated design of further reading links, added additional links now that app is just an app and not also a web site</li>
-						<li>Removed content not specific to app, Dlayer used to be app and web site</li>
-						<li>Included Zend framework in library </li>
-						<li>Docs moved to dlayer.com/docs, were at specification.dlayer.com</li>
-						<li>New design for designers, initially Image library, fully responsive designer</li>
-						<li>Styling updates</li>
-						<li>Content updates</li>
-						<li>Refactoring</li>
-						<li>Removed redundant code</li>
-					</ul>
-
-					<h3><span class="label label-default">v0.81</span>
-						Pre Open Source release <small class="text-muted">(14th August 2015)</small></h3>
-
-					<ul>
-						<li>Initial design for the Data manager</li>
-						<li>Updated README</li>
-					</ul>
-
-					<h3><span class="label label-default">v0.80</span>
-						Refactoring <small class="text-muted">(27th Jun 2015)</small></h3>
-
-					<ul>
-						<li>Content updates</li>
-						<li>Two new preset tools in Form builder</li>
-					</ul>
-
-                    <hr />
-
-					<p><em>This page only shows the Open Source versions, everything since August 2015; you can view
-						the changelogs for all the previous releases <a href="/private-releases.html">here</a>.</em></p>
-
-					<p><em>The changelogs for the private versions aren't 100% accurate; I copied the data directly
-						from SVN/GIT, and I have not yet gone through and corrected it.</em></p>
-				</div>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="http://www.deanblackborough.com">DeanBlackborough.com</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://www.g3d-development.com/blog">G3D Development Ltd</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<div class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="display-2">Changelog</h1>
+				<p class="lead">Open source changelog</p>
+
+				<p>
+					<a class="btn btn-secondary" href="https://github.com/Dlayer/dlayer/zipball/master" role="button">Download: Zip</a>
+					<a class="btn btn-secondary" href="https://github.com/Dlayer/dlayer/tarball/master" role="button">Download: Tar</a>
+					<a class="btn btn-primary" href="https://github.com/Dlayer/dlayer" role="button">Find on GitHub</a>
+				</p>
 			</div>
 		</div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12 col-xs-12 muted text-center">
-                    <p>Dlayer originally developed by
-                        <a href="http://www.g3d-development.com/blog/">G3D
-                            Development Limited</a> /
-                        <a href="http://www.deanblackborough.com">Dean
-                            Blackborough</a><br />
-                        Dlayer Copyright &copy; G3D Development 2015<br />
-                        Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a>,
-                        Code <a href="https://github.com/Dlayer/dlayer/blob/master/LICENSE">licensed</a> under MIT</p>
-                </div>
-            </div>
-        </div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<p class="lead">This page lists all the Dlayer versions since August 2015 along with the changelog
+				that accompanied each release, if you would like additional detail, please visit
+				<a href="https://github.com/Dlayer/dlayer">GitHub</a> to see all the commits that went into
+				each release.</p>
 
-		<script src="bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	</body>
+			<h3><span class="badge badge-success">v1.16</span> Horizontal rule and styling <small class="text-muted">(13th March 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.16">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>Enabled link support in Quill rich text fields. [v0.30.0 of PHP Quill renderer]</li>
+				<li>Enabled superscript and subscript support in Quill rich text fields. [v0.40.0 of PHP Quill renderer]</li>
+				<li>I have changed the name of the background colour property on the page styling sub tool; it is now called content background colour which is more accurate.</li>
+				<li>I have added the ability to define the background colour for your website (Page background colour, in the future this will be configurable per template). [Feature]</li>
+				<li>I have added a horizontal rule tool, under the content layout drop down. [Feature]</li>
+				<li>I have added a styling sub tool for horizontal rule content items, allows the colour to be defined. [Feature]</li>
+				<li>I have added a delete sub tool for horizontal rule content items. [Feature]</li>
+				<li>I have made improvements to the styling code, less duplication of both data and code. [Refactoring]</li>
+				<li>New tables to manage any styling attributes defined for the page, HTML and content items, additional refactoring required. [Database]</li>
+				<li>Control bar improvements. [UX]</li>
+				<li>General fixes and improvements.</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.15</span> Blog/Rich text content items <small class="text-muted">(3rd March 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.15">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>Enabled the rich text content item tool. [Feature]</li>
+				<li>Added a blog post content item [Feature]</li>
+				<li>Added styling, typography and delete sub tools to rich text and blog post content items. [Feature]</li>
+				<li>Original text content item renamed to 'plain text'.</li>
+				<li>Added PHP Quill HTML renderer, used by the tools which have rich content areas.</li>
+				<li>Tool links inside an empty column dynamic.</li>
+				<li>Refactoring.</li>
+				<li>Minor fixes and improvements.</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.14</span> Composite content items soon <small class="text-muted">(23rd February 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.14">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>The New and Edit forms in the Form Builder expose the layout options visible within the Form Builder. [Feature]</li>
+				<li>The import SQL files don't define the module or tool ids. [Setup]</li>
+				<li>Added a preset 'Date of Birth' element tool to the Form Builder. [Feature]</li>
+				<li>Added alternate rows quick styling tool to the Form Builder. [Feature]</li>
+				<li>Updated the text for the Column, Row and Page tools, more conditional, aware of designer and design state. [UX]</li>
+				<li>Added shortcut buttons to Column, Row and Page tools. [UX]</li>
+				<li>The column contains content query only looks at enabled content. [Bugfix]</li>
+				<li>Added a toggle ribbon button to the right side of the control bar, it expands the ribbon to open up the form. [UX]</li>
+				<li>Control bar padding left and right set to 15px, was 0. [Bugfix]</li>
+				<li>Added a rich text content item to the Content Manager (disabled until I add a renderer for quill). [Disabled Feature]</li>
+				<li>Refactoring.</li>
+				<li>Minor fixes and improvements.</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.13</span> Bugs & Date <small class="text-muted">(18th February 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.13">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>Switching to a new sub tool clears any unsaved changes displaying in the designer. [Bugfix]</li>
+				<li>Select parent row code looks at whether a content item is selected and returns the column that is relevant to the current environment status. [Bugfix]</li>
+				<li>Added a Date Element tool to the Form Builder along with the Styling and Delete sub tools. [Feature]</li>
+				<li>Added a Heading & Date content item to the Content Manager along with the Styling, Typography and Delete sub tools. [Feature]</li>
+				<li>Clear the selected tool for the Form Builder upon logout. [Bugfix]</li>
+				<li>Refactoring.</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.12</span> Mixed bag <small class="text-muted">(14th February 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.12">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>Added a delete sub tool to each of the content items. [Feature]</li>
+				<li>The Content Manager does not display deleted content items; data remains pending feature to restore.</li>
+				<li>The re-order code which runs after an element is deleted in the Form Builder was sorting incorrectly. [Bugfix]</li>
+				<li>Added an admin controller to the Content Manager. [Refactoring]</li>
+				<li>Added an admin controller to the default module. [Refactoring]</li>
+				<li>Added the control bar to the Form Builder and Content Manager previews. There is a button to return to the Designer/Manager and in the Form Builder an option to set the width of the preview. [Feature]</li>
+				<li>The Form Builder displays the assigned title and subtitle. [Bugfix]</li>
+				<li>Model cleanup. [Refactoring]</li>
+				<li>Minor fixes and improvements.</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.11</span> Form Builder part 5 (Layout and preset tools) <small class="text-muted">(10th February 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.11">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>Added layout tools to the Form Builder, forms can now use stacked, inline or horizontal layouts. [Feature]</li>
+				<li>I have moved the code for the delete element sub tool into the shared section for Form Builder tools.</li>
+				<li>Added the delete sub tool to the Password, Email and Textarea elements. [Feature]</li>
+				<li>Added titles tool to the Form Builder, the title and subtitle can now be set. [Feature]</li>
+				<li>Added button tool to the Form Builder, allows the labels for the submit and reset buttons to be defined. [Feature]</li>
+				<li>Added controls to preview form at full width, three-quarter width, half width and quarter width. [Feature]</li>
+				<li>Added four preset element tools to Form Builder, name, email, comment and address. They are standard elements with the values prefilled to assist with creating a new form. [Feature]</li>
+				<li>Additional tests added to the test suite. [Tests]</li>
+				<li>Minor fixes and improvements.</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.10</span> Form Builder part 4 (Sub tools and live preview) <small class="text-muted">(4th February 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.10">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>Added a styling sub tool to the Text, Textarea, Email and password element tools, row background colour can be set. [Feature]</li>
+				<li>Form Builder and Form Builder preview show assigned background colours.</li>
+				<li>Added live preview for changes to all element tools.</li>
+				<li>Added live preview for element sub tools, row background colour.</li>
+				<li>Added ability to re-order form elements. [Feature]</li>
+				<li>Added ability to delete elements from a form. [Feature]</li>
+				<li>Added additional tests to test suite. [Tests]</li>
+				<li>Minor fixes and improvements.</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.09</span> Form Builder part 3 (Tools) <small class="text-muted">(30th January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.09">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>Select parent row and column buttons now have the correct URI when a content item is selected. [Bugfix]</li>
+				<li>Minor update to the signed in page. [UI]</li>
+				<li>Added the 'Text element` tool. [Feature]</li>
+				<li>Added the 'Textarea element` tool. [Feature]</li>
+				<li>Added the 'Email element` tool. [Feature]</li>
+				<li>Added the 'Password element` tool. [Feature]</li>
+				<li>Element label and description are now part of the attributes table. [Database]</li>
+				<li>Added form field selector. [Feature]</li>
+				<li>Starting to build up the test suite. [Tests]</li>
+				<li>The active site is visibly clearer on the signed in page. [UI]</li>
+				<li>Added the control bar to non-designer pages. [UX]</li>
+				<li>Minor update to the layout of Form Builder and Content Manager dashboards. [UI]</li>
+				<li>General refactoring and minor fixes.></li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.08</span> Form Builder part 2 <small class="text-muted">(26th January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.08">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>I have removed the full SQL exports, no longer required, setup module will be used for all imports.</li>
+				<li>Added foundation for the Form Builder, this shows the currently selected form, the control bar and ribbon.</li>
+				<li>Added a Preview mode to display the final form.</li>
+				<li>Moving to a separate layout per designer.</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.07</span> Form Builder part 1 <small class="text-muted">(25th January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.07">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>Added the foundation code for the Form Builder module.</li>
+				<li>You can now add and edit form definitions, name and title as of this release.</li>
+				<li>Added initial code for the Form Builder session class.</li>
+				<li>Minor styling updates to forms, the further reading block and lists.</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.06</span> Responsive layouts and a control bar <small class="text-muted">(23rd January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.06">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>Removed additional terminators in SQL data file [Bugfix]</li>
+				<li>Added a settings sub tool to columns, allows the column width and offset to defined.
+					[Feature]</li>
+				<li>Added a glyph style field to tool tabs table, added to allow glyph icons to be rotated.</li>
+				<li>Moved column type from the columns structure table, now a separate table. [Database]</li>
+				<li>Added a responsive sub tool to columns, allows the column with to be defined for the 'xs',
+					'sm' and 'lg' layouts, Dlayer defaults to 'md'. [Feature]</li>
+				<li>Added a control bar to the bottom of the designer, houses the cancel button and navigation
+					controls for Content Manager. [UX]</li>
+				<li>The tool buttons are now in the new control bar. [UX]</li>
+				<li>Added missing foreign keys. [Database]</li>
+				<li>Removed redundant tables from the database. [Database]</li>
+				<li>Updated the tool ribbon classes, general refactoring.</li>
+				<li>Other minor fixes and improvements.</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.05</span> Database setup <small class="text-muted">(17th January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.05">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>I have added a live preview when editing text, jumbotron and heading content items.
+					[Feature]</li>
+				<li>Corrected the class names for the heading tool; it will now correctly load in the demo.
+					[Bugfix]</li>
+				<li>Added a setting to application.ini which controls whether or not the test credentials
+					display on the sign-in page. [Feature]</li>
+				<li>Split the database export into three files per table, one for the structure, another for
+					the data and a third to define the foreign keys.</li>
+				<li>I have added a setup module; this allows you to create the tables for the database and
+					imports the required data, there are four options, import demo database, import base
+					database, reset to demo state and reset to clean state. [Feature]</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.04</span> Bugs... <small class="text-muted">(8th January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.04">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>I have updated the styling sub tools, the Form, Model and Tool classes extend from shared classes
+					as per the typography sub tool.</li>
+				<li>If you only have one page in the Content Manager, it is now automatically selected.</li>
+				<li>The title and subtitle set for a form now display in the Content Manager [Bugfix].</li>
+				<li>I have updated the content for the demo sign-in page; it now shows the changelog for the latest
+					version.</li>
+				<li>The heading type is now updateable for heading based content items [Bugfix].</li>
+				<li>If you try to create a new content item when in edit mode for an existing content item you will no
+					longer be met with a nasty error [Bugfix].</li>
+				<li>I have added controls to select the sibling (next|previous) content items in a column; this should
+					reduce the number of clicks when editing [UX].</li>
+				<li>I have added titles above each of the new navigation controls, 'Parents' and
+					'Column content items'.</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.03</span> UX improvements <small class="text-muted">(7th January 2017 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.03">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>The page tool is now auto selected in the designer, both on initial entry and whenever you click the cancel button. It is stupid to force you to choose the page when there is only ever one page which always needs to be selected. [UX]</li>
+				<li>Added select parent row to the column tool, now easier to go back. [UX]</li>
+				<li>Added select parent column/page to the row tool, now easier to go back. [UX]</li>
+				<li>Added nesting support for rows and columns. [Feature]</li>
+				<li>The 'Add row' and 'Add content' tools are aware of state, they will only display when relevant. [UX]</li>
+				<li>I have added the ability to collapse top level rows so you can concentrate on a particular area of the design. [UX]</li>
+				<li>The min-height on a page is only applied when the page is empty.</li>
+				<li>I have updated the sample site for all three demo users.</li>
+				<li>Creating a default site no longer errors, an issue with insert default text weights. [Bugfix]</li>
+				<li>Removed the log links, not currently necessary</li>
+				<li>Updated the code hinting in all view files, now correctly shows all view helpers</li>
+				<li>Added select parent row and column to content item tools, now easier to go back. [UX]</li>
+				<li>I have reduced the size of all the buttons in the designer. [UI]</li>
+				<li>I have updated the content for the demo home page and the Content Manager home page.</li>
+				<li>Set the stable version to v1.03</li>
+				<li>Refactoring</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.02</span> Shared tool classes <small class="text-muted">(31st December 2016 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.02">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>Initial support for shared tool classes, for now simply extend from a Shared folder [Feature]</li>
+				<li>Fixed a bug with typography sub tool, font family and text weight values not getting set, query had an excess inner join that wouldn't work if font family was null [Bug]</li>
+				<li>Added text weight to typography sub tool for Form content items [Feature]</li>
+				<li>Added text weight to typography sub tool for Heading content items [Feature]</li>
+				<li>Added text weight to typography sub tool for Jumbotron content items [Feature]</li>
+				<li>Added text weight to typography sub tool for Image content items [Feature]</li>
+				<li>Added additional support for shared tools, simple to now have a shared form, tool, model or ribbon class</li>
+				<li>Updated the colour of action buttons for tools, there were too many blue buttons</li>
+				<li>Added a divider to tab p[ages that have multiple forms, for example, add row</li>
+				<li>Added typography sub tool to HTML tool [Feature]</li>
+				<li>Initial help text for Page, Column and Row tool tabs hidden behind a collapse</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.01</span> Release bugs and typography <small class="text-muted">(26th December 2016 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.01">GitHub</a>)</small></h3>
+
+			<ul>
+				<li>Correct ordinal for release date [Bug]</li>
+				<li>Directory separator incorrect [Bug]</li>
+				<li>Added ability to set text weight on text content items [Feature]</li>
+				<li>Updated model to only save typography values when necessary</li>
+				<li>Initial work on shared models</li>
+				<li>Added preview for text weight changes [Feature]</li>
+				<li>README updated to show latest stable/complete release</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.00</span> Official Open Source release <small class="text-muted">(22nd December 2016 - <a href="https://github.com/Dlayer/dlayer/releases/tag/v1.00">GitHub</a>)</small></h3>
+
+			<p>Thank you for taking the time to look at Dlayer, I've been working on this project for many years
+				including the inevitable restarts, it has taken an inordinate amount of work to finally get here,
+				now that I have a stable base I'm hoping to grow the project.</p>
+
+			<p>Over the next few weeks, I am going to continue to polish the core of the Content manager,
+				work on the set-up process and then start reintegrating the removed designers, first on the
+				list is the Form builder.</p>
+
+			<p>There have been several interim releases to get to this point; the major changes are below,
+				for a complete picture, please visit GitHub.</p>
+
+			<ul>
+				<li>Simplified the ribbons, no need for the old Ribbon class</li>
+				<li>Switching to PSR1/2</li>
+				<li>Removed old code that handled styling, view helpers, Designer class, developed a simpler solution</li>
+				<li>Initial styling sub tools, background colour for Heading and Text content items [Feature]</li>
+				<li>Reworked session classes, move tool environment vars into Designer session</li>
+				<li>Added app logging [Feature]</li>
+				<li>I have stripped out all code not directly related to the Content manager; initial release will just be the Content manager</li>
+				<li>Page background colour displays in Designer and the Designer preview.</li>
+				<li>Logs deleted on logout</li>
+				<li>Added additional app logging</li>
+				<li>Typography sub tool for text content item [Feature]</li>
+				<li>Updated toolbar, showing incorrect tool when column selected [Bug]</li>
+				<li>Added two views to show app and error log output</li>
+				<li>Added additional error and app logging, more in progress [Feature]</li>
+				<li>Added helper buttons to the selected row, column and page if empty [Feature]</li>
+				<li>Refactored the animate code to set background colour</li>
+				<li>Added Typography sub tool for Heading content items [Feature]</li>
+				<li>Added Typography sub tool for Jumbotron content items [Feature]</li>
+				<li>Added Typography sub tool for Image content items [Feature]</li>
+				<li>Added Typography sub tool for Form content items [Feature]</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v1.00-alpha-1</span>
+				Open Source release prep - Styling sub tools and back to MVP <small class="text-muted">(12th November 2016)</small></h3>
+
+			<p>Pre release for version 1.00, taking the app back to the MVP, Content manager only.</p>
+
+			<ul>
+				<li>Stripped out all code not directly related to the Content manager, initial release will just be the Content manager</li>
+				<li>Added app logging [Feature]</li>
+				<li>Reworked session classes, move tool environment vars into Designer session</li>
+				<li>Initial styling sub tools, background colour for Heading and Text content items [Feature]</li>
+				<li>Removed old code that handled styling, view helpers, Designer class, developed a simpler solution</li>
+				<li>Switching to PSR1/2</li>
+				<li>Simplified the ribbons, no need for the old Ribbon class</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v0.99</span>
+				Open Source release prep - v1.00 incoming <small class="text-muted">(9th October 2016)</small></h3>
+
+			<p>All the modules have been updated to support modular tools, this has raised an issue though,
+				the other modules are not up to the quality of the Content manager, rather continue to delay
+				until I get things right I am going to launch with just the MVP which is Content manager
+				and add the other modules as I update them.</p>
+
+			<h3><span class="badge badge-default">v0.99-alpha-3</span>
+				Open Source release prep - Content Manager <small class="text-muted">(5th September 2016)</small></h3>
+
+			<p>This is an interim release, there is a lot of work to complete for v0.99 so I am doing interim
+				alpha releases until it is ready, there will be three or four alpha releases before v0.99.</p>
+
+			<ul>
+				<li>Content manager enabled</li>
+				<li>Added text tool to Content manager [Feature]</li>
+				<li>Added instances support to content items [Feature]</li>
+				<li>Collapse not working in tool bar [Bug fix]</li>
+				<li>Move row controls added [Feature]</li>
+				<li>Move column controls added [Feature]</li>
+				<li>Move content item controls added [Feature]</li>
+				<li>New base classes for Content managers tool, ribbons and forms</li>
+				<li>Added heading tool [Feature]</li>
+				<li>Added jumbotron tool [Feature]</li>
+				<li>Added import form tool [Feature]</li>
+				<li>Added import image tool [Feature]</li>
+				<li>Reworked the image picker [Feature]</li>
+				<li>Refactoring</li>
+				<li>Minor fixes and updates</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v0.99-alpha-2</span>
+				Open Source release prep - Content Manager <small class="text-muted">(17th June 2016)</small></h3>
+
+			<p>This is an interim release, there is a lot of work to complete for v0.99 so I am doing interim
+				alpha releases until it is ready, there will be three or four alpha releases before v0.99.</p>
+
+			<ul>
+				<li>All new selectors in Content manager, page, row and column</li>
+				<li>New structure supports nesting rows</li>
+				<li>Added basic versions of the add row and column tools</li>
+				<li>Added new items tools for page, row and column</li>
+				<li>Content updates, trying to simplify the language within Dlayer</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v0.99-alpha-1</span>
+				Open Source release prep - Content Manager <small class="text-muted">(12th June 2016)</small></h3>
+
+			<ul>
+				<li>Removed the Template designer, it will return after the Content manager is complete, it will essentially be a minified Content manager</li>
+				<li>Content manager is currently being reworked, I've ripped out the old div code, replacing it with a new system to fully support Bootstrap, columns and rows</li>
+				<li>Updated site content</li>
+				<li>Simplified add and edit for each designer, now have a single form rather than separate add and edit forms</li>
+				<li>Major rework of controllers to remove duplication that has developed over time, added action helper to help with this</li>
+				<li>Simplified the tool forms in the Content manager, now extend a base classes which does more of the heavy lifting</li>
+				<li>Moved Javascript preview functions for Form builder into their own file, will make it simpler to enable and disable the feature</li>
+				<li>Tool tabs now either have just glyphs or glyphs and text, depends on the current layout mode</li>
+				<li>Updates to the responsive layouts for all designers</li>
+				<li>Fixed a bug where sign out is shown on sign in page</li>
+				<li>Fixed a bug with move fields tool in Form builder, selector incorrect</li>
+				<li>Splitting and updating the Javascript, going back to per designer files</li>
+				<li>General fixes, improvements and clean up</li>
+				<li>Code style updates</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v0.98</span>
+				Open Source release prep - Responsive Content Manager <small class="text-muted">(25th April 2016)</small></h3>
+
+			<p>The version number has been bumped because this release was supposed to be the official
+				beta v1.00 release. I need to rework the code that generates the structure of templates and
+				pages so have decided to delay the official beta v1.00 release slightly until those changes
+				have been made.</p>
+
+			<ul>
+				<li>Enabled content manager</li>
+				<li>Content manager now uses a new responsive layout, support for large desktop to mobile</li>
+				<li>Width and height removed from content area divs, not relevant with Bootstrap</li>
+				<li>Added live preview link back into navbar</li>
+				<li>Updated 970 design, bootstrap col classes being defined when not strictly necessary</li>
+				<li>Bug fixes</li>
+				<li>Content updates</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v0.84</span>
+				Open Source release prep - Responsive Form builder <small class="text-muted">(20th March 2016)</small></h3>
+
+			<ul>
+				<li>New responsive 1170 design</li>
+				<li>Enabled Form builder</li>
+				<li>Updated navbar, brand link now points to dlayer.com not root of demo</li>
+				<li>Minor fixes to 970 design</li>
+				<li>Tool buttons moved below ribbon, content now next to tool forms</li>
+				<li>Added a new cancel button to 1170 design so user doesn't need to scroll</li>
+				<li>Updated text field labels descriptions for form builder tools</li>
+				<li>Reworked colour picker and made responsive, 970 version uses less vertical space</li>
+				<li>Starting to split dlayer.js file</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v0.83</span>
+				Open Source release prep - Web site manager <small class="text-muted">(5th March 2016)</small></h3>
+
+			<ul>
+				<li>Added quick check to enable maintenance mode for upgrades</li>
+				<li>Correct the docs link in README</li>
+				<li>Updated the web site manager to the responsive design</li>
+				<li>Removed down folder containing old down page</li>
+				<li>Removed Glyph table from database, no longer needed</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v0.82</span>
+				Open Source release prep <small class="text-muted">(2nd March 2016)</small></h3>
+
+			<ul>
+				<li>Moved the link to main site/docs into nav bar</li>
+				<li>Cleaned up application.ini</li>
+				<li>Disabled/hidden tools and modules that aren't complete/updated</li>
+				<li>Updated the design of the settings section</li>
+				<li>Updated design of further reading links, added additional links now that app is just an app and not also a web site</li>
+				<li>Removed content not specific to app, Dlayer used to be app and web site</li>
+				<li>Included Zend framework in library </li>
+				<li>Docs moved to dlayer.com/docs, were at specification.dlayer.com</li>
+				<li>New design for designers, initially Image library, fully responsive designer</li>
+				<li>Styling updates</li>
+				<li>Content updates</li>
+				<li>Refactoring</li>
+				<li>Removed redundant code</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v0.81</span>
+				Pre Open Source release <small class="text-muted">(14th August 2015)</small></h3>
+
+			<ul>
+				<li>Initial design for the Data manager</li>
+				<li>Updated README</li>
+			</ul>
+
+			<h3><span class="badge badge-default">v0.80</span>
+				Refactoring <small class="text-muted">(27th Jun 2015)</small></h3>
+
+			<ul>
+				<li>Content updates</li>
+				<li>Two new preset tools in Form builder</li>
+			</ul>
+
+			<hr />
+
+			<p><em>This page only shows the Open Source versions, everything since August 2015; you can view
+				the changelogs for all the previous releases <a href="/private-releases.html">here</a>.</em></p>
+
+			<p><em>The changelogs for the private versions aren't 100% accurate; I copied the data directly
+				from SVN/GIT, and I have not yet gone through and corrected it.</em></p>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center text-muted">
+				<hr />
+				<p>Dlayer originally developed by
+					<a href="http://www.g3d-development.com/blog/">G3D
+						Development Limited</a> /
+					<a href="http://www.deanblackborough.com">Dean
+						Blackborough</a><br>
+					Dlayer Copyright © G3D Development 2017<br>
+					Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a>,
+					Code <a href="https://github.com/Dlayer/dlayer/blob/master/LICENSE">licensed</a> under MIT</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
 </html>

@@ -2,30 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <title>Dlayer: Coding standards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-          content="Dlayer is a web development tool aimed primarily at users that don't have any web design or web development experience.">
+    <meta name="description" content="Dlayer is a web development tool aimed primarily at users that don't have any web design or web development experience.">
     <meta name="author" content="G3D Development Limited - Dean Blackborough">
     <meta name="application-name" content="Dlayer.com"/>
     <meta name="msapplication-TileColor" content="#FFFFFF"/>
     <meta name="msapplication-starturl" content="http://www.dlayer.com"/>
     <meta name="msapplication-tooltip" content="Dlayer.com: Web development simplified"/>
-    <link rel="shortcut icon" href="/images/favicon.ico"/>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
-    <link rel="icon" sizes="192x192" href="/images/favicon-192x192.png"/>
-
-    <title>Dlayer- Coding standards</title>
-
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="icon" sizes="192x192" href="/images/favicon-192x192.png" />
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="/css/site.css" media="screen" rel="stylesheet" type="text/css">
     <link href="bower_components/prism/themes/prism.css" rel="stylesheet">
-    <link href="css/dlayer.css" rel="stylesheet">
-
+    <link href="/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/prism/prism.js"></script>
+    <script src="bower_components/prism/components.js"></script>
+    <script src="bower_components/prism/components/prism-php.js"></script>
     <script>
         var _prum = [['id', '586d2ba4aa6959fe4202e95f'],
             ['mark', 'firstbyte', (new Date()).getTime()]];
-        (function ()
-        {
+        (function() {
             var s = document.getElementsByTagName('script')[0]
                 , p = document.createElement('script');
             p.async = 'async';
@@ -34,98 +35,73 @@
         })();
     </script>
 </head>
-
 <body>
 <script>
-    (function (i, s, o, g, r, a, m)
-    {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function ()
-            {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-64736-3', 'auto');
     ga('send', 'pageview');
 
 </script>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-            <h1>Dlayer.com</h1>
+<div class="container-fluid">
+    <nav class="navbar navbar-toggleable-md navbar-light">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/">Dlayer</a>
 
-            <p class="text-muted">Web Development simplified</p>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://demo.dlayer.com">Try the Demo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://blog.dlayer.com/">Development blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Docs and about
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="releases.html">Changelog</a>
+                        <a class="dropdown-item disabled" href="#">Documentation (moving)</a>
+                        <a class="dropdown-item" href="coding-standards.html">Coding standards</a>
+                        <a class="dropdown-item" href="history.html">The history of Dlayer</a>
+                    </div>
+                </li>
 
-            <p>
-                <a class="btn btn-primary-outline btn-sm" href="https://github.com/Dlayer/dlayer/zipball/master"
-                   role="button">Zip</a>
-                <a class="btn btn-primary-outline btn-sm" href="https://github.com/Dlayer/dlayer/tarball/master"
-                   role="button">Tar</a>
-                <a class="btn btn-primary btn-sm" href="https://github.com/Dlayer/dlayer" role="button">on GitHub</a>
-            </p>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.deanblackborough.com">DeanBlackborough.com</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.g3d-development.com/blog">G3D Development Ltd</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-2">Coding standards</h1>
+                <p class="lead">Suggestions for contributors.</p>
 
-            <p class="text-muted">Visit GitHub to view the project</p>
-
-            <hr/>
-
-            <div class="hidden-sm-down">
-                <ul class="list-unstyled navigation">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="https://demo.dlayer.com">Demo</a>
-                        <ul>
-                            <li><a href="http://blog.dlayer.com">Development blog</a></li>
-                            <li><a href="/releases.html">Changelog</a></li>
-                            <li><a href="/docs/">Documentation</a></li>
-                            <li><a href="/coding-standards.html">Coding standards</a></li>
-                            <li><a href="/history.html">Dlayer history</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="http://www.deanblackborough.com">DeanBlackborough.com</a></li>
-                    <li><a href="http://www.g3d-development.com">G3D-Development.com</a></li>
-                </ul>
-
-                <hr/>
-
-                <p class="small hidden-sm-down">A
-                    <a href="https://github.com/Dlayer">Dlayer</a>
-                    project. Intial idea and development by
-                    <a href="http://www.g3d-development.com/blog/">G3D
-                        Development Limited</a> /
-                    <a href="http://www.deanblackborough.com">Dean
-                        Blackborough</a></p>
-            </div>
-
-            <div class="small hidden-md-up">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                           aria-haspopup="true" aria-expanded="false">Dlayer</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/releases.html">Releases</a>
-                            <a class="dropdown-item" href="/coding-standards.html">Coding standards</a>
-                            <a class="dropdown-item" href="/history.html">History</a>
-                            <a class="dropdown-item" href="/docs/">Docs</a>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a href="https://demo.dlayer.com" class="nav-link">The demo</a></li>
-                    <li class="nav-item"><a href="http://blog.dlayer.com" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="http://www.deanblackborough.com"
-                                            class="nav-link">DeanBlackborough.com</a></li>
-                </ul>
+                <p>
+                    <a class="btn btn-secondary" href="https://github.com/Dlayer/dlayer/zipball/master" role="button">Download: Zip</a>
+                    <a class="btn btn-secondary" href="https://github.com/Dlayer/dlayer/tarball/master" role="button">Download: Tar</a>
+                    <a class="btn btn-primary" href="https://github.com/Dlayer/dlayer" role="button">Find on GitHub</a>
+                </p>
             </div>
         </div>
-        <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
-            <h2 class="display-1">Coding standards</h2>
-
-            <hr/>
-
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
             <p class="lead">If you would like to contribute to Dlayer, please try to adhere to the coding standards
                 I have detailed below, if you have any questions or believe I have missed something, please content
                 me. I am working towards moving to PSR-1/2, there may be minor differences listed below, if unsure
@@ -347,29 +323,25 @@
 
             <p>If you review the commits, you will discover very quickly spot I am not following the guidelines for
                 Database changes; I will adhere to them once I have the set-up/reset scripts in place.</p>
-
         </div>
     </div>
 </div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12 col-xs-12 muted text-center">
-            <p>Dlayer originally developed by
-                <a href="http://www.g3d-development.com/blog/">G3D
-                    Development Limited</a> /
-                <a href="http://www.deanblackborough.com">Dean
-                    Blackborough</a><br/>
-                Dlayer Copyright &copy; G3D Development 2015<br/>
-                Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a>,
-                Code <a href="https://github.com/Dlayer/dlayer/blob/master/LICENSE">licensed</a> under MIT</p>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center text-muted">
+                <hr />
+                <p>Dlayer originally developed by
+                    <a href="http://www.g3d-development.com/blog/">G3D
+                        Development Limited</a> /
+                    <a href="http://www.deanblackborough.com">Dean
+                        Blackborough</a><br>
+                    Dlayer Copyright © G3D Development 2017<br>
+                    Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a>,
+                    Code <a href="https://github.com/Dlayer/dlayer/blob/master/LICENSE">licensed</a> under MIT</p>
+            </div>
         </div>
     </div>
 </div>
-
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower_components/prism/prism.js"></script>
-<script src="bower_components/prism/components.js"></script>
-<script src="bower_components/prism/components/prism-php.js"></script>
 </body>
 </html>
