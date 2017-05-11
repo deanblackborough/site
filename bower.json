@@ -2,7 +2,7 @@
 	"name": "dlayer-site",
 	"version": "1.0.0",
 	"dependencies": {
-		"bootstrap": "4.0.0-alpha",
+		"bootstrap": "4.0.0-alpha.6",
 		"prism": "1.0.1"
 	},
 	"private": true
